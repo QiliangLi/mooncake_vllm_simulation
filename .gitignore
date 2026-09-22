@@ -1,0 +1,21 @@
+# macOS
+.DS_Store
+
+# Local agent/tool state
+.video_agent/
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# Build artifacts
+build/
+dist/
+*.so
+*.o
+
+# Editors
+.idea/
+.vscode/
