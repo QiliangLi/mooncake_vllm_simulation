@@ -1,0 +1,76 @@
+{
+  "schema_version": 1,
+  "diagram_type": "architecture",
+  "meta": {
+    "title": "mooncake-cpu-lab 仿真平台架构",
+    "locale": "zh-CN",
+    "quality_profile": "showcase",
+    "viewBox": [1280, 640],
+    "views": [
+      { "id": "main-path", "label": "主数据路径", "focus": ["trace", "router", "engine", "vsched", "batch", "storage", "results"], "note": "请求从 trace 到达，经路由与真实调度，由虚拟执行产出结果。" },
+      { "id": "kv-chain", "label": "KV 命中链", "focus": ["vsched", "simconn", "conductor", "kvm"], "note": "调度器经 SimConnector 查询真实 Mooncake 前缀索引，再由 KVCacheManager 分配逻辑块。" },
+      { "id": "engines", "label": "两种引擎入口", "focus": ["engine", "ascend", "vsched"], "note": "--engine ascend 时加载原始 BalanceScheduler；均衡关闭时委托 vLLM 父类调度。" }
+    ]
+  },
+  "components": [
+    { "id": "trace", "type": "external", "label": "请求 Trace", "sublabel": "jsonl：到达/前缀/SLO", "pos": [36, 300], "size": [122, 60], "tag": "合成或 trace 转换" },
+    { "id": "clock", "type": "messagebus", "label": "虚拟时钟", "sublabel": "离散事件堆", "pos": [36, 92], "size": [122, 60], "tag": "lab/events.py" },
+    { "id": "router", "type": "backend", "label": "全局路由", "sublabel": "arrive()：RR/least/aware", "pos": [212, 300], "size": [136, 64], "tag": "lab 仿真" },
+    { "id": "engine", "type": "backend", "label": "引擎驱动 Engine", "sublabel": "step() 驱动真实调度器", "pos": [402, 300], "size": [146, 64], "tag": "lab 仿真" },
+    { "id": "vsched", "type": "backend", "label": "vLLM V1 Scheduler", "sublabel": "schedule() · 预算/抢占", "pos": [622, 300], "size": [152, 64], "tag": "vLLM v0.20.2 原始代码" },
+    { "id": "ascend", "type": "backend", "label": "BalanceScheduler", "sublabel": "AST 隔离加载", "pos": [622, 150], "size": [152, 64], "tag": "vllm-ascend rc1 原始类" },
+    { "id": "kvm", "type": "database", "label": "KVCacheManager / BlockPool", "sublabel": "逻辑块分配·释放·delay 预留", "pos": [842, 150], "size": [164, 64], "tag": "原始代码" },
+    { "id": "conductor", "type": "database", "label": "Mooncake PrefixCacheTable", "sublabel": "C++ 前缀索引，C ABI 桥接入", "pos": [622, 460], "size": [164, 64], "tag": "原始代码" },
+    { "id": "simconn", "type": "backend", "label": "SimConnector", "sublabel": "KVConnectorBase_V1 子类", "pos": [402, 460], "size": [146, 64], "tag": "lab 仿真" },
+    { "id": "batch", "type": "backend", "label": "虚拟执行 Batch", "sublabel": "逐层 barrier / 整段异步", "pos": [842, 300], "size": [164, 64], "tag": "lab 仿真" },
+    { "id": "storage", "type": "database", "label": "Storage 流体模型", "sublabel": "盘/Path/NIC · max-min 带宽", "pos": [1064, 460], "size": [150, 64], "tag": "lab 仿真" },
+    { "id": "results", "type": "external", "label": "结果与事件轨迹", "sublabel": "summary / events / requests", "pos": [1064, 150], "size": [150, 60], "tag": "确定性输出" }
+  ],
+  "boundaries": [
+    { "kind": "region", "label": "真实上游代码（vendor 哈希锁定）", "wraps": ["vsched", "ascend", "kvm", "conductor"] }
+  ],
+  "connections": [
+    { "id": "arrive", "from": "trace", "to": "router", "label": "到达 aᵢ", "variant": "emphasis" },
+    { "id": "kick", "from": "clock", "to": "engine", "label": "虚拟时间 kick", "variant": "dashed" },
+    { "id": "dispatch", "from": "router", "to": "engine", "label": "dispatch + add_request", "labelAt": [375, 386] },
+    { "id": "sched-call", "from": "engine", "to": "vsched", "label": "schedule() / update_from_output()", "variant": "emphasis", "labelDy": -26 },
+    { "id": "ascend-inherit", "from": "ascend", "to": "vsched", "label": "继承父类调度", "variant": "dashed", "fromSide": "bottom", "toSide": "top", "labelDy": 24 },
+    { "id": "ascend-opt", "from": "engine", "to": "ascend", "label": "--engine ascend", "variant": "dashed", "fromSide": "top", "toSide": "left" },
+    { "id": "blocks", "from": "vsched", "to": "kvm", "label": "分配/释放", "fromSide": "right", "toSide": "left" },
+    { "id": "conn-hook", "from": "vsched", "to": "simconn", "label": "connector 钩子", "fromSide": "bottom", "toSide": "top" },
+    { "id": "query", "from": "simconn", "to": "conductor", "label": "ctypes: mc_query / mc_hash", "variant": "emphasis", "fromSide": "right", "toSide": "left", "labelAt": [585, 452] },
+    { "id": "so-out", "from": "vsched", "to": "batch", "label": "SchedulerOutput", "fromSide": "right", "toSide": "left", "labelAt": [808, 388] },
+    { "id": "io-submit", "from": "batch", "to": "storage", "label": "逐层 IO 提交", "fromSide": "right", "toSide": "top" },
+    { "id": "io-done", "from": "storage", "to": "batch", "label": "IO 完成·重算率", "variant": "dashed", "fromSide": "top", "toSide": "right" },
+    { "id": "emit", "from": "batch", "to": "results", "label": "token / 时延事件", "fromSide": "top", "toSide": "bottom" }
+  ],
+  "cards": [
+    {
+      "dot": "cyan",
+      "title": "真实控制面（未改动的上游代码）",
+      "items": [
+        "vLLM v0.20.2 Scheduler：token 预算、chunk、抢占、状态机原样执行",
+        "BalanceScheduler：vllm-ascend rc1 原始类，AST 节点选择加载",
+        "Mooncake C++ PrefixCacheTable：编译执行，hash 与 vLLM 逐字节一致"
+      ]
+    },
+    {
+      "dot": "emerald",
+      "title": "仿真替换面（lab 代码）",
+      "items": [
+        "虚拟时钟与事件循环替代墙钟，time 模块被替换为虚拟时刻",
+        "SimConnector 实现真实 KVConnectorBase_V1 接口，命中查询走 C ABI",
+        "Storage 流体模型给 IO 完成时刻；compute_time() 解析公式给计算时刻"
+      ]
+    },
+    {
+      "dot": "rose",
+      "title": "隔离原则",
+      "items": [
+        "保留\"谁进下一轮、分配多少资源\"的决策；只替换\"何时完成\"",
+        "vendor 目录哈希锁定，任何上游改动可被 audit 脚本检出",
+        "同配置两次运行逐字段一致（E0 确定性验证）"
+      ]
+    }
+  ]
+}

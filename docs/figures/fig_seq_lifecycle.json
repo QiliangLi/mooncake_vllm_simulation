@@ -1,0 +1,290 @@
+{
+  "schema_version": 1,
+  "diagram_type": "sequence",
+  "meta": {
+    "title": "一批请求的生命周期：真实调度与虚拟执行",
+    "locale": "zh-CN",
+    "quality_profile": "showcase",
+    "viewBox": [
+      1080,
+      590
+    ],
+    "views": [
+      {
+        "id": "admit",
+        "label": "到达与准入",
+        "focus": [
+          "trace",
+          "router",
+          "engine",
+          "sched"
+        ],
+        "note": "请求经路由进入某个引擎，以真实 Request 入队。"
+      },
+      {
+        "id": "hit",
+        "label": "命中查询与块分配",
+        "focus": [
+          "sched",
+          "conn",
+          "mc"
+        ],
+        "note": "调度器经 SimConnector 查询真实 Mooncake 索引并分配逻辑块。"
+      },
+      {
+        "id": "exec",
+        "label": "虚拟执行与完成回报",
+        "focus": [
+          "engine",
+          "store",
+          "sched",
+          "results"
+        ],
+        "note": "IO 完成时刻由流体模型给出，计算时刻由解析公式给出，完成结果回送真实调度器。"
+      }
+    ]
+  },
+  "participants": [
+    {
+      "id": "trace",
+      "type": "external",
+      "label": "Trace",
+      "sublabel": "jsonl"
+    },
+    {
+      "id": "router",
+      "type": "backend",
+      "label": "全局路由",
+      "sublabel": "run.arrive()"
+    },
+    {
+      "id": "engine",
+      "type": "backend",
+      "label": "Engine",
+      "sublabel": "step() 驱动"
+    },
+    {
+      "id": "sched",
+      "type": "backend",
+      "label": "vLLM 调度器",
+      "sublabel": "真实 · 含 KV 管理"
+    },
+    {
+      "id": "conn",
+      "type": "backend",
+      "label": "SimConnector",
+      "sublabel": "仿真connector"
+    },
+    {
+      "id": "mc",
+      "type": "database",
+      "label": "Mooncake 索引",
+      "sublabel": "Mooncake C++ 真实"
+    },
+    {
+      "id": "store",
+      "type": "database",
+      "label": "Storage",
+      "sublabel": "流体模型"
+    },
+    {
+      "id": "results",
+      "type": "external",
+      "label": "结果轨迹",
+      "sublabel": "events/summary"
+    }
+  ],
+  "segments": [
+    {
+      "from": 150,
+      "to": 232,
+      "label": "到达与路由"
+    },
+    {
+      "from": 240,
+      "to": 342,
+      "label": "真实调度：命中查询与块分配"
+    },
+    {
+      "from": 350,
+      "to": 430,
+      "label": "虚拟执行：IO 与计算时刻"
+    },
+    {
+      "from": 438,
+      "to": 512,
+      "label": "完成回报"
+    }
+  ],
+  "messages": [
+    {
+      "id": "arrive",
+      "from": "trace",
+      "to": "router",
+      "y": 160,
+      "label": "到达 aᵢ（前缀/SLO）",
+      "variant": "emphasis"
+    },
+    {
+      "id": "dispatch",
+      "from": "router",
+      "to": "engine",
+      "y": 188,
+      "label": "dispatch → add_request"
+    },
+    {
+      "id": "mkreq",
+      "from": "engine",
+      "to": "sched",
+      "y": 216,
+      "label": "add_request(真实 Request)"
+    },
+    {
+      "id": "schedcall",
+      "from": "engine",
+      "to": "sched",
+      "y": 244,
+      "label": "schedule()",
+      "variant": "emphasis"
+    },
+    {
+      "id": "cq",
+      "from": "conn",
+      "to": "mc",
+      "y": 272,
+      "label": "get_num_new_matched_tokens → mc_query",
+      "variant": "emphasis"
+    },
+    {
+      "id": "cr",
+      "from": "mc",
+      "to": "conn",
+      "y": 300,
+      "label": "命中块数",
+      "variant": "return"
+    },
+    {
+      "id": "hr",
+      "from": "conn",
+      "to": "sched",
+      "y": 328,
+      "label": "ext_tokens + 同步/异步标记",
+      "variant": "return"
+    },
+    {
+      "id": "sor",
+      "from": "sched",
+      "to": "engine",
+      "y": 356,
+      "label": "SchedulerOutput（成员/token）",
+      "variant": "return"
+    },
+    {
+      "id": "iosub",
+      "from": "engine",
+      "to": "store",
+      "y": 388,
+      "label": "submit 逐层 IO（或 :all 整段）"
+    },
+    {
+      "id": "iodone",
+      "from": "store",
+      "to": "engine",
+      "y": 416,
+      "label": "io_done（barrier 就绪）",
+      "variant": "dashed"
+    },
+    {
+      "id": "ufo",
+      "from": "engine",
+      "to": "sched",
+      "y": 444,
+      "label": "update_from_output(占位 token)",
+      "variant": "emphasis"
+    },
+    {
+      "id": "eco",
+      "from": "sched",
+      "to": "engine",
+      "y": 472,
+      "label": "EngineCoreOutputs（新 token/完成）",
+      "variant": "return"
+    },
+    {
+      "id": "emit",
+      "from": "engine",
+      "to": "results",
+      "y": 500,
+      "label": "TTFT / 事件轨迹",
+      "variant": "dashed"
+    }
+  ],
+  "activations": [
+    {
+      "participant": "router",
+      "from": 162,
+      "to": 192,
+      "type": "backend"
+    },
+    {
+      "participant": "engine",
+      "from": 182,
+      "to": 506,
+      "type": "backend"
+    },
+    {
+      "participant": "sched",
+      "from": 210,
+      "to": 478,
+      "type": "backend"
+    },
+    {
+      "participant": "conn",
+      "from": 264,
+      "to": 332,
+      "type": "backend"
+    },
+    {
+      "participant": "mc",
+      "from": 266,
+      "to": 304,
+      "type": "database"
+    },
+    {
+      "participant": "store",
+      "from": 382,
+      "to": 420,
+      "type": "database"
+    }
+  ],
+  "cards": [
+    {
+      "dot": "cyan",
+      "title": "真实代码做的决策",
+      "items": [
+        "谁进本批、各算多少 token（预算/chunk/抢占）",
+        "命中多少外部 KV、分配与预留哪些逻辑块",
+        "请求何时达到停止条件、块何时释放",
+        "分配/预留由 allocate_slots 完成（异步时置 WAITING_FOR_REMOTE_KVS）"
+      ]
+    },
+    {
+      "dot": "emerald",
+      "title": "仿真决定的时刻",
+      "items": [
+        "IO 完成时刻：Storage 流体模型的 max-min 带宽求解",
+        "计算完成时刻：compute_time() 解析公式按层均分",
+        "层 barrier：本批所有成员该层 IO 就绪才开始计算"
+      ]
+    },
+    {
+      "dot": "rose",
+      "title": "关键不变量",
+      "items": [
+        "C++ 前缀 hash 与 vLLM block hash 逐字节一致（测试断言）",
+        "完成结果只在合法调度边界回送真实调度器",
+        "同配置两次运行事件轨迹逐字段一致"
+      ]
+    }
+  ]
+}
