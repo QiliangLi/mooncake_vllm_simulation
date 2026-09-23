@@ -2,7 +2,7 @@
 
 | 项目 | 约定 |
 |---|---|
-| 检视对象 | `mooncake-cpu-lab-v0.11/`（检视时名为 `mooncake-cpu-lab/`，提交基线 `bfc1874`，UPSTREAM 锁定 vLLM v0.11.0 / vllm-ascend v0.11.0 / Mooncake `fd72779`） |
+| 检视对象 | v0.11.0 基线工程（检视时名为 `mooncake-cpu-lab/`，现归档于 `archive/mooncake-cpu-lab-v0.11/`；提交基线 `bfc1874`，UPSTREAM 锁定 vLLM v0.11.0 / vllm-ascend v0.11.0 / Mooncake `fd72779`） |
 | 需求依据 | 用户原始需求、`ChatGPT-全局调度仿真方案-20260922-2147.md`、`Mooncake_vLLM_CPU_Simulation_Design.zh-CN.md`、`docs/` 两份调度研究设计（20260913、20260917） |
 | 检视方法 | 逐文件阅读 lab 代码与 vendored 上游代码；对照测试与运行结果；对 vLLM v0.20.2（tag `bc150f5`）与 vllm-ascend v0.20.2rc1（tag `367b8e6`）实际拉取源码逐文件 diff，关键破坏点已逐一复核 |
 | 日期 | 2026-09-22 |
@@ -179,4 +179,4 @@ trace 到达 → run.py arrive()【lab：全局路由】
 - v0.20.2 源码抽查记录：`Scheduler.__init__` 含 `block_size`（v0.20.2 `scheduler.py:68-78`）；`KVConnectorBase_V1.__init__` 对 `kv_transfer_config=None` raise（`base.py:196-201`）；`Request.__init__` 无 `eos_token_id`、`block_hasher` 幸存（`request.py:59-78`）；`WAITING_FOR_REMOTE_KVS` 幸存（`request.py:309`）
 - vllm-ascend v0.20.2rc1 树中 `vllm_ascend/core/` 文件清单（无 `scheduler.py`）；其 `platform.py` opt-in 接线、Dockerfile `VLLM_TAG=v0.20.2` 配对
 - Mooncake `fd72779...HEAD` compare：2 提交，prefixindex 路径零改动
-- lab 侧证据见正文 file:line 引用；测试事实见 `mooncake-cpu-lab-v0.11/VERIFICATION.md`
+- lab 侧证据见正文 file:line 引用；测试事实见 `archive/mooncake-cpu-lab-v0.11/VERIFICATION.md`
