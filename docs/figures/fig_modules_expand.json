@@ -2,40 +2,28 @@
   "schema_version": 1,
   "diagram_type": "architecture",
   "meta": {
-    "title": "展开图：三方模块明细与 mock 接入点",
+    "title": "展开图：三条归属带 × 核心模块 × mock 接入点",
     "locale": "zh-CN",
     "quality_profile": "standard",
     "viewBox": [
-      990,
-      531
+      1020,
+      530
     ],
     "views": [
       {
-        "id": "vllm-modules",
-        "label": "vLLM 模块",
-        "focus": [
-          "v_sched",
-          "v_kvm",
-          "v_kvc",
-          "v_unused",
-          "a_balance",
-          "a_unused"
-        ],
-        "note": "vLLM v0.20.2 与 Ascend 插件的主要模块：tag 标注每个模块的处置。"
-      },
-      {
-        "id": "conductor-modules",
-        "label": "Conductor 模块",
+        "id": "band-mc",
+        "label": "Conductor 带",
         "focus": [
           "mc_index",
           "mc_unused",
-          "l_bridge"
+          "l_bridge",
+          "l_storage"
         ],
-        "note": "Mooncake Conductor：只引入前缀索引；router/传输/存储未引入。"
+        "note": "Conductor 只取 prefixindex 子集编译；router/传输/存储未引入。"
       },
       {
-        "id": "mock-plugs",
-        "label": "mock 接入点",
+        "id": "band-lab",
+        "label": "lab 仿真带",
         "focus": [
           "l_router",
           "l_clock",
@@ -44,23 +32,65 @@
           "l_batch",
           "l_storage"
         ],
-        "note": "六个自研 mock（左列）各自接到哪个上游模块（粗边=接入点，虚线边=角色替换）。"
+        "note": "六个自研 mock：接口归上游、硬件执行归仿真。"
+      },
+      {
+        "id": "band-vllm",
+        "label": "vLLM+Ascend 带",
+        "focus": [
+          "v_sched",
+          "v_kvc",
+          "v_kvm",
+          "v_balance",
+          "v_unused"
+        ],
+        "note": "vLLM 整包 vendor 按需 import；Ascend 仅取平台补丁 3 文件。"
       }
     ]
   },
   "components": [
     {
+      "id": "mc_index",
+      "type": "database",
+      "label": "PrefixCacheTable + HashStrategy",
+      "sublabel": "Register/Query·hash 与 vLLM 一致",
+      "pos": [
+        40,
+        56
+      ],
+      "size": [
+        250,
+        64
+      ],
+      "tag": "真实 C++·子集 10 文件"
+    },
+    {
+      "id": "mc_unused",
+      "type": "database",
+      "label": "Router / TransferEngine / Store",
+      "sublabel": "上游完整版另有",
+      "pos": [
+        740,
+        56
+      ],
+      "size": [
+        230,
+        64
+      ],
+      "tag": "未引入"
+    },
+    {
       "id": "l_router",
       "type": "backend",
       "label": "全局路由 + 遥测",
-      "sublabel": "run.py【自研】",
+      "sublabel": "run.py",
       "pos": [
-        60,
-        70
+        40,
+        196
       ],
       "size": [
-        170,
-        50
+        150,
+        54
       ],
       "tag": "mock"
     },
@@ -68,14 +98,14 @@
       "id": "l_clock",
       "type": "messagebus",
       "label": "虚拟时钟",
-      "sublabel": "events.py【自研】",
+      "sublabel": "events.py",
       "pos": [
-        60,
-        146
+        220,
+        196
       ],
       "size": [
-        150,
-        50
+        115,
+        54
       ],
       "tag": "mock"
     },
@@ -83,14 +113,14 @@
       "id": "l_simconn",
       "type": "backend",
       "label": "SimConnector",
-      "sublabel": "engine.py【自研】",
+      "sublabel": "engine.py",
       "pos": [
-        60,
-        222
+        360,
+        196
       ],
       "size": [
-        150,
-        50
+        140,
+        54
       ],
       "tag": "mock"
     },
@@ -98,14 +128,14 @@
       "id": "l_bridge",
       "type": "backend",
       "label": "C ABI 桥",
-      "sublabel": "ctypes【自研】",
+      "sublabel": "ctypes",
       "pos": [
-        60,
-        298
+        540,
+        196
       ],
       "size": [
-        150,
-        50
+        125,
+        54
       ],
       "tag": "mock"
     },
@@ -113,14 +143,14 @@
       "id": "l_batch",
       "type": "backend",
       "label": "Batch + compute_time",
-      "sublabel": "逐层执行【自研】",
+      "sublabel": "逐层执行",
       "pos": [
-        60,
-        374
+        695,
+        196
       ],
       "size": [
-        170,
-        50
+        150,
+        54
       ],
       "tag": "mock"
     },
@@ -128,14 +158,14 @@
       "id": "l_storage",
       "type": "database",
       "label": "Storage 流体模型",
-      "sublabel": "盘/Path/NIC【自研】",
+      "sublabel": "盘/Path/NIC",
       "pos": [
-        60,
-        450
+        865,
+        196
       ],
       "size": [
-        170,
-        50
+        115,
+        54
       ],
       "tag": "mock"
     },
@@ -145,11 +175,11 @@
       "label": "V1 Scheduler + Request 状态机",
       "sublabel": "组批·预算·抢占·远端等待",
       "pos": [
-        380,
-        70
+        40,
+        336
       ],
       "size": [
-        240,
+        230,
         64
       ],
       "tag": "真实执行"
@@ -157,14 +187,14 @@
     {
       "id": "v_kvc",
       "type": "backend",
-      "label": "KVConnector 框架（base）",
-      "sublabel": "生命周期钩子接口",
+      "label": "KVConnector 框架",
+      "sublabel": "生命周期钩子接口（base）",
       "pos": [
-        380,
-        162
+        300,
+        336
       ],
       "size": [
-        240,
+        190,
         60
       ],
       "tag": "真实执行"
@@ -175,95 +205,58 @@
       "label": "KVCacheManager / BlockPool",
       "sublabel": "逻辑块分配·释放·预留",
       "pos": [
-        380,
-        254
+        520,
+        336
       ],
       "size": [
-        240,
+        230,
         60
       ],
       "tag": "真实执行"
+    },
+    {
+      "id": "v_balance",
+      "type": "backend",
+      "label": "BalanceScheduler",
+      "sublabel": "Ascend 平台补丁·AST 加载",
+      "pos": [
+        40,
+        436
+      ],
+      "size": [
+        230,
+        60
+      ],
+      "tag": "真实执行·仅取 3 文件"
     },
     {
       "id": "v_unused",
       "type": "backend",
-      "label": "EngineCore / ModelRunner / Worker",
-      "sublabel": "进程模型·真实 forward",
+      "label": "EngineCore·ModelRunner·Worker / Recompute·torch_npu",
+      "sublabel": "vLLM 进程与 NPU 执行层",
       "pos": [
-        380,
-        354
+        300,
+        436
       ],
       "size": [
-        240,
-        54
-      ],
-      "tag": "不启动"
-    },
-    {
-      "id": "a_balance",
-      "type": "backend",
-      "label": "BalanceScheduler 平台补丁",
-      "sublabel": "AST 隔离加载",
-      "pos": [
-        700,
-        70
-      ],
-      "size": [
-        210,
-        64
-      ],
-      "tag": "真实执行"
-    },
-    {
-      "id": "a_unused",
-      "type": "backend",
-      "label": "Recompute/DynamicBatch",
-      "sublabel": "可选调度器·torch_npu 层",
-      "pos": [
-        700,
-        162
-      ],
-      "size": [
-        210,
-        64
-      ],
-      "tag": "未启用"
-    },
-    {
-      "id": "mc_index",
-      "type": "database",
-      "label": "PrefixCacheTable · HashStrategy",
-      "sublabel": "前缀索引·hash profile",
-      "pos": [
-        700,
-        290
-      ],
-      "size": [
-        210,
-        70
-      ],
-      "tag": "真实执行 C++"
-    },
-    {
-      "id": "mc_unused",
-      "type": "database",
-      "label": "Router / TransferEngine / Store",
-      "sublabel": "上游另有·未引入",
-      "pos": [
-        700,
-        430
-      ],
-      "size": [
-        210,
+        450,
         60
       ],
-      "tag": "未引入"
+      "tag": "不启动/未启用"
     }
   ],
   "boundaries": [
     {
       "kind": "region",
-      "label": "lab 仿真（自研 mock）",
+      "label": "Mooncake Conductor【真实 C++】— 仅取 prefixindex 子集编译",
+      "wraps": [
+        "mc_index",
+        "mc_unused"
+      ]
+    },
+    {
+      "kind": "region",
+      "label": "lab 仿真【自研 mock】— 接口归上游，硬件执行归仿真",
       "wraps": [
         "l_router",
         "l_clock",
@@ -275,191 +268,116 @@
     },
     {
       "kind": "region",
-      "label": "vLLM v0.20.2（真实 Python；tag=不启动的模块不执行）",
+      "label": "vLLM v0.20.2 + Ascend rc1【真实代码】— vLLM 整包 vendor；Ascend 取 3 文件",
       "wraps": [
         "v_sched",
         "v_kvc",
         "v_kvm",
+        "v_balance",
         "v_unused"
-      ]
-    },
-    {
-      "kind": "region",
-      "label": "vLLM-Ascend rc1 插件（真实；tag=未启用）",
-      "wraps": [
-        "a_balance",
-        "a_unused"
-      ]
-    },
-    {
-      "kind": "region",
-      "label": "Mooncake Conductor（真实 C++；tag=未引入）",
-      "wraps": [
-        "mc_index",
-        "mc_unused"
       ]
     }
   ],
   "connections": [
     {
-      "id": "c1",
-      "from": "l_router",
-      "to": "v_sched",
-      "label": "dispatch/add_request",
-      "variant": "emphasis",
-      "fromSide": "right",
-      "toSide": "left",
-      "labelAt": [
-        300,
-        85
-      ]
-    },
-    {
-      "id": "c2",
-      "from": "l_clock",
-      "to": "v_sched",
-      "label": "time 模块补丁",
-      "fromSide": "right",
-      "toSide": "left",
-      "labelAt": [
-        300,
-        143
-      ]
-    },
-    {
-      "id": "c4",
-      "from": "v_sched",
-      "to": "v_kvc",
-      "label": "调用钩子",
-      "fromSide": "bottom",
-      "toSide": "top",
-      "labelAt": [
-        530,
-        154
-      ]
-    },
-    {
-      "id": "c3",
-      "from": "v_sched",
-      "to": "v_kvm",
-      "label": "块分配/释放",
-      "fromSide": "left",
-      "toSide": "left",
-      "labelAt": [
-        287,
-        205
-      ]
-    },
-    {
-      "id": "c5",
-      "from": "l_simconn",
-      "to": "v_kvc",
-      "label": "实现接口并注入",
-      "variant": "emphasis",
-      "fromSide": "right",
-      "toSide": "left",
-      "labelAt": [
-        300,
-        222
-      ]
-    },
-    {
-      "id": "c6",
-      "from": "l_simconn",
-      "to": "l_bridge",
-      "label": "调用",
-      "fromSide": "bottom",
-      "toSide": "top",
-      "labelAt": [
-        110,
-        286
-      ]
-    },
-    {
-      "id": "c7",
+      "id": "e1",
       "from": "l_bridge",
       "to": "mc_index",
-      "label": "extern C 包装",
+      "label": "extern C 桥接",
       "variant": "emphasis",
-      "fromSide": "right",
-      "toSide": "left",
-      "labelAt": [
-        300,
-        318
-      ]
+      "fromSide": "top",
+      "toSide": "bottom"
     },
     {
-      "id": "c8",
-      "from": "a_balance",
-      "to": "v_sched",
-      "label": "继承父类",
-      "fromSide": "left",
-      "toSide": "right"
-    },
-    {
-      "id": "c10",
-      "from": "l_batch",
-      "to": "v_unused",
-      "label": "替换 forward",
-      "variant": "dashed",
-      "fromSide": "right",
-      "toSide": "left",
-      "labelAt": [
-        297,
-        376
-      ]
-    },
-    {
-      "id": "c11",
-      "from": "l_batch",
-      "to": "l_storage",
-      "label": "逐层 IO",
-      "fromSide": "bottom",
-      "toSide": "top",
-      "labelAt": [
-        178,
-        440
-      ]
-    },
-    {
-      "id": "c12",
+      "id": "e2",
       "from": "l_storage",
       "to": "mc_unused",
       "label": "替换传输/存储",
       "variant": "dashed",
+      "fromSide": "top",
+      "toSide": "bottom"
+    },
+    {
+      "id": "e3",
+      "from": "l_router",
+      "to": "v_sched",
+      "label": "dispatch/add_request",
+      "variant": "emphasis",
+      "fromSide": "bottom",
+      "toSide": "top"
+    },
+    {
+      "id": "e4",
+      "from": "l_clock",
+      "to": "v_sched",
+      "label": "time 模块补丁",
+      "fromSide": "bottom",
+      "toSide": "top"
+    },
+    {
+      "id": "e5",
+      "from": "l_simconn",
+      "to": "v_kvc",
+      "label": "实现接口并注入",
+      "variant": "emphasis",
+      "fromSide": "bottom",
+      "toSide": "top"
+    },
+    {
+      "id": "e6",
+      "from": "v_balance",
+      "to": "v_sched",
+      "label": "继承父类",
+      "fromSide": "top",
+      "toSide": "bottom"
+    },
+    {
+      "id": "e7",
+      "from": "l_simconn",
+      "to": "l_bridge",
+      "label": "调用",
       "fromSide": "right",
-      "toSide": "left",
+      "toSide": "left"
+    },
+    {
+      "id": "e8",
+      "from": "l_batch",
+      "to": "v_unused",
+      "label": "替换 forward",
+      "variant": "dashed",
+      "fromSide": "bottom",
+      "toSide": "top",
       "labelAt": [
-        445,
-        483
+        770,
+        310
       ]
     }
   ],
   "cards": [
     {
       "dot": "cyan",
-      "title": "上游模块与取用范围",
+      "title": "取码方式",
       "items": [
-        "vLLM：Scheduler/KV 管理/Connector 框架真实执行；EngineCore 与 Worker 不启动（见 tag）",
-        "Ascend 插件：BalanceScheduler 补丁真实加载；其余调度器与 torch_npu 层未启用",
-        "Conductor：仅前缀索引（真实 C++）；router/TransferEngine/Store 未引入"
+        "vLLM：整包 vendor（0.20.2 wheel 全量源码，哈希锁定；用多少 import 多少）",
+        "Ascend：仅 3 个文件（platform.py + 平台补丁），AST 选择性执行",
+        "Mooncake：仅 prefixindex 子集（10 个 C++ 文件）编译执行"
       ]
     },
     {
       "dot": "emerald",
-      "title": "六个 mock 的接入点",
+      "title": "为何路由/加载/计算在 lab 侧",
       "items": [
-        "全局路由：在 vLLM 之外决定发往哪个实例",
-        "虚拟时钟→time 补丁；SimConnector→接口注入",
-        "C ABI 桥→包装索引；Batch/Storage→替换执行"
+        "全局路由：上游无公开 router，Conductor 只开源了索引器",
+        "加载传输：KVConnector 只有接口，官方实现依赖真实网络与远端存储",
+        "本层计算：真实 forward 需要 NPU，CPU 上以解析公式给完成时刻"
       ]
     },
     {
       "dot": "rose",
-      "title": "怎么读这张图",
+      "title": "阅读方式",
       "items": [
-        "四个彩色区域=四方归属：lab 自研 / vLLM / Ascend 插件 / Conductor",
-        "tag 标注每个模块的处置：真实执行、不启动、未启用、未引入"
+        "三条横带与逻辑图泳道一一对应，每带展开该方核心模块",
+        "粗边=mock 接入点；虚线边=角色替换；tag=模块处置"
       ]
     }
   ]
