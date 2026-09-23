@@ -1,0 +1,365 @@
+{
+  "schema_version": 1,
+  "diagram_type": "architecture",
+  "meta": {
+    "title": "仿真平台分层架构：自上而下的请求逻辑",
+    "locale": "zh-CN",
+    "quality_profile": "showcase",
+    "viewBox": [
+      1040,
+      572
+    ],
+    "views": [
+      {
+        "id": "td-main",
+        "label": "自上而下主链",
+        "focus": [
+          "trace",
+          "route",
+          "vsched",
+          "batch",
+          "results"
+        ],
+        "note": "请求自上而下经过调度层、引擎层、虚拟执行层到输出。"
+      },
+      {
+        "id": "conductor-band",
+        "label": "全局调度层",
+        "focus": [
+          "conductor",
+          "route",
+          "telemetry"
+        ],
+        "note": "Conductor 索引是真实 C++；路由策略与遥测为仿真替换。"
+      },
+      {
+        "id": "engine-band",
+        "label": "推理引擎层",
+        "focus": [
+          "vsched",
+          "kvm",
+          "simconn"
+        ],
+        "note": "vLLM/Ascend 调度与块管理真实执行；KV 传输由 SimConnector 仿真。"
+      }
+    ]
+  },
+  "components": [
+    {
+      "id": "trace",
+      "type": "external",
+      "label": "请求 Trace",
+      "sublabel": "jsonl 到达/前缀/SLO",
+      "pos": [
+        370,
+        40
+      ],
+      "size": [
+        160,
+        54
+      ],
+      "tag": "仿真输入"
+    },
+    {
+      "id": "clock",
+      "type": "messagebus",
+      "label": "虚拟时钟",
+      "sublabel": "离散事件堆",
+      "pos": [
+        50,
+        40
+      ],
+      "size": [
+        130,
+        54
+      ],
+      "tag": "仿真"
+    },
+    {
+      "id": "conductor",
+      "type": "database",
+      "label": "Conductor 前缀索引",
+      "sublabel": "PrefixCacheTable·C ABI",
+      "pos": [
+        70,
+        140
+      ],
+      "size": [
+        190,
+        60
+      ],
+      "tag": "真实 C++"
+    },
+    {
+      "id": "route",
+      "type": "backend",
+      "label": "全局路由策略",
+      "sublabel": "打分选 worker",
+      "pos": [
+        365,
+        140
+      ],
+      "size": [
+        170,
+        60
+      ],
+      "tag": "仿真（上游未公开）"
+    },
+    {
+      "id": "telemetry",
+      "type": "database",
+      "label": "遥测快照",
+      "sublabel": "延迟送达",
+      "pos": [
+        720,
+        140
+      ],
+      "size": [
+        150,
+        60
+      ],
+      "tag": "仿真"
+    },
+    {
+      "id": "vsched",
+      "type": "backend",
+      "label": "vLLM / Ascend 调度器",
+      "sublabel": "schedule() 组批·预算·抢占",
+      "pos": [
+        260,
+        240
+      ],
+      "size": [
+        170,
+        64
+      ],
+      "tag": "真实代码"
+    },
+    {
+      "id": "kvm",
+      "type": "database",
+      "label": "KVCacheManager",
+      "sublabel": "逻辑块·无张量",
+      "pos": [
+        490,
+        240
+      ],
+      "size": [
+        165,
+        64
+      ],
+      "tag": "真实·mock 张量"
+    },
+    {
+      "id": "simconn",
+      "type": "backend",
+      "label": "SimConnector",
+      "sublabel": "命中查询·加载计划",
+      "pos": [
+        70,
+        240
+      ],
+      "size": [
+        150,
+        64
+      ],
+      "tag": "仿真"
+    },
+    {
+      "id": "batch",
+      "type": "backend",
+      "label": "虚拟执行 Batch",
+      "sublabel": "逐层 barrier·公式",
+      "pos": [
+        260,
+        360
+      ],
+      "size": [
+        170,
+        60
+      ],
+      "tag": "仿真"
+    },
+    {
+      "id": "storage",
+      "type": "database",
+      "label": "Storage 流体模型",
+      "sublabel": "盘/Path/NIC",
+      "pos": [
+        530,
+        360
+      ],
+      "size": [
+        175,
+        60
+      ],
+      "tag": "仿真"
+    },
+    {
+      "id": "results",
+      "type": "external",
+      "label": "指标与事件轨迹",
+      "sublabel": "TTFT/SLO/events",
+      "pos": [
+        260,
+        456
+      ],
+      "size": [
+        170,
+        56
+      ],
+      "tag": "确定性输出"
+    }
+  ],
+  "connections": [
+    {
+      "id": "arrive",
+      "from": "trace",
+      "to": "route",
+      "label": "到达",
+      "variant": "emphasis",
+      "fromSide": "bottom",
+      "toSide": "top",
+      "labelDy": 26
+    },
+    {
+      "id": "hitq",
+      "from": "route",
+      "to": "conductor",
+      "label": "命中查询",
+      "variant": "dashed",
+      "fromSide": "left",
+      "toSide": "right"
+    },
+    {
+      "id": "dispatch",
+      "from": "route",
+      "to": "vsched",
+      "label": "dispatch + add_request",
+      "fromSide": "bottom",
+      "toSide": "top"
+    },
+    {
+      "id": "ctypes",
+      "from": "simconn",
+      "to": "conductor",
+      "label": "ctypes 命中查询",
+      "variant": "emphasis",
+      "fromSide": "top",
+      "toSide": "bottom"
+    },
+    {
+      "id": "alloc",
+      "from": "vsched",
+      "to": "kvm",
+      "label": "分配/预留",
+      "fromSide": "right",
+      "toSide": "left",
+      "labelAt": [
+        462,
+        336
+      ]
+    },
+    {
+      "id": "hook",
+      "from": "vsched",
+      "to": "simconn",
+      "label": "connector 钩子",
+      "fromSide": "left",
+      "toSide": "right",
+      "labelAt": [
+        235,
+        330
+      ]
+    },
+    {
+      "id": "so",
+      "from": "vsched",
+      "to": "batch",
+      "label": "SchedulerOutput",
+      "fromSide": "bottom",
+      "toSide": "top",
+      "labelAt": [
+        345,
+        332
+      ]
+    },
+    {
+      "id": "io",
+      "from": "batch",
+      "to": "storage",
+      "label": "逐层 IO",
+      "fromSide": "right",
+      "toSide": "left"
+    },
+    {
+      "id": "iodone",
+      "from": "storage",
+      "to": "batch",
+      "label": "完成事件",
+      "variant": "dashed",
+      "fromSide": "left",
+      "toSide": "right",
+      "labelDy": 18
+    },
+    {
+      "id": "out",
+      "from": "batch",
+      "to": "results",
+      "label": "token/时延",
+      "fromSide": "bottom",
+      "toSide": "top",
+      "labelAt": [
+        345,
+        434
+      ]
+    },
+    {
+      "id": "snap",
+      "from": "storage",
+      "to": "telemetry",
+      "label": "状态快照",
+      "variant": "dashed",
+      "fromSide": "top",
+      "toSide": "bottom"
+    },
+    {
+      "id": "deliver",
+      "from": "telemetry",
+      "to": "route",
+      "label": "延迟送达",
+      "variant": "dashed",
+      "fromSide": "left",
+      "toSide": "right"
+    }
+  ],
+  "cards": [
+    {
+      "dot": "cyan",
+      "title": "真实执行的部分",
+      "items": [
+        "Conductor 前缀索引：C++ 编译执行，hash 与 vLLM 一致",
+        "vLLM v0.20.2 / Ascend rc1 调度器：组批、预算、chunk、抢占原样运行",
+        "KVCacheManager/BlockPool：逻辑块分配、预留与释放"
+      ]
+    },
+    {
+      "dot": "emerald",
+      "title": "为仿真 mock 的部分",
+      "items": [
+        "全局路由策略与遥测观测（上游 router 未公开）",
+        "KV 传输（SimConnector）与逐层执行时刻（解析公式）",
+        "共享存储（盘/Path/NIC 流体带宽）与虚拟时钟"
+      ]
+    },
+    {
+      "dot": "rose",
+      "title": "怎么读这张图",
+      "items": [
+        "自上而下即请求主链：到达→调度→引擎→虚拟执行→输出",
+        "右侧两条虚线是反馈回路：IO 完成事件与延迟遥测",
+        "每个组件的 tag 标注真实/仿真属性"
+      ]
+    }
+  ]
+}

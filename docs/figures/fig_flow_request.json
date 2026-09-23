@@ -1,0 +1,317 @@
+{
+  "schema_version": 2,
+  "diagram_type": "workflow",
+  "meta": {
+    "title": "请求逻辑流：到达 → Conductor 路由 → vLLM 组批 → 逐层虚拟执行 → 首 token",
+    "locale": "zh-CN",
+    "quality_profile": "showcase",
+    "viewBox": [
+      1190,
+      560
+    ],
+    "views": [
+      {
+        "id": "main-chain",
+        "label": "主链",
+        "focus": [
+          "arrive",
+          "route",
+          "schedn",
+          "simconn",
+          "layerio",
+          "compute",
+          "token",
+          "metrics"
+        ],
+        "note": "请求从到达到首 token 的主逻辑链。"
+      },
+      {
+        "id": "hit-loop",
+        "label": "命中与逐层循环",
+        "focus": [
+          "conductor",
+          "simconn",
+          "layerio",
+          "storage",
+          "compute"
+        ],
+        "note": "两次真实索引查询与逐层 IO/计算/预取循环。"
+      }
+    ]
+  },
+  "lanes": [
+    {
+      "id": "sched_lane",
+      "label": "全局调度（Conductor 索引 + lab 路由）"
+    },
+    {
+      "id": "engine_lane",
+      "label": "推理引擎（vLLM / Ascend 插件）"
+    },
+    {
+      "id": "exec_lane",
+      "label": "虚拟执行与共享存储"
+    }
+  ],
+  "phases": [
+    {
+      "id": "p1",
+      "label": "到达与路由",
+      "fromCol": 0,
+      "toCol": 1
+    },
+    {
+      "id": "p2",
+      "label": "组批与分配",
+      "fromCol": 2,
+      "toCol": 3,
+      "variant": "emphasis"
+    },
+    {
+      "id": "p3",
+      "label": "逐层执行",
+      "fromCol": 4,
+      "toCol": 4
+    },
+    {
+      "id": "p4",
+      "label": "完成",
+      "fromCol": 5,
+      "toCol": 5
+    }
+  ],
+  "mainPath": [
+    "arrive",
+    "route",
+    "schedn",
+    "simconn",
+    "layerio",
+    "compute",
+    "token",
+    "metrics"
+  ],
+  "nodes": [
+    {
+      "id": "arrive",
+      "lane": "sched_lane",
+      "col": 0,
+      "type": "external",
+      "label": "请求到达",
+      "sublabel": "trace【仿真输入】",
+      "width": 140
+    },
+    {
+      "id": "conductor",
+      "lane": "sched_lane",
+      "col": 4,
+      "type": "database",
+      "label": "Conductor 前缀索引",
+      "sublabel": "真实 C++·C ABI",
+      "tag": "Mooncake",
+      "width": 150
+    },
+    {
+      "id": "route",
+      "lane": "sched_lane",
+      "col": 1,
+      "type": "backend",
+      "label": "全局路由策略",
+      "sublabel": "打分选 worker【仿真】",
+      "width": 150
+    },
+    {
+      "id": "metrics",
+      "lane": "sched_lane",
+      "col": 5,
+      "type": "external",
+      "label": "指标与轨迹",
+      "sublabel": "TTFT/SLO/events",
+      "width": 140
+    },
+    {
+      "id": "schedn",
+      "lane": "engine_lane",
+      "col": 2,
+      "type": "backend",
+      "label": "vLLM/Ascend 调度器",
+      "sublabel": "schedule()【真实】",
+      "tag": "组批·预算·抢占",
+      "width": 160
+    },
+    {
+      "id": "kvm",
+      "lane": "engine_lane",
+      "col": 3,
+      "type": "database",
+      "label": "KV 块分配/预留",
+      "sublabel": "BlockPool【真实·mock 张量】",
+      "width": 150
+    },
+    {
+      "id": "simconn",
+      "lane": "engine_lane",
+      "col": 4,
+      "type": "backend",
+      "label": "SimConnector",
+      "sublabel": "加载计划【仿真】",
+      "width": 140
+    },
+    {
+      "id": "token",
+      "lane": "engine_lane",
+      "col": 5,
+      "type": "backend",
+      "label": "首 token · 完成",
+      "sublabel": "update_from_output【真实】",
+      "width": 150
+    },
+    {
+      "id": "storage",
+      "lane": "exec_lane",
+      "col": 3,
+      "type": "database",
+      "label": "共享存储",
+      "sublabel": "盘/Path/NIC【仿真】",
+      "width": 140
+    },
+    {
+      "id": "layerio",
+      "lane": "exec_lane",
+      "col": 4,
+      "type": "backend",
+      "label": "逐层 KV 加载",
+      "sublabel": "barrier+预取【仿真】",
+      "width": 150
+    },
+    {
+      "id": "compute",
+      "lane": "exec_lane",
+      "col": 5,
+      "type": "backend",
+      "label": "本层计算",
+      "sublabel": "解析公式【仿真】",
+      "width": 130
+    }
+  ],
+  "edges": [
+    {
+      "id": "e-arrive",
+      "from": "arrive",
+      "to": "route",
+      "label": "到达 aᵢ",
+      "role": "main"
+    },
+    {
+      "id": "e-dispatch",
+      "from": "route",
+      "to": "schedn",
+      "label": "dispatch + add_request",
+      "variant": "emphasis",
+      "role": "main",
+      "route": "drop"
+    },
+    {
+      "id": "e-alloc",
+      "from": "schedn",
+      "to": "kvm",
+      "label": "allocate_slots",
+      "role": "main"
+    },
+    {
+      "id": "e-hook",
+      "from": "schedn",
+      "to": "simconn",
+      "label": "connector 钩子",
+      "role": "main"
+    },
+    {
+      "id": "e-ctypes",
+      "from": "simconn",
+      "to": "conductor",
+      "label": "ctypes mc_query",
+      "variant": "dashed"
+    },
+    {
+      "id": "e-plan",
+      "from": "simconn",
+      "to": "layerio",
+      "label": "加载计划",
+      "role": "main"
+    },
+    {
+      "id": "e-io",
+      "from": "layerio",
+      "to": "storage",
+      "label": "每层 IO",
+      "role": "main"
+    },
+    {
+      "id": "e-iodone",
+      "from": "storage",
+      "to": "layerio",
+      "label": "io_done",
+      "variant": "dashed",
+      "role": "return"
+    },
+    {
+      "id": "e-barrier",
+      "from": "layerio",
+      "to": "compute",
+      "label": "barrier 就绪",
+      "role": "main"
+    },
+    {
+      "id": "e-prefetch",
+      "from": "compute",
+      "to": "layerio",
+      "label": "预取下一层",
+      "variant": "dashed",
+      "role": "branch"
+    },
+    {
+      "id": "e-last",
+      "from": "compute",
+      "to": "token",
+      "label": "末层完成",
+      "role": "main",
+      "route": "drop"
+    },
+    {
+      "id": "e-metric",
+      "from": "token",
+      "to": "metrics",
+      "label": "事件/TTFT",
+      "variant": "dashed",
+      "route": "drop"
+    }
+  ],
+  "cards": [
+    {
+      "dot": "cyan",
+      "title": "真实代码环节",
+      "items": [
+        "Conductor 前缀索引：C++ 编译执行，hash 与 vLLM 一致",
+        "vLLM/Ascend 调度器：组批、预算、chunk、抢占原样运行",
+        "块分配/预留与首 token 停止检查：真实 BlockPool 与状态机"
+      ]
+    },
+    {
+      "dot": "emerald",
+      "title": "仿真替换环节",
+      "items": [
+        "路由策略与遥测观测（上游 router 未公开）",
+        "KV 传输时刻（流体存储）与计算时刻（解析公式）",
+        "逐层 barrier 与预取窗口的执行时序"
+      ]
+    },
+    {
+      "dot": "rose",
+      "title": "与 0913 形式化模型的对应",
+      "items": [
+        "主链=「到达→组批→读第一层→逐层计算→首 token」",
+        "预取回环=「计算同时提交下一层读取」",
+        "指标与事件轨迹按虚拟时刻落盘，可逐请求复核"
+      ]
+    }
+  ]
+}
