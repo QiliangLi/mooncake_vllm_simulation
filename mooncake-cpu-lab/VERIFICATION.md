@@ -30,6 +30,10 @@
 | Compute / STALL / Idle 时间守恒，扣除首到达前空闲 | 通过 |
 | 存储感知路由与等待队列策略可执行 | 通过 |
 
+## macOS 补充验证（实验性）
+
+2026-09-23 在 macOS arm64（Apple Silicon，clang 21 / Homebrew gcc 15.2 + openssl@3，Python 3.12 venv，torch 2.11.0）上：`scripts/setup.sh` 从零一键复现，`17 passed`；vllm 与 ascend（BalanceScheduler）双引擎完成 demo 仿真，结果与 Linux 一致（makespan、事件轨迹相同）。差异仅安装侧：macOS 无 `+cpu` wheel 与 vllm wheel，脚本按 Darwin 分支改用 PyPI torch 并生成 vllm dist-info 元数据桩（`run.py` 记录版本用；实际执行代码为 `vendor/vllm` 哈希锁定源码）。主要验证环境仍为 Linux。
+
 ## 验证范围
 
 这些检查证明起步工程能够执行真实控制代码并维持已覆盖场景的状态和事件约束。没有在真实 NPU、RDMA 网络或 ASU/CMS 存储上校准；没有运行真实完整 EngineCore / NPUWorker / Conductor HTTP 服务；没有证明生产性能误差或策略收益。所有演示结果都标记 `timing_calibrated=false`。

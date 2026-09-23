@@ -10,7 +10,8 @@
 
 ## 快速搭建
 
-已在 Linux x86_64、Python 3.12、g++ 13、OpenSSL 3 上验证。Windows 请使用 WSL2 Ubuntu；macOS 不在当前安装脚本验证范围。
+已在 Linux x86_64、Python 3.12、g++ 13、OpenSSL 3 上验证。Windows 请使用 WSL2 Ubuntu。
+macOS（Apple Silicon，实验性支持，2026-09-23 起 17 项测试通过）：`brew install uv gcc openssl@3` 后直接 `bash scripts/setup.sh`；脚本自动改用 PyPI 版 torch 2.11.0、Homebrew gcc 与 openssl@3，并以 dist-info 桩替代不存在的 macOS vllm wheel（执行的仍是哈希锁定的 `vendor/vllm` 源码）。
 
 ```bash
 unzip mooncake-cpu-lab.zip

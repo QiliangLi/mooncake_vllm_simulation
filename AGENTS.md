@@ -21,7 +21,7 @@
 
 1. **文档同步**：任何代码/配置改动，必须同批更新相关文档（工程内 README / DESIGN / VERIFICATION / UPGRADE，或 `docs/` 下对应分析），并同步维护本索引；新增文档要在上表登记。
 2. **vendor 纪律**：`vendor/` 是哈希锁定的上游源码，禁止直接修改；`UPSTREAM.lock.json` 与 `results/source-audit.json` 必须保持一致（详见 UPGRADE 文档）。
-3. **验证**：改动 `mooncake-cpu-lab/` 后在 Linux 环境跑 `tests/test_lab.py`（macOS 不在验证范围）；结果产物标记 `timing_calibrated=false`，不得当作性能结论。
+3. **验证**：改动 `mooncake-cpu-lab/` 后在 Linux 环境跑 `tests/test_lab.py`（主验证环境；macOS 为实验性支持，2026-09-23 起 17 项测试通过，适配见工程内 VERIFICATION.md）；结果产物标记 `timing_calibrated=false`，不得当作性能结论。
 4. **归档纪律**：`archive/` 只读；如需对照 0.11 行为，复制后在别处实验。
 
 ## Git 工作流（自动提交）
