@@ -1,0 +1,19 @@
+{
+  "modified_upstream_files": [],
+  "baseline": {
+    "Mooncake": {
+      "commit": "fd72779c2ee8ec28379bc6487f2113e3efe418d8",
+      "repository": "https://github.com/kvcache-ai/Mooncake"
+    },
+    "vllm": {
+      "tag": "v0.20.2",
+      "commit": "bc150f50299199599673614f80d12a196f377655",
+      "repository": "https://github.com/vllm-project/vllm"
+    },
+    "vllm-ascend": {
+      "tag": "v0.20.2rc1",
+      "commit": "367b8e62da799870a7476ce34f5f7658589a8aad",
+      "repository": "https://github.com/vllm-project/vllm-ascend"
+    }
+  }
+}
