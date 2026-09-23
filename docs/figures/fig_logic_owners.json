@@ -1,0 +1,290 @@
+{
+  "schema_version": 2,
+  "diagram_type": "workflow",
+  "meta": {
+    "title": "请求流程逻辑图：三方归属（Mooncake Conductor / vLLM+Ascend / lab 仿真）",
+    "locale": "zh-CN",
+    "quality_profile": "showcase",
+    "viewBox": [
+      1190,
+      560
+    ],
+    "views": [
+      {
+        "id": "whole",
+        "label": "全流程",
+        "focus": [
+          "arrive",
+          "hitq_route",
+          "route",
+          "schedn",
+          "hitq_engine",
+          "simconn",
+          "compute",
+          "token"
+        ],
+        "note": "横向读流程，纵向看归属：每步落在哪一方的泳道里。"
+      },
+      {
+        "id": "real-only",
+        "label": "真实代码部分",
+        "focus": [
+          "hitq_route",
+          "hitq_engine",
+          "schedn",
+          "alloc",
+          "token"
+        ],
+        "note": "只在真实上游代码中发生的决策。"
+      },
+      {
+        "id": "mock-only",
+        "label": "lab 仿真部分",
+        "focus": [
+          "arrive",
+          "route",
+          "simconn",
+          "compute"
+        ],
+        "note": "自研替换件承担的环节。"
+      }
+    ]
+  },
+  "lanes": [
+    {
+      "id": "mc",
+      "label": "Mooncake Conductor【真实 C++】"
+    },
+    {
+      "id": "lab",
+      "label": "lab 仿真【自研 mock】"
+    },
+    {
+      "id": "vllm",
+      "label": "vLLM + Ascend 插件【真实代码】"
+    }
+  ],
+  "phases": [
+    {
+      "id": "p1",
+      "label": "到达与路由",
+      "fromCol": 0,
+      "toCol": 1
+    },
+    {
+      "id": "p2",
+      "label": "组批与命中",
+      "fromCol": 2,
+      "toCol": 3,
+      "variant": "emphasis"
+    },
+    {
+      "id": "p3",
+      "label": "加载与计算",
+      "fromCol": 4,
+      "toCol": 4
+    },
+    {
+      "id": "p4",
+      "label": "完成",
+      "fromCol": 5,
+      "toCol": 5
+    }
+  ],
+  "mainPath": [
+    "arrive",
+    "hitq_route",
+    "route",
+    "schedn",
+    "hitq_engine",
+    "simconn",
+    "compute",
+    "token"
+  ],
+  "nodes": [
+    {
+      "id": "arrive",
+      "lane": "lab",
+      "col": 0,
+      "type": "external",
+      "label": "请求到达",
+      "sublabel": "trace 输入",
+      "width": 130
+    },
+    {
+      "id": "hitq_route",
+      "lane": "mc",
+      "col": 1,
+      "type": "database",
+      "label": "前缀索引查询",
+      "sublabel": "路由侧估值·真实 C++",
+      "width": 150
+    },
+    {
+      "id": "route",
+      "lane": "lab",
+      "col": 2,
+      "type": "backend",
+      "label": "全局路由打分",
+      "sublabel": "选实例·自研 mock",
+      "width": 140
+    },
+    {
+      "id": "schedn",
+      "lane": "vllm",
+      "col": 2,
+      "type": "backend",
+      "label": "调度器 schedule()",
+      "sublabel": "组批/预算/抢占·真实",
+      "width": 160
+    },
+    {
+      "id": "hitq_engine",
+      "lane": "mc",
+      "col": 3,
+      "type": "database",
+      "label": "前缀索引查询",
+      "sublabel": "引擎侧命中·真实 C++",
+      "width": 150
+    },
+    {
+      "id": "alloc",
+      "lane": "vllm",
+      "col": 3,
+      "type": "database",
+      "label": "块分配/预留",
+      "sublabel": "BlockPool·真实",
+      "width": 140
+    },
+    {
+      "id": "simconn",
+      "lane": "lab",
+      "col": 4,
+      "type": "backend",
+      "label": "加载计划与逐层 IO",
+      "sublabel": "SimConnector·流体存储",
+      "width": 160
+    },
+    {
+      "id": "compute",
+      "lane": "lab",
+      "col": 5,
+      "type": "backend",
+      "label": "本层计算",
+      "sublabel": "解析公式·自研 mock",
+      "width": 130
+    },
+    {
+      "id": "token",
+      "lane": "vllm",
+      "col": 5,
+      "type": "backend",
+      "label": "首 token·完成",
+      "sublabel": "停止检查+update 真实",
+      "width": 140
+    }
+  ],
+  "edges": [
+    {
+      "id": "e1",
+      "from": "arrive",
+      "to": "hitq_route",
+      "label": "到达 aᵢ",
+      "role": "main"
+    },
+    {
+      "id": "e2",
+      "from": "hitq_route",
+      "to": "route",
+      "label": "命中块数",
+      "role": "main"
+    },
+    {
+      "id": "e3",
+      "from": "route",
+      "to": "schedn",
+      "label": "dispatch + add_request",
+      "variant": "emphasis",
+      "role": "main"
+    },
+    {
+      "id": "e4",
+      "from": "schedn",
+      "to": "hitq_engine",
+      "label": "命中查询钩子",
+      "role": "main"
+    },
+    {
+      "id": "e5",
+      "from": "schedn",
+      "to": "alloc",
+      "label": "allocate_slots",
+      "role": "main"
+    },
+    {
+      "id": "e6",
+      "from": "hitq_engine",
+      "to": "simconn",
+      "label": "命中块列表",
+      "variant": "dashed"
+    },
+    {
+      "id": "e7",
+      "from": "alloc",
+      "to": "simconn",
+      "label": "块预留信息",
+      "variant": "dashed"
+    },
+    {
+      "id": "e8",
+      "from": "simconn",
+      "to": "compute",
+      "label": "barrier 就绪",
+      "role": "main"
+    },
+    {
+      "id": "e9",
+      "from": "compute",
+      "to": "simconn",
+      "label": "预取下一层",
+      "variant": "dashed",
+      "role": "branch"
+    },
+    {
+      "id": "e10",
+      "from": "compute",
+      "to": "token",
+      "label": "末层完成",
+      "role": "main"
+    }
+  ],
+  "cards": [
+    {
+      "dot": "cyan",
+      "title": "Mooncake Conductor 泳道【真实 C++】",
+      "items": [
+        "两次索引查询：路由侧估值与引擎侧命中，同一 PrefixCacheTable",
+        "经 C ABI 桥（ctypes）调用编译后的原始代码",
+        "上游的 router/Transfer Engine/Store 未引入"
+      ]
+    },
+    {
+      "dot": "emerald",
+      "title": "vLLM + Ascend 泳道【真实代码】",
+      "items": [
+        "schedule()：组批、token 预算、chunk、抢占，原样执行",
+        "BlockPool 分配/预留/释放与停止检查均为真实状态机",
+        "Ascend 插件 BalanceScheduler 经 AST 隔离加载，默认走父类"
+      ]
+    },
+    {
+      "dot": "rose",
+      "title": "lab 仿真泳道【自研 mock】",
+      "items": [
+        "全局路由：上游无公开物，自研策略挂载点",
+        "加载计划与逐层 IO 时刻：流体存储模型",
+        "本层计算时刻：解析公式；采样 token 为占位值"
+      ]
+    }
+  ]
+}

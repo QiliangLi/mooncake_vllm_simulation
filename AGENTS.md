@@ -15,7 +15,7 @@
 | `docs/仿真环境符合性检视与vLLM-v0.20.2升级评估-20260922.md` | 符合性检视 + G1–G9 研究增量清单 + 升级破坏点 B1–B8 |
 | `docs/v0.20代码落地核查与升级再评估-20260923.md` | v0.20.2 落地核查证据链 + 升级路线 |
 | `docs/机制验证实验报告-20260923.md` | 六组机制实验（E0–E5）图文结果：路由信息价值、KV 加载语义、async_full 准入死锁发现、带宽相变、预取窗口、真实抢占；复现脚本 `mooncake-cpu-lab/scripts/{make_exp_trace,mechanism_experiments,plot_mechanism}.py`，数据在 `results/mech-20260923/`，图在 `docs/figures/` |
-| `docs/仿真架构说明-20260923.md` | 仿真架构：上游三大件取用范围、M1–M9 mock 清单与机制、请求生命周期真实事件走查；交互图 `docs/figures/`：`fig_arch_layers.html`（自上而下分层架构·主视图）、`fig_flow_request.html`（请求逻辑流程图）、`fig_arch_platform.html`（组件图）、`fig_seq_lifecycle.html`（时序图），可编辑规格 `.json` 同目录；走查复现 `mooncake-cpu-lab/scripts/lifecycle_demo.py` |
+| `docs/仿真架构说明-20260923.md` | 仿真架构：上游三大件取用范围、M1–M9 mock 清单与机制、请求生命周期真实事件走查；交互图 `docs/figures/`：主视图 `fig_logic_owners.html`（逻辑图·泳道=三方归属）+ `fig_modules_expand.html`（展开图·模块明细与 mock 接入点），过渡 `fig_arch_layers/fig_flow_request`，细节 `fig_arch_platform/fig_seq_lifecycle`，可编辑规格 `.json` 同目录；走查复现 `mooncake-cpu-lab/scripts/lifecycle_demo.py` |
 | `archive/` | 历史归档（v0.11 基线工程与旧版设计文档，只读，见 [archive/README](archive/README.md)） |
 | `ChatGPT-全局调度仿真方案-20260922-2147.md` | 需求沟通原始记录 |
 
