@@ -1,0 +1,75 @@
+{
+  "execution": "real-vllm-scheduler + real-mooncake-prefix-index + simulated-hardware",
+  "engine": "vllm",
+  "timing_calibrated": false,
+  "router_policy": "round_robin",
+  "local_policy": "fcfs",
+  "load_mode": "layerwise",
+  "requests": 48,
+  "makespan_s": 0.4293539469609716,
+  "mean_ttft_s": 0.1630359511927468,
+  "p50_ttft_s": 0.14490054750572012,
+  "p95_ttft_s": 0.3915998778350744,
+  "slo_attainment": 0.1875,
+  "request_throughput_rps": 111.79587456864164,
+  "goodput_rps": 20.961726481620307,
+  "worker_time_s": [
+    {
+      "idle": 0.0,
+      "compute": 0.02249383639230642,
+      "stall": 0.40686011056866517
+    },
+    {
+      "idle": 0.22318393224072966,
+      "compute": 0.010967639861611268,
+      "stall": 0.19520237485863068
+    }
+  ],
+  "storage_bytes": 679477247.9999609,
+  "event_count": 2642,
+  "versions": {
+    "python": "3.12.10",
+    "vllm": "0.20.2",
+    "torch": "2.11.0"
+  },
+  "scheduler_source_sha256": "ff208267973b16f1cde384cb4d86090b950f35d0e8bcd97433c642551867572d",
+  "upstream": {
+    "Mooncake": {
+      "commit": "fd72779c2ee8ec28379bc6487f2113e3efe418d8",
+      "repository": "https://github.com/kvcache-ai/Mooncake"
+    },
+    "vllm": {
+      "tag": "v0.20.2",
+      "commit": "bc150f50299199599673614f80d12a196f377655",
+      "repository": "https://github.com/vllm-project/vllm"
+    },
+    "vllm-ascend": {
+      "tag": "v0.20.2rc1",
+      "commit": "367b8e62da799870a7476ce34f5f7658589a8aad",
+      "repository": "https://github.com/vllm-project/vllm-ascend"
+    }
+  },
+  "scheduler_class": "Scheduler",
+  "scheduler_source": "vendor/vllm/vllm/v1/core/sched/scheduler.py",
+  "base_scheduler_source_sha256": "ff208267973b16f1cde384cb4d86090b950f35d0e8bcd97433c642551867572d",
+  "ascend_features": {
+    "balance_scheduling": false,
+    "dynamic_batch": false,
+    "profiling_chunk": false,
+    "recompute_scheduler": false
+  },
+  "worker_utilization": [
+    {
+      "idle": 0.0,
+      "compute": 0.0523899606642049,
+      "stall": 0.947610039335795
+    },
+    {
+      "idle": 0.5198133936358506,
+      "compute": 0.02554451854755682,
+      "stall": 0.45464208781659254
+    }
+  ],
+  "mean_normalized_ttft_vs_isolated": 51.800436770221786,
+  "recompute_token_overhead": 448
+}

@@ -14,6 +14,7 @@
 | `docs/共享KV统一队列下的Batch效率与错峰调度形式化分析-20260913.md` | 形式化分析（前序） |
 | `docs/仿真环境符合性检视与vLLM-v0.20.2升级评估-20260922.md` | 符合性检视 + G1–G9 研究增量清单 + 升级破坏点 B1–B8 |
 | `docs/v0.20代码落地核查与升级再评估-20260923.md` | v0.20.2 落地核查证据链 + 升级路线 |
+| `docs/机制验证实验报告-20260923.md` | 六组机制实验（E0–E5）图文结果：路由信息价值、KV 加载语义、async_full 准入死锁发现、带宽相变、预取窗口、真实抢占；复现脚本 `mooncake-cpu-lab/scripts/{make_exp_trace,mechanism_experiments,plot_mechanism}.py`，数据在 `results/mech-20260923/`，图在 `docs/figures/` |
 | `archive/` | 历史归档（v0.11 基线工程与旧版设计文档，只读，见 [archive/README](archive/README.md)） |
 | `ChatGPT-全局调度仿真方案-20260922-2147.md` | 需求沟通原始记录 |
 

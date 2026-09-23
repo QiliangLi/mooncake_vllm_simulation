@@ -1,0 +1,43 @@
+{
+  "workers": 2,
+  "router_policy": "round_robin",
+  "local_policy": "fcfs",
+  "load_mode": "async_full",
+  "prefetch_layers": 2,
+  "telemetry_interval_s": 0.005,
+  "telemetry_delay_s": 0.002,
+  "aging_weight": 1.0,
+  "default_slo_s": 0.2,
+  "engine": {
+    "block_size": 16,
+    "num_blocks": 512,
+    "max_num_seqs": 8,
+    "max_num_batched_tokens": 256,
+    "max_model_len": 2048,
+    "chunked_prefill": true,
+    "chunk_size": 128
+  },
+  "model": {
+    "layers": 8,
+    "kv_heads": 8,
+    "head_dim": 128,
+    "dtype_bytes": 2
+  },
+  "storage": {
+    "disks": 2,
+    "paths_per_disk": 256,
+    "disk_Bps": 40000000000,
+    "nic_Bps": [
+      1200000000,
+      1200000000
+    ],
+    "latency_s": 0.0001
+  },
+  "compute": {
+    "batch_overhead_s": 5e-05,
+    "linear_s_per_token": 2e-06,
+    "attention_s_per_pair": 1e-10,
+    "min_efficiency": 0.2,
+    "saturation_tokens": 128
+  }
+}

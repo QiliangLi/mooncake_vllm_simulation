@@ -1,0 +1,1825 @@
+{"t": 0, "event": "dispatch", "request": "e00", "worker": 0, "storage_sample_time": 0.0}
+{"t": 0, "event": "schedule", "worker": 0, "tokens": {"e00": 128}, "running": ["e00"], "waiting": [], "skipped_waiting": [], "free_blocks": 199}
+{"t": 0, "event": "state", "worker": 0, "state": "stall"}
+{"t": 0.0001, "event": "io_submit", "worker": 0, "label": "e00:L0", "bytes": 3145728.0}
+{"t": 0.0001, "event": "io_submit", "worker": 0, "label": "e00:L1", "bytes": 3145728.0}
+{"t": 0.0004, "event": "dispatch", "request": "e01", "worker": 1, "storage_sample_time": 0.0}
+{"t": 0.0004, "event": "schedule", "worker": 1, "tokens": {"e01": 96}, "running": ["e01"], "waiting": [], "skipped_waiting": [], "free_blocks": 217}
+{"t": 0.0004, "event": "state", "worker": 1, "state": "stall"}
+{"t": 0.0005, "event": "io_submit", "worker": 1, "label": "e01:L0", "bytes": 2097152.0}
+{"t": 0.0005, "event": "io_submit", "worker": 1, "label": "e01:L1", "bytes": 2097152.0}
+{"t": 0.0008, "event": "dispatch", "request": "e02", "worker": 0, "storage_sample_time": 0.0}
+{"t": 0.0012, "event": "dispatch", "request": "e03", "worker": 1, "storage_sample_time": 0.0}
+{"t": 0.0016, "event": "dispatch", "request": "e04", "worker": 0, "storage_sample_time": 0.0}
+{"t": 0.002, "event": "dispatch", "request": "e05", "worker": 1, "storage_sample_time": 0}
+{"t": 0.0024, "event": "dispatch", "request": "e06", "worker": 0, "storage_sample_time": 0}
+{"t": 0.0028, "event": "dispatch", "request": "e07", "worker": 1, "storage_sample_time": 0}
+{"t": 0.0032, "event": "dispatch", "request": "e08", "worker": 0, "storage_sample_time": 0}
+{"t": 0.0036, "event": "dispatch", "request": "e09", "worker": 1, "storage_sample_time": 0}
+{"t": 0.004, "event": "dispatch", "request": "e10", "worker": 0, "storage_sample_time": 0}
+{"t": 0.0044, "event": "dispatch", "request": "e11", "worker": 1, "storage_sample_time": 0}
+{"t": 0.0048, "event": "dispatch", "request": "e12", "worker": 0, "storage_sample_time": 0}
+{"t": 0.005015199999999999, "event": "io_done", "worker": 0, "label": "e00:L0"}
+{"t": 0.005015199999999999, "event": "state", "worker": 0, "state": "compute"}
+{"t": 0.005015199999999999, "event": "layer_start", "worker": 0, "layer": 0, "requests": ["e00"]}
+{"t": 0.005054781999999999, "event": "state", "worker": 0, "state": "stall"}
+{"t": 0.005154781999999999, "event": "io_submit", "worker": 0, "label": "e00:L2", "bytes": 3145728.0}
+{"t": 0.0052, "event": "dispatch", "request": "e13", "worker": 1, "storage_sample_time": 0}
+{"t": 0.0056, "event": "dispatch", "request": "e14", "worker": 0, "storage_sample_time": 0}
+{"t": 0.006, "event": "dispatch", "request": "e15", "worker": 1, "storage_sample_time": 0}
+{"t": 0.0064, "event": "dispatch", "request": "e16", "worker": 0, "storage_sample_time": 0}
+{"t": 0.00648, "event": "dispatch", "request": "e17", "worker": 1, "storage_sample_time": 0}
+{"t": 0.00656, "event": "dispatch", "request": "e18", "worker": 0, "storage_sample_time": 0}
+{"t": 0.00664, "event": "dispatch", "request": "e19", "worker": 1, "storage_sample_time": 0}
+{"t": 0.00672, "event": "dispatch", "request": "e20", "worker": 0, "storage_sample_time": 0}
+{"t": 0.0068, "event": "dispatch", "request": "e21", "worker": 1, "storage_sample_time": 0}
+{"t": 0.00688, "event": "dispatch", "request": "e22", "worker": 0, "storage_sample_time": 0}
+{"t": 0.00696, "event": "dispatch", "request": "e23", "worker": 1, "storage_sample_time": 0}
+{"t": 0.00704, "event": "dispatch", "request": "e24", "worker": 0, "storage_sample_time": 0.005}
+{"t": 0.00712, "event": "dispatch", "request": "e25", "worker": 1, "storage_sample_time": 0.005}
+{"t": 0.0072, "event": "dispatch", "request": "e26", "worker": 0, "storage_sample_time": 0.005}
+{"t": 0.00728, "event": "dispatch", "request": "e27", "worker": 1, "storage_sample_time": 0.005}
+{"t": 0.00736, "event": "dispatch", "request": "e28", "worker": 0, "storage_sample_time": 0.005}
+{"t": 0.007418186666666666, "event": "io_done", "worker": 0, "label": "e00:L1"}
+{"t": 0.007418186666666666, "event": "state", "worker": 0, "state": "compute"}
+{"t": 0.007418186666666666, "event": "layer_start", "worker": 0, "layer": 1, "requests": ["e00"]}
+{"t": 0.00744, "event": "dispatch", "request": "e29", "worker": 1, "storage_sample_time": 0.005}
+{"t": 0.0074577686666666655, "event": "state", "worker": 0, "state": "stall"}
+{"t": 0.00752, "event": "dispatch", "request": "e30", "worker": 0, "storage_sample_time": 0.005}
+{"t": 0.007557768666666666, "event": "io_submit", "worker": 0, "label": "e00:L3", "bytes": 3145728.0}
+{"t": 0.0076, "event": "dispatch", "request": "e31", "worker": 1, "storage_sample_time": 0.005}
+{"t": 0.00768, "event": "dispatch", "request": "e32", "worker": 0, "storage_sample_time": 0.005}
+{"t": 0.00808, "event": "dispatch", "request": "e33", "worker": 1, "storage_sample_time": 0.005}
+{"t": 0.00848, "event": "dispatch", "request": "e34", "worker": 0, "storage_sample_time": 0.005}
+{"t": 0.00888, "event": "dispatch", "request": "e35", "worker": 1, "storage_sample_time": 0.005}
+{"t": 0.00928, "event": "dispatch", "request": "e36", "worker": 0, "storage_sample_time": 0.005}
+{"t": 0.00968, "event": "dispatch", "request": "e37", "worker": 1, "storage_sample_time": 0.005}
+{"t": 0.01008, "event": "dispatch", "request": "e38", "worker": 0, "storage_sample_time": 0.005}
+{"t": 0.01048, "event": "dispatch", "request": "e39", "worker": 1, "storage_sample_time": 0.005}
+{"t": 0.01088, "event": "dispatch", "request": "e40", "worker": 0, "storage_sample_time": 0.005}
+{"t": 0.01128, "event": "dispatch", "request": "e41", "worker": 1, "storage_sample_time": 0.005}
+{"t": 0.01168, "event": "dispatch", "request": "e42", "worker": 0, "storage_sample_time": 0.005}
+{"t": 0.01208, "event": "dispatch", "request": "e43", "worker": 1, "storage_sample_time": 0.01}
+{"t": 0.01248, "event": "dispatch", "request": "e44", "worker": 0, "storage_sample_time": 0.01}
+{"t": 0.01288, "event": "dispatch", "request": "e45", "worker": 1, "storage_sample_time": 0.01}
+{"t": 0.012912553846153845, "event": "io_done", "worker": 1, "label": "e01:L0"}
+{"t": 0.012912553846153845, "event": "state", "worker": 1, "state": "compute"}
+{"t": 0.012912553846153845, "event": "layer_start", "worker": 1, "layer": 0, "requests": ["e01"]}
+{"t": 0.012951700646153846, "event": "state", "worker": 1, "state": "stall"}
+{"t": 0.013051700646153845, "event": "io_submit", "worker": 1, "label": "e01:L2", "bytes": 2097152.0}
+{"t": 0.01328, "event": "dispatch", "request": "e46", "worker": 0, "storage_sample_time": 0.01}
+{"t": 0.01368, "event": "dispatch", "request": "e47", "worker": 1, "storage_sample_time": 0.01}
+{"t": 0.017784266133333334, "event": "io_done", "worker": 0, "label": "e00:L2"}
+{"t": 0.017784266133333334, "event": "state", "worker": 0, "state": "compute"}
+{"t": 0.017784266133333334, "event": "layer_start", "worker": 0, "layer": 2, "requests": ["e00"]}
+{"t": 0.017823848133333334, "event": "state", "worker": 0, "state": "stall"}
+{"t": 0.017923848133333333, "event": "io_submit", "worker": 0, "label": "e00:L4", "bytes": 3145728.0}
+{"t": 0.018811150633333343, "event": "io_done", "worker": 0, "label": "e00:L3"}
+{"t": 0.018811150633333343, "event": "state", "worker": 0, "state": "compute"}
+{"t": 0.018811150633333343, "event": "layer_start", "worker": 0, "layer": 3, "requests": ["e00"]}
+{"t": 0.018850732633333343, "event": "state", "worker": 0, "state": "stall"}
+{"t": 0.018950732633333342, "event": "io_submit", "worker": 0, "label": "e00:L5", "bytes": 3145728.0}
+{"t": 0.020585283410256408, "event": "io_done", "worker": 1, "label": "e01:L1"}
+{"t": 0.020585283410256408, "event": "state", "worker": 1, "state": "compute"}
+{"t": 0.020585283410256408, "event": "layer_start", "worker": 1, "layer": 1, "requests": ["e01"]}
+{"t": 0.02062443021025641, "event": "state", "worker": 1, "state": "stall"}
+{"t": 0.020724430210256408, "event": "io_submit", "worker": 1, "label": "e01:L3", "bytes": 2097152.0}
+{"t": 0.022725957754909317, "event": "io_done", "worker": 0, "label": "e00:L4"}
+{"t": 0.022725957754909317, "event": "state", "worker": 0, "state": "compute"}
+{"t": 0.022725957754909317, "event": "layer_start", "worker": 0, "layer": 4, "requests": ["e00"]}
+{"t": 0.022765539754909317, "event": "state", "worker": 0, "state": "stall"}
+{"t": 0.022865539754909316, "event": "io_submit", "worker": 0, "label": "e00:L6", "bytes": 3145728.0}
+{"t": 0.02532090613333333, "event": "io_done", "worker": 0, "label": "e00:L5"}
+{"t": 0.02532090613333333, "event": "state", "worker": 0, "state": "compute"}
+{"t": 0.02532090613333333, "event": "layer_start", "worker": 0, "layer": 5, "requests": ["e00"]}
+{"t": 0.02536048813333333, "event": "state", "worker": 0, "state": "stall"}
+{"t": 0.02546048813333333, "event": "io_submit", "worker": 0, "label": "e00:L7", "bytes": 3145728.0}
+{"t": 0.027588213333333333, "event": "io_done", "worker": 1, "label": "e01:L2"}
+{"t": 0.027588213333333333, "event": "state", "worker": 1, "state": "compute"}
+{"t": 0.027588213333333333, "event": "layer_start", "worker": 1, "layer": 2, "requests": ["e01"]}
+{"t": 0.027627360133333334, "event": "state", "worker": 1, "state": "stall"}
+{"t": 0.027727360133333333, "event": "io_submit", "worker": 1, "label": "e01:L4", "bytes": 2097152.0}
+{"t": 0.02807191239423864, "event": "io_done", "worker": 0, "label": "e00:L6"}
+{"t": 0.02807191239423864, "event": "state", "worker": 0, "state": "compute"}
+{"t": 0.02807191239423864, "event": "layer_start", "worker": 0, "layer": 6, "requests": ["e00"]}
+{"t": 0.02811149439423864, "event": "state", "worker": 0, "state": "stall"}
+{"t": 0.028488479466666664, "event": "io_done", "worker": 0, "label": "e00:L7"}
+{"t": 0.028488479466666664, "event": "state", "worker": 0, "state": "compute"}
+{"t": 0.028488479466666664, "event": "layer_start", "worker": 0, "layer": 7, "requests": ["e00"]}
+{"t": 0.028528061466666664, "event": "state", "worker": 0, "state": "stall"}
+{"t": 0.028528061466666664, "event": "schedule", "worker": 0, "tokens": {"e00": 64, "e02": 128, "e04": 64}, "running": ["e00", "e02", "e04"], "waiting": ["e06", "e08", "e10", "e12", "e14", "e16", "e18", "e20", "e22", "e24", "e26", "e28", "e30", "e32", "e34", "e36", "e38", "e40", "e42", "e44", "e46"], "skipped_waiting": [], "free_blocks": 135}
+{"t": 0.028628061466666663, "event": "io_submit", "worker": 0, "label": "e02:L0", "bytes": 1048576.0}
+{"t": 0.028628061466666663, "event": "io_submit", "worker": 0, "label": "e04:L0", "bytes": 2097152.0}
+{"t": 0.028628061466666663, "event": "io_submit", "worker": 0, "label": "e02:L1", "bytes": 1048576.0}
+{"t": 0.028628061466666663, "event": "io_submit", "worker": 0, "label": "e04:L1", "bytes": 2097152.0}
+{"t": 0.03422375106755303, "event": "io_done", "worker": 0, "label": "e04:L0"}
+{"t": 0.034278364400886364, "event": "io_done", "worker": 0, "label": "e04:L1"}
+{"t": 0.034391484666223486, "event": "io_done", "worker": 0, "label": "e02:L0"}
+{"t": 0.034391484666223486, "event": "state", "worker": 0, "state": "compute"}
+{"t": 0.034391484666223486, "event": "layer_start", "worker": 0, "layer": 0, "requests": ["e00", "e02", "e04"]}
+{"t": 0.03444609799955682, "event": "io_done", "worker": 0, "label": "e02:L1"}
+{"t": 0.03446342586622349, "event": "layer_start", "worker": 0, "layer": 1, "requests": ["e00", "e02", "e04"]}
+{"t": 0.03453536706622349, "event": "state", "worker": 0, "state": "stall"}
+{"t": 0.03456342586622349, "event": "io_submit", "worker": 0, "label": "e02:L2", "bytes": 1048576.0}
+{"t": 0.03456342586622349, "event": "io_submit", "worker": 0, "label": "e04:L2", "bytes": 2097152.0}
+{"t": 0.03457872, "event": "io_done", "worker": 1, "label": "e01:L3"}
+{"t": 0.03457872, "event": "state", "worker": 1, "state": "compute"}
+{"t": 0.03457872, "event": "layer_start", "worker": 1, "layer": 3, "requests": ["e01"]}
+{"t": 0.0346178668, "event": "state", "worker": 1, "state": "stall"}
+{"t": 0.03463536706622349, "event": "io_submit", "worker": 0, "label": "e02:L3", "bytes": 1048576.0}
+{"t": 0.03463536706622349, "event": "io_submit", "worker": 0, "label": "e04:L3", "bytes": 2097152.0}
+{"t": 0.034717866800000004, "event": "io_submit", "worker": 1, "label": "e01:L5", "bytes": 2097152.0}
+{"t": 0.039478625866223485, "event": "io_done", "worker": 0, "label": "e02:L2"}
+{"t": 0.039478625866223485, "event": "io_done", "worker": 0, "label": "e04:L2"}
+{"t": 0.039478625866223485, "event": "state", "worker": 0, "state": "compute"}
+{"t": 0.039478625866223485, "event": "layer_start", "worker": 0, "layer": 2, "requests": ["e00", "e02", "e04"]}
+{"t": 0.03955056706622349, "event": "state", "worker": 0, "state": "stall"}
+{"t": 0.03965056706622349, "event": "io_submit", "worker": 0, "label": "e02:L4", "bytes": 1048576.0}
+{"t": 0.03965056706622349, "event": "io_submit", "worker": 0, "label": "e04:L4", "bytes": 2097152.0}
+{"t": 0.041526932314317366, "event": "io_done", "worker": 1, "label": "e01:L4"}
+{"t": 0.041526932314317366, "event": "state", "worker": 1, "state": "compute"}
+{"t": 0.041526932314317366, "event": "layer_start", "worker": 1, "layer": 4, "requests": ["e01"]}
+{"t": 0.04156607911431737, "event": "state", "worker": 1, "state": "stall"}
+{"t": 0.04166607911431737, "event": "io_submit", "worker": 1, "label": "e01:L6", "bytes": 2097152.0}
+{"t": 0.0418954419056284, "event": "io_done", "worker": 0, "label": "e02:L3"}
+{"t": 0.0418954419056284, "event": "io_done", "worker": 0, "label": "e04:L3"}
+{"t": 0.0418954419056284, "event": "state", "worker": 0, "state": "compute"}
+{"t": 0.0418954419056284, "event": "layer_start", "worker": 0, "layer": 3, "requests": ["e00", "e02", "e04"]}
+{"t": 0.0419673831056284, "event": "state", "worker": 0, "state": "stall"}
+{"t": 0.0420673831056284, "event": "io_submit", "worker": 0, "label": "e02:L5", "bytes": 1048576.0}
+{"t": 0.0420673831056284, "event": "io_submit", "worker": 0, "label": "e04:L5", "bytes": 2097152.0}
+{"t": 0.04461227919955681, "event": "io_done", "worker": 0, "label": "e02:L4"}
+{"t": 0.04461227919955681, "event": "io_done", "worker": 0, "label": "e04:L4"}
+{"t": 0.04461227919955681, "event": "state", "worker": 0, "state": "compute"}
+{"t": 0.04461227919955681, "event": "layer_start", "worker": 0, "layer": 4, "requests": ["e00", "e02", "e04"]}
+{"t": 0.044684220399556815, "event": "state", "worker": 0, "state": "stall"}
+{"t": 0.04478422039955682, "event": "io_submit", "worker": 0, "label": "e02:L6", "bytes": 1048576.0}
+{"t": 0.04478422039955682, "event": "io_submit", "worker": 0, "label": "e04:L6", "bytes": 2097152.0}
+{"t": 0.04847173837417684, "event": "io_done", "worker": 0, "label": "e02:L5"}
+{"t": 0.04847173837417684, "event": "io_done", "worker": 0, "label": "e04:L5"}
+{"t": 0.04847173837417684, "event": "state", "worker": 0, "state": "compute"}
+{"t": 0.04847173837417684, "event": "layer_start", "worker": 0, "layer": 5, "requests": ["e00", "e02", "e04"]}
+{"t": 0.048543679574176844, "event": "state", "worker": 0, "state": "stall"}
+{"t": 0.048559733333333334, "event": "io_done", "worker": 1, "label": "e01:L5"}
+{"t": 0.048559733333333334, "event": "state", "worker": 1, "state": "compute"}
+{"t": 0.048559733333333334, "event": "layer_start", "worker": 1, "layer": 5, "requests": ["e01"]}
+{"t": 0.048580965040843506, "event": "io_done", "worker": 0, "label": "e02:L6"}
+{"t": 0.048580965040843506, "event": "io_done", "worker": 0, "label": "e04:L6"}
+{"t": 0.048580965040843506, "event": "state", "worker": 0, "state": "compute"}
+{"t": 0.048580965040843506, "event": "layer_start", "worker": 0, "layer": 6, "requests": ["e00", "e02", "e04"]}
+{"t": 0.048598880133333335, "event": "state", "worker": 1, "state": "stall"}
+{"t": 0.04864367957417685, "event": "io_submit", "worker": 0, "label": "e02:L7", "bytes": 1048576.0}
+{"t": 0.04864367957417685, "event": "io_submit", "worker": 0, "label": "e04:L7", "bytes": 2097152.0}
+{"t": 0.04865290624084351, "event": "state", "worker": 0, "state": "stall"}
+{"t": 0.04869888013333334, "event": "io_submit", "worker": 1, "label": "e01:L7", "bytes": 2097152.0}
+{"t": 0.05126511957417684, "event": "io_done", "worker": 0, "label": "e02:L7"}
+{"t": 0.05126511957417684, "event": "io_done", "worker": 0, "label": "e04:L7"}
+{"t": 0.05126511957417684, "event": "state", "worker": 0, "state": "compute"}
+{"t": 0.05126511957417684, "event": "layer_start", "worker": 0, "layer": 7, "requests": ["e00", "e02", "e04"]}
+{"t": 0.051337060774176844, "event": "state", "worker": 0, "state": "stall"}
+{"t": 0.051337060774176844, "event": "schedule", "worker": 0, "tokens": {"e00": 1, "e02": 128, "e04": 127}, "running": ["e00", "e02", "e04"], "waiting": ["e06", "e08", "e10", "e12", "e14", "e16", "e18", "e20", "e22", "e24", "e26", "e28", "e30", "e32", "e34", "e36", "e38", "e40", "e42", "e44", "e46"], "skipped_waiting": [], "free_blocks": 118}
+{"t": 0.051337060774176844, "event": "state", "worker": 0, "state": "compute"}
+{"t": 0.051337060774176844, "event": "layer_start", "worker": 0, "layer": 0, "requests": ["e00", "e02", "e04"]}
+{"t": 0.051409056386676845, "event": "layer_start", "worker": 0, "layer": 1, "requests": ["e00", "e02", "e04"]}
+{"t": 0.051481051999176845, "event": "layer_start", "worker": 0, "layer": 2, "requests": ["e00", "e02", "e04"]}
+{"t": 0.051553047611676846, "event": "layer_start", "worker": 0, "layer": 3, "requests": ["e00", "e02", "e04"]}
+{"t": 0.051625043224176846, "event": "layer_start", "worker": 0, "layer": 4, "requests": ["e00", "e02", "e04"]}
+{"t": 0.05169703883667685, "event": "layer_start", "worker": 0, "layer": 5, "requests": ["e00", "e02", "e04"]}
+{"t": 0.05176903444917685, "event": "layer_start", "worker": 0, "layer": 6, "requests": ["e00", "e02", "e04"]}
+{"t": 0.05184103006167685, "event": "layer_start", "worker": 0, "layer": 7, "requests": ["e00", "e02", "e04"]}
+{"t": 0.05191302567417685, "event": "state", "worker": 0, "state": "stall"}
+{"t": 0.05191302567417685, "event": "schedule", "worker": 0, "tokens": {"e00": 1, "e02": 64, "e04": 1, "e06": 128, "e08": 62}, "running": ["e00", "e02", "e04", "e06", "e08"], "waiting": ["e10", "e12", "e14", "e16", "e18", "e20", "e22", "e24", "e26", "e28", "e30", "e32", "e34", "e36", "e38", "e40", "e42", "e44", "e46"], "skipped_waiting": [], "free_blocks": 38}
+{"t": 0.05201302567417685, "event": "io_submit", "worker": 0, "label": "e06:L0", "bytes": 3145728.0}
+{"t": 0.05201302567417685, "event": "io_submit", "worker": 0, "label": "e08:L0", "bytes": 1048576.0}
+{"t": 0.05201302567417685, "event": "io_submit", "worker": 0, "label": "e06:L1", "bytes": 3145728.0}
+{"t": 0.05201302567417685, "event": "io_submit", "worker": 0, "label": "e08:L1", "bytes": 1048576.0}
+{"t": 0.05555024, "event": "io_done", "worker": 1, "label": "e01:L6"}
+{"t": 0.05555024, "event": "state", "worker": 1, "state": "compute"}
+{"t": 0.05555024, "event": "layer_start", "worker": 1, "layer": 6, "requests": ["e01"]}
+{"t": 0.0555893868, "event": "state", "worker": 1, "state": "stall"}
+{"t": 0.056424053333333335, "event": "io_done", "worker": 1, "label": "e01:L7"}
+{"t": 0.056424053333333335, "event": "state", "worker": 1, "state": "compute"}
+{"t": 0.056424053333333335, "event": "layer_start", "worker": 1, "layer": 7, "requests": ["e01"]}
+{"t": 0.056463200133333336, "event": "state", "worker": 1, "state": "stall"}
+{"t": 0.056463200133333336, "event": "schedule", "worker": 1, "tokens": {"e01": 1, "e03": 128, "e05": 96, "e07": 31}, "running": ["e01", "e03", "e05", "e07"], "waiting": ["e09", "e11", "e13", "e15", "e17", "e19", "e21", "e23", "e25", "e27", "e29", "e31", "e33", "e35", "e37", "e39", "e41", "e43", "e45", "e47"], "skipped_waiting": [], "free_blocks": 184}
+{"t": 0.05656320013333334, "event": "io_submit", "worker": 1, "label": "e05:L0", "bytes": 1048576.0}
+{"t": 0.05656320013333334, "event": "io_submit", "worker": 1, "label": "e05:L1", "bytes": 1048576.0}
+{"t": 0.05808587446995786, "event": "io_done", "worker": 0, "label": "e06:L0"}
+{"t": 0.0585590087599514, "event": "io_done", "worker": 0, "label": "e08:L0"}
+{"t": 0.0585590087599514, "event": "state", "worker": 0, "state": "compute"}
+{"t": 0.0585590087599514, "event": "layer_start", "worker": 0, "layer": 0, "requests": ["e00", "e02", "e04", "e06", "e08"]}
+{"t": 0.058631269997451406, "event": "state", "worker": 0, "state": "stall"}
+{"t": 0.05873126999745141, "event": "io_submit", "worker": 0, "label": "e06:L2", "bytes": 3145728.0}
+{"t": 0.05873126999745141, "event": "io_submit", "worker": 0, "label": "e08:L2", "bytes": 1048576.0}
+{"t": 0.06015594198703469, "event": "io_done", "worker": 0, "label": "e06:L1"}
+{"t": 0.06216170639035527, "event": "io_done", "worker": 0, "label": "e08:L1"}
+{"t": 0.06216170639035527, "event": "state", "worker": 0, "state": "compute"}
+{"t": 0.06216170639035527, "event": "layer_start", "worker": 0, "layer": 1, "requests": ["e00", "e02", "e04", "e06", "e08"]}
+{"t": 0.062233967627855276, "event": "state", "worker": 0, "state": "stall"}
+{"t": 0.06233396762785528, "event": "io_submit", "worker": 0, "label": "e06:L3", "bytes": 3145728.0}
+{"t": 0.06233396762785528, "event": "io_submit", "worker": 0, "label": "e08:L3", "bytes": 1048576.0}
+{"t": 0.06289555693606713, "event": "io_done", "worker": 1, "label": "e05:L0"}
+{"t": 0.06289555693606713, "event": "state", "worker": 1, "state": "compute"}
+{"t": 0.06289555693606713, "event": "layer_start", "worker": 1, "layer": 0, "requests": ["e01", "e03", "e05", "e07"]}
+{"t": 0.06296628934856713, "event": "state", "worker": 1, "state": "stall"}
+{"t": 0.06306628934856713, "event": "io_submit", "worker": 1, "label": "e05:L2", "bytes": 1048576.0}
+{"t": 0.06539882532069298, "event": "io_done", "worker": 0, "label": "e08:L2"}
+{"t": 0.06561470766105983, "event": "io_done", "worker": 0, "label": "e06:L2"}
+{"t": 0.06561470766105983, "event": "state", "worker": 0, "state": "compute"}
+{"t": 0.06561470766105983, "event": "layer_start", "worker": 0, "layer": 2, "requests": ["e00", "e02", "e04", "e06", "e08"]}
+{"t": 0.06568696889855982, "event": "state", "worker": 0, "state": "stall"}
+{"t": 0.06578696889855982, "event": "io_submit", "worker": 0, "label": "e06:L4", "bytes": 3145728.0}
+{"t": 0.06578696889855982, "event": "io_submit", "worker": 0, "label": "e08:L4", "bytes": 1048576.0}
+{"t": 0.0661751468, "event": "io_done", "worker": 1, "label": "e05:L1"}
+{"t": 0.0661751468, "event": "state", "worker": 1, "state": "compute"}
+{"t": 0.0661751468, "event": "layer_start", "worker": 1, "layer": 1, "requests": ["e01", "e03", "e05", "e07"]}
+{"t": 0.0662458792125, "event": "state", "worker": 1, "state": "stall"}
+{"t": 0.0663458792125, "event": "io_submit", "worker": 1, "label": "e05:L3", "bytes": 1048576.0}
+{"t": 0.06767256758137233, "event": "io_done", "worker": 0, "label": "e06:L3"}
+{"t": 0.06921622567417685, "event": "io_done", "worker": 0, "label": "e08:L3"}
+{"t": 0.06921622567417685, "event": "state", "worker": 0, "state": "compute"}
+{"t": 0.06921622567417685, "event": "layer_start", "worker": 0, "layer": 3, "requests": ["e00", "e02", "e04", "e06", "e08"]}
+{"t": 0.06928848691167684, "event": "state", "worker": 0, "state": "stall"}
+{"t": 0.06938006567417684, "event": "io_done", "worker": 0, "label": "e08:L4"}
+{"t": 0.06938848691167684, "event": "io_submit", "worker": 0, "label": "e06:L5", "bytes": 3145728.0}
+{"t": 0.06938848691167684, "event": "io_submit", "worker": 0, "label": "e08:L5", "bytes": 1048576.0}
+{"t": 0.06972473216395172, "event": "io_done", "worker": 1, "label": "e05:L2"}
+{"t": 0.06972473216395172, "event": "state", "worker": 1, "state": "compute"}
+{"t": 0.06972473216395172, "event": "layer_start", "worker": 1, "layer": 2, "requests": ["e01", "e03", "e05", "e07"]}
+{"t": 0.06979546457645172, "event": "state", "worker": 1, "state": "stall"}
+{"t": 0.06989546457645172, "event": "io_submit", "worker": 1, "label": "e05:L4", "bytes": 1048576.0}
+{"t": 0.07253812821192501, "event": "io_done", "worker": 0, "label": "e06:L4"}
+{"t": 0.07253812821192501, "event": "state", "worker": 0, "state": "compute"}
+{"t": 0.07253812821192501, "event": "layer_start", "worker": 0, "layer": 4, "requests": ["e00", "e02", "e04", "e06", "e08"]}
+{"t": 0.07261038944942501, "event": "state", "worker": 0, "state": "stall"}
+{"t": 0.07271038944942501, "event": "io_submit", "worker": 0, "label": "e06:L6", "bytes": 3145728.0}
+{"t": 0.07271038944942501, "event": "io_submit", "worker": 0, "label": "e08:L6", "bytes": 1048576.0}
+{"t": 0.07337554639456506, "event": "io_done", "worker": 1, "label": "e05:L3"}
+{"t": 0.07337554639456506, "event": "state", "worker": 1, "state": "compute"}
+{"t": 0.07337554639456506, "event": "layer_start", "worker": 1, "layer": 3, "requests": ["e01", "e03", "e05", "e07"]}
+{"t": 0.07344627880706506, "event": "state", "worker": 1, "state": "stall"}
+{"t": 0.07354627880706506, "event": "io_submit", "worker": 1, "label": "e05:L5", "bytes": 1048576.0}
+{"t": 0.07589591202525847, "event": "io_done", "worker": 0, "label": "e06:L5"}
+{"t": 0.07594208691167684, "event": "io_done", "worker": 0, "label": "e08:L5"}
+{"t": 0.07594208691167684, "event": "state", "worker": 0, "state": "compute"}
+{"t": 0.07594208691167684, "event": "layer_start", "worker": 0, "layer": 5, "requests": ["e00", "e02", "e04", "e06", "e08"]}
+{"t": 0.07601434814917683, "event": "state", "worker": 0, "state": "stall"}
+{"t": 0.07611434814917684, "event": "io_submit", "worker": 0, "label": "e06:L7", "bytes": 3145728.0}
+{"t": 0.07611434814917684, "event": "io_submit", "worker": 0, "label": "e08:L7", "bytes": 1048576.0}
+{"t": 0.07700381982384917, "event": "io_done", "worker": 1, "label": "e05:L4"}
+{"t": 0.07700381982384917, "event": "state", "worker": 1, "state": "compute"}
+{"t": 0.07700381982384917, "event": "layer_start", "worker": 1, "layer": 4, "requests": ["e01", "e03", "e05", "e07"]}
+{"t": 0.07707455223634917, "event": "state", "worker": 1, "state": "stall"}
+{"t": 0.07717455223634917, "event": "io_submit", "worker": 1, "label": "e05:L6", "bytes": 1048576.0}
+{"t": 0.07932434142277746, "event": "io_done", "worker": 0, "label": "e06:L6"}
+{"t": 0.07971040691167683, "event": "io_done", "worker": 0, "label": "e08:L6"}
+{"t": 0.07971040691167683, "event": "state", "worker": 0, "state": "compute"}
+{"t": 0.07971040691167683, "event": "layer_start", "worker": 0, "layer": 6, "requests": ["e00", "e02", "e04", "e06", "e08"]}
+{"t": 0.07978266814917682, "event": "state", "worker": 0, "state": "stall"}
+{"t": 0.07987424691167683, "event": "io_done", "worker": 0, "label": "e08:L7"}
+{"t": 0.08061672063530519, "event": "io_done", "worker": 1, "label": "e05:L5"}
+{"t": 0.08061672063530519, "event": "state", "worker": 1, "state": "compute"}
+{"t": 0.08061672063530519, "event": "layer_start", "worker": 1, "layer": 5, "requests": ["e01", "e03", "e05", "e07"]}
+{"t": 0.08068745304780518, "event": "state", "worker": 1, "state": "stall"}
+{"t": 0.08072594730197186, "event": "io_done", "worker": 0, "label": "e06:L7"}
+{"t": 0.08072594730197186, "event": "state", "worker": 0, "state": "compute"}
+{"t": 0.08072594730197186, "event": "layer_start", "worker": 0, "layer": 7, "requests": ["e00", "e02", "e04", "e06", "e08"]}
+{"t": 0.08078745304780519, "event": "io_submit", "worker": 1, "label": "e05:L7", "bytes": 1048576.0}
+{"t": 0.08079820853947185, "event": "state", "worker": 0, "state": "stall"}
+{"t": 0.08079820853947185, "event": "schedule", "worker": 0, "tokens": {"e00": 1, "e02": 1, "e04": 1, "e06": 128, "e08": 125}, "running": ["e00", "e02", "e04", "e06", "e08"], "waiting": ["e10", "e12", "e14", "e16", "e18", "e20", "e22", "e24", "e26", "e28", "e30", "e32", "e34", "e36", "e38", "e40", "e42", "e44", "e46"], "skipped_waiting": [], "free_blocks": 20}
+{"t": 0.08079820853947185, "event": "state", "worker": 0, "state": "compute"}
+{"t": 0.08079820853947185, "event": "layer_start", "worker": 0, "layer": 0, "requests": ["e00", "e02", "e04", "e06", "e08"]}
+{"t": 0.08087061871447185, "event": "layer_start", "worker": 0, "layer": 1, "requests": ["e00", "e02", "e04", "e06", "e08"]}
+{"t": 0.08094302888947184, "event": "layer_start", "worker": 0, "layer": 2, "requests": ["e00", "e02", "e04", "e06", "e08"]}
+{"t": 0.08101543906447184, "event": "layer_start", "worker": 0, "layer": 3, "requests": ["e00", "e02", "e04", "e06", "e08"]}
+{"t": 0.08108784923947183, "event": "layer_start", "worker": 0, "layer": 4, "requests": ["e00", "e02", "e04", "e06", "e08"]}
+{"t": 0.08116025941447183, "event": "layer_start", "worker": 0, "layer": 5, "requests": ["e00", "e02", "e04", "e06", "e08"]}
+{"t": 0.08123266958947183, "event": "layer_start", "worker": 0, "layer": 6, "requests": ["e00", "e02", "e04", "e06", "e08"]}
+{"t": 0.08130507976447182, "event": "layer_start", "worker": 0, "layer": 7, "requests": ["e00", "e02", "e04", "e06", "e08"]}
+{"t": 0.08137748993947182, "event": "request_done", "request": "e00", "worker": 0}
+{"t": 0.08137748993947182, "event": "state", "worker": 0, "state": "stall"}
+{"t": 0.08137748993947182, "event": "schedule", "worker": 0, "tokens": {"e02": 1, "e04": 1, "e06": 64, "e08": 5, "e10": 128}, "running": ["e02", "e04", "e06", "e08", "e10"], "waiting": ["e12", "e14", "e16", "e18", "e20", "e22", "e24", "e26", "e28", "e30", "e32", "e34", "e36", "e38", "e40", "e42", "e44", "e46"], "skipped_waiting": [], "free_blocks": 37}
+{"t": 0.08147748993947182, "event": "io_submit", "worker": 0, "label": "e10:L0", "bytes": 2097152.0}
+{"t": 0.08147748993947182, "event": "io_submit", "worker": 0, "label": "e10:L1", "bytes": 2097152.0}
+{"t": 0.08360295995405521, "event": "io_done", "worker": 1, "label": "e05:L6"}
+{"t": 0.08360295995405521, "event": "state", "worker": 1, "state": "compute"}
+{"t": 0.08360295995405521, "event": "layer_start", "worker": 1, "layer": 6, "requests": ["e01", "e03", "e05", "e07"]}
+{"t": 0.08367369236655521, "event": "state", "worker": 1, "state": "stall"}
+{"t": 0.08465810730197185, "event": "io_done", "worker": 1, "label": "e05:L7"}
+{"t": 0.08465810730197185, "event": "state", "worker": 1, "state": "compute"}
+{"t": 0.08465810730197185, "event": "layer_start", "worker": 1, "layer": 7, "requests": ["e01", "e03", "e05", "e07"]}
+{"t": 0.08472883971447184, "event": "state", "worker": 1, "state": "stall"}
+{"t": 0.08472883971447184, "event": "schedule", "worker": 1, "tokens": {"e01": 1, "e03": 32, "e05": 1, "e07": 128, "e09": 94}, "running": ["e01", "e03", "e05", "e07", "e09"], "waiting": ["e11", "e13", "e15", "e17", "e19", "e21", "e23", "e25", "e27", "e29", "e31", "e33", "e35", "e37", "e39", "e41", "e43", "e45", "e47"], "skipped_waiting": [], "free_blocks": 119}
+{"t": 0.08482883971447185, "event": "io_submit", "worker": 1, "label": "e09:L0", "bytes": 3145728.0}
+{"t": 0.08482883971447185, "event": "io_submit", "worker": 1, "label": "e09:L1", "bytes": 3145728.0}
+{"t": 0.08484051537641626, "event": "io_done", "worker": 0, "label": "e10:L0"}
+{"t": 0.08484051537641626, "event": "state", "worker": 0, "state": "compute"}
+{"t": 0.08484051537641626, "event": "layer_start", "worker": 0, "layer": 0, "requests": ["e02", "e04", "e06", "e08", "e10"]}
+{"t": 0.08489832690141627, "event": "state", "worker": 0, "state": "stall"}
+{"t": 0.08497274327280516, "event": "io_done", "worker": 0, "label": "e10:L1"}
+{"t": 0.08497274327280516, "event": "state", "worker": 0, "state": "compute"}
+{"t": 0.08497274327280516, "event": "layer_start", "worker": 0, "layer": 1, "requests": ["e02", "e04", "e06", "e08", "e10"]}
+{"t": 0.08499832690141627, "event": "io_submit", "worker": 0, "label": "e10:L2", "bytes": 2097152.0}
+{"t": 0.08503055479780516, "event": "state", "worker": 0, "state": "stall"}
+{"t": 0.08513055479780517, "event": "io_submit", "worker": 0, "label": "e10:L3", "bytes": 2097152.0}
+{"t": 0.10536345304780517, "event": "io_done", "worker": 1, "label": "e09:L0"}
+{"t": 0.10536345304780517, "event": "state", "worker": 1, "state": "compute"}
+{"t": 0.10536345304780517, "event": "layer_start", "worker": 1, "layer": 0, "requests": ["e01", "e03", "e05", "e07", "e09"]}
+{"t": 0.10543488389780517, "event": "state", "worker": 1, "state": "stall"}
+{"t": 0.10553488389780517, "event": "io_submit", "worker": 1, "label": "e09:L2", "bytes": 3145728.0}
+{"t": 0.1055819063811385, "event": "io_done", "worker": 0, "label": "e10:L2"}
+{"t": 0.1055819063811385, "event": "state", "worker": 0, "state": "compute"}
+{"t": 0.1055819063811385, "event": "layer_start", "worker": 0, "layer": 2, "requests": ["e02", "e04", "e06", "e08", "e10"]}
+{"t": 0.1056397179061385, "event": "state", "worker": 0, "state": "stall"}
+{"t": 0.10573971790613851, "event": "io_submit", "worker": 0, "label": "e10:L4", "bytes": 2097152.0}
+{"t": 0.10620969192072177, "event": "io_done", "worker": 0, "label": "e10:L3"}
+{"t": 0.10620969192072177, "event": "state", "worker": 0, "state": "compute"}
+{"t": 0.10620969192072177, "event": "layer_start", "worker": 0, "layer": 3, "requests": ["e02", "e04", "e06", "e08", "e10"]}
+{"t": 0.10626750344572178, "event": "state", "worker": 0, "state": "stall"}
+{"t": 0.10636750344572178, "event": "io_submit", "worker": 0, "label": "e10:L5", "bytes": 2097152.0}
+{"t": 0.11584921304780517, "event": "io_done", "worker": 1, "label": "e09:L1"}
+{"t": 0.11584921304780517, "event": "state", "worker": 1, "state": "compute"}
+{"t": 0.11584921304780517, "event": "layer_start", "worker": 1, "layer": 1, "requests": ["e01", "e03", "e05", "e07", "e09"]}
+{"t": 0.11592064389780517, "event": "state", "worker": 1, "state": "stall"}
+{"t": 0.11602064389780517, "event": "io_submit", "worker": 1, "label": "e09:L3", "bytes": 3145728.0}
+{"t": 0.11603633710764043, "event": "io_done", "worker": 0, "label": "e10:L4"}
+{"t": 0.11603633710764043, "event": "state", "worker": 0, "state": "compute"}
+{"t": 0.11603633710764043, "event": "layer_start", "worker": 0, "layer": 4, "requests": ["e02", "e04", "e06", "e08", "e10"]}
+{"t": 0.11609414863264043, "event": "state", "worker": 0, "state": "stall"}
+{"t": 0.11619414863264044, "event": "io_submit", "worker": 0, "label": "e10:L6", "bytes": 2097152.0}
+{"t": 0.1166641226472237, "event": "io_done", "worker": 0, "label": "e10:L5"}
+{"t": 0.1166641226472237, "event": "state", "worker": 0, "state": "compute"}
+{"t": 0.1166641226472237, "event": "layer_start", "worker": 0, "layer": 5, "requests": ["e02", "e04", "e06", "e08", "e10"]}
+{"t": 0.1167219341722237, "event": "state", "worker": 0, "state": "stall"}
+{"t": 0.11682193417222371, "event": "io_submit", "worker": 0, "label": "e10:L7", "bytes": 2097152.0}
+{"t": 0.12633497304780514, "event": "io_done", "worker": 1, "label": "e09:L2"}
+{"t": 0.12633497304780514, "event": "state", "worker": 1, "state": "compute"}
+{"t": 0.12633497304780514, "event": "layer_start", "worker": 1, "layer": 2, "requests": ["e01", "e03", "e05", "e07", "e09"]}
+{"t": 0.12640640389780514, "event": "state", "worker": 1, "state": "stall"}
+{"t": 0.12650640389780513, "event": "io_submit", "worker": 1, "label": "e09:L4", "bytes": 3145728.0}
+{"t": 0.12652136851988466, "event": "io_done", "worker": 0, "label": "e10:L6"}
+{"t": 0.12652136851988466, "event": "state", "worker": 0, "state": "compute"}
+{"t": 0.12652136851988466, "event": "layer_start", "worker": 0, "layer": 6, "requests": ["e02", "e04", "e06", "e08", "e10"]}
+{"t": 0.12657918004488466, "event": "state", "worker": 0, "state": "stall"}
+{"t": 0.126739821853218, "event": "io_done", "worker": 0, "label": "e10:L7"}
+{"t": 0.126739821853218, "event": "state", "worker": 0, "state": "compute"}
+{"t": 0.126739821853218, "event": "layer_start", "worker": 0, "layer": 7, "requests": ["e02", "e04", "e06", "e08", "e10"]}
+{"t": 0.126797633378218, "event": "state", "worker": 0, "state": "stall"}
+{"t": 0.126797633378218, "event": "schedule", "worker": 0, "tokens": {"e02": 1, "e04": 1, "e06": 1, "e08": 1, "e10": 128}, "running": ["e02", "e04", "e06", "e08", "e10"], "waiting": ["e12", "e14", "e16", "e18", "e20", "e22", "e24", "e26", "e28", "e30", "e32", "e34", "e36", "e38", "e40", "e42", "e44", "e46"], "skipped_waiting": [], "free_blocks": 27}
+{"t": 0.126797633378218, "event": "state", "worker": 0, "state": "compute"}
+{"t": 0.126797633378218, "event": "layer_start", "worker": 0, "layer": 0, "requests": ["e02", "e04", "e06", "e08", "e10"]}
+{"t": 0.126838045878218, "event": "layer_start", "worker": 0, "layer": 1, "requests": ["e02", "e04", "e06", "e08", "e10"]}
+{"t": 0.126878458378218, "event": "layer_start", "worker": 0, "layer": 2, "requests": ["e02", "e04", "e06", "e08", "e10"]}
+{"t": 0.12691887087821802, "event": "layer_start", "worker": 0, "layer": 3, "requests": ["e02", "e04", "e06", "e08", "e10"]}
+{"t": 0.12695928337821802, "event": "layer_start", "worker": 0, "layer": 4, "requests": ["e02", "e04", "e06", "e08", "e10"]}
+{"t": 0.12699969587821802, "event": "layer_start", "worker": 0, "layer": 5, "requests": ["e02", "e04", "e06", "e08", "e10"]}
+{"t": 0.12704010837821803, "event": "layer_start", "worker": 0, "layer": 6, "requests": ["e02", "e04", "e06", "e08", "e10"]}
+{"t": 0.12708052087821803, "event": "layer_start", "worker": 0, "layer": 7, "requests": ["e02", "e04", "e06", "e08", "e10"]}
+{"t": 0.12712093337821803, "event": "state", "worker": 0, "state": "stall"}
+{"t": 0.12712093337821803, "event": "schedule", "worker": 0, "tokens": {"e02": 1, "e04": 1, "e06": 1, "e08": 1, "e10": 64}, "running": ["e02", "e04", "e06", "e08", "e10"], "waiting": ["e12", "e14", "e16", "e18", "e20", "e22", "e24", "e26", "e28", "e30", "e32", "e34", "e36", "e38", "e40", "e42", "e44", "e46"], "skipped_waiting": [], "free_blocks": 23}
+{"t": 0.12712093337821803, "event": "state", "worker": 0, "state": "compute"}
+{"t": 0.12712093337821803, "event": "layer_start", "worker": 0, "layer": 0, "requests": ["e02", "e04", "e06", "e08", "e10"]}
+{"t": 0.12716045537821802, "event": "layer_start", "worker": 0, "layer": 1, "requests": ["e02", "e04", "e06", "e08", "e10"]}
+{"t": 0.127199977378218, "event": "layer_start", "worker": 0, "layer": 2, "requests": ["e02", "e04", "e06", "e08", "e10"]}
+{"t": 0.127239499378218, "event": "layer_start", "worker": 0, "layer": 3, "requests": ["e02", "e04", "e06", "e08", "e10"]}
+{"t": 0.12727902137821798, "event": "layer_start", "worker": 0, "layer": 4, "requests": ["e02", "e04", "e06", "e08", "e10"]}
+{"t": 0.12731854337821796, "event": "layer_start", "worker": 0, "layer": 5, "requests": ["e02", "e04", "e06", "e08", "e10"]}
+{"t": 0.12735806537821795, "event": "layer_start", "worker": 0, "layer": 6, "requests": ["e02", "e04", "e06", "e08", "e10"]}
+{"t": 0.12739758737821794, "event": "layer_start", "worker": 0, "layer": 7, "requests": ["e02", "e04", "e06", "e08", "e10"]}
+{"t": 0.12743710937821792, "event": "state", "worker": 0, "state": "stall"}
+{"t": 0.12743710937821792, "event": "schedule", "worker": 0, "tokens": {"e02": 1, "e04": 1, "e06": 1, "e08": 1, "e10": 1}, "running": ["e02", "e04", "e06", "e08", "e10"], "waiting": ["e12", "e14", "e16", "e18", "e20", "e22", "e24", "e26", "e28", "e30", "e32", "e34", "e36", "e38", "e40", "e42", "e44", "e46"], "skipped_waiting": [], "free_blocks": 22}
+{"t": 0.12743710937821792, "event": "state", "worker": 0, "state": "compute"}
+{"t": 0.12743710937821792, "event": "layer_start", "worker": 0, "layer": 0, "requests": ["e02", "e04", "e06", "e08", "e10"]}
+{"t": 0.12744983844071792, "event": "layer_start", "worker": 0, "layer": 1, "requests": ["e02", "e04", "e06", "e08", "e10"]}
+{"t": 0.1274625675032179, "event": "layer_start", "worker": 0, "layer": 2, "requests": ["e02", "e04", "e06", "e08", "e10"]}
+{"t": 0.1274752965657179, "event": "layer_start", "worker": 0, "layer": 3, "requests": ["e02", "e04", "e06", "e08", "e10"]}
+{"t": 0.1274880256282179, "event": "layer_start", "worker": 0, "layer": 4, "requests": ["e02", "e04", "e06", "e08", "e10"]}
+{"t": 0.1275007546907179, "event": "layer_start", "worker": 0, "layer": 5, "requests": ["e02", "e04", "e06", "e08", "e10"]}
+{"t": 0.1275134837532179, "event": "layer_start", "worker": 0, "layer": 6, "requests": ["e02", "e04", "e06", "e08", "e10"]}
+{"t": 0.12752621281571788, "event": "layer_start", "worker": 0, "layer": 7, "requests": ["e02", "e04", "e06", "e08", "e10"]}
+{"t": 0.12753894187821788, "event": "request_done", "request": "e02", "worker": 0}
+{"t": 0.12753894187821788, "event": "state", "worker": 0, "state": "stall"}
+{"t": 0.12753894187821788, "event": "schedule", "worker": 0, "tokens": {"e04": 1, "e06": 1, "e08": 1, "e10": 1}, "running": ["e04", "e06", "e08", "e10"], "waiting": ["e12", "e14", "e16", "e18", "e20", "e22", "e24", "e26", "e28", "e30", "e32", "e34", "e36", "e38", "e40", "e42", "e44", "e46"], "skipped_waiting": [], "free_blocks": 59}
+{"t": 0.12753894187821788, "event": "state", "worker": 0, "state": "compute"}
+{"t": 0.12753894187821788, "event": "layer_start", "worker": 0, "layer": 0, "requests": ["e04", "e06", "e08", "e10"]}
+{"t": 0.12755038487821788, "event": "layer_start", "worker": 0, "layer": 1, "requests": ["e04", "e06", "e08", "e10"]}
+{"t": 0.12756182787821788, "event": "layer_start", "worker": 0, "layer": 2, "requests": ["e04", "e06", "e08", "e10"]}
+{"t": 0.12757327087821788, "event": "layer_start", "worker": 0, "layer": 3, "requests": ["e04", "e06", "e08", "e10"]}
+{"t": 0.12758471387821788, "event": "layer_start", "worker": 0, "layer": 4, "requests": ["e04", "e06", "e08", "e10"]}
+{"t": 0.12759615687821788, "event": "layer_start", "worker": 0, "layer": 5, "requests": ["e04", "e06", "e08", "e10"]}
+{"t": 0.12760759987821788, "event": "layer_start", "worker": 0, "layer": 6, "requests": ["e04", "e06", "e08", "e10"]}
+{"t": 0.12761904287821788, "event": "layer_start", "worker": 0, "layer": 7, "requests": ["e04", "e06", "e08", "e10"]}
+{"t": 0.12763048587821788, "event": "request_done", "request": "e06", "worker": 0}
+{"t": 0.12763048587821788, "event": "state", "worker": 0, "state": "stall"}
+{"t": 0.12763048587821788, "event": "schedule", "worker": 0, "tokens": {"e04": 1, "e08": 1, "e10": 1, "e12": 128, "e14": 125}, "running": ["e04", "e08", "e10", "e12", "e14"], "waiting": ["e16", "e18", "e20", "e22", "e24", "e26", "e28", "e30", "e32", "e34", "e36", "e38", "e40", "e42", "e44", "e46"], "skipped_waiting": [], "free_blocks": 48}
+{"t": 0.12773048587821786, "event": "io_submit", "worker": 0, "label": "e12:L0", "bytes": 3145728.0}
+{"t": 0.12773048587821786, "event": "io_submit", "worker": 0, "label": "e14:L0", "bytes": 1048576.0}
+{"t": 0.12773048587821786, "event": "io_submit", "worker": 0, "label": "e12:L1", "bytes": 3145728.0}
+{"t": 0.12773048587821786, "event": "io_submit", "worker": 0, "label": "e14:L1", "bytes": 1048576.0}
+{"t": 0.13682073304780515, "event": "io_done", "worker": 1, "label": "e09:L3"}
+{"t": 0.13682073304780515, "event": "state", "worker": 1, "state": "compute"}
+{"t": 0.13682073304780515, "event": "layer_start", "worker": 1, "layer": 3, "requests": ["e01", "e03", "e05", "e07", "e09"]}
+{"t": 0.13689216389780515, "event": "state", "worker": 1, "state": "stall"}
+{"t": 0.13696140339205304, "event": "io_done", "worker": 0, "label": "e12:L0"}
+{"t": 0.13699216389780514, "event": "io_submit", "worker": 1, "label": "e09:L5", "bytes": 3145728.0}
+{"t": 0.13724351726629386, "event": "io_done", "worker": 0, "label": "e14:L0"}
+{"t": 0.13724351726629386, "event": "state", "worker": 0, "state": "compute"}
+{"t": 0.13724351726629386, "event": "layer_start", "worker": 0, "layer": 0, "requests": ["e04", "e08", "e10", "e12", "e14"]}
+{"t": 0.1372981305996272, "event": "io_done", "worker": 0, "label": "e12:L1"}
+{"t": 0.13731562269129385, "event": "state", "worker": 0, "state": "stall"}
+{"t": 0.13740735726629386, "event": "io_done", "worker": 0, "label": "e14:L1"}
+{"t": 0.13740735726629386, "event": "state", "worker": 0, "state": "compute"}
+{"t": 0.13740735726629386, "event": "layer_start", "worker": 0, "layer": 1, "requests": ["e04", "e08", "e10", "e12", "e14"]}
+{"t": 0.13741562269129384, "event": "io_submit", "worker": 0, "label": "e12:L2", "bytes": 3145728.0}
+{"t": 0.13741562269129384, "event": "io_submit", "worker": 0, "label": "e14:L2", "bytes": 1048576.0}
+{"t": 0.13747946269129385, "event": "state", "worker": 0, "state": "stall"}
+{"t": 0.13757946269129384, "event": "io_submit", "worker": 0, "label": "e12:L3", "bytes": 3145728.0}
+{"t": 0.13757946269129384, "event": "io_submit", "worker": 0, "label": "e14:L3", "bytes": 1048576.0}
+{"t": 0.14730649304780516, "event": "io_done", "worker": 1, "label": "e09:L4"}
+{"t": 0.14730649304780516, "event": "state", "worker": 1, "state": "compute"}
+{"t": 0.14730649304780516, "event": "layer_start", "worker": 1, "layer": 4, "requests": ["e01", "e03", "e05", "e07", "e09"]}
+{"t": 0.14737792389780516, "event": "state", "worker": 1, "state": "stall"}
+{"t": 0.14747792389780515, "event": "io_submit", "worker": 1, "label": "e09:L6", "bytes": 3145728.0}
+{"t": 0.14748724325247992, "event": "io_done", "worker": 0, "label": "e12:L2"}
+{"t": 0.1477499990106399, "event": "io_done", "worker": 0, "label": "e14:L2"}
+{"t": 0.1477499990106399, "event": "state", "worker": 0, "state": "compute"}
+{"t": 0.1477499990106399, "event": "layer_start", "worker": 0, "layer": 2, "requests": ["e04", "e08", "e10", "e12", "e14"]}
+{"t": 0.14780461234397324, "event": "io_done", "worker": 0, "label": "e12:L3"}
+{"t": 0.1478221044356399, "event": "state", "worker": 0, "state": "stall"}
+{"t": 0.1479138390106399, "event": "io_done", "worker": 0, "label": "e14:L3"}
+{"t": 0.1479138390106399, "event": "state", "worker": 0, "state": "compute"}
+{"t": 0.1479138390106399, "event": "layer_start", "worker": 0, "layer": 3, "requests": ["e04", "e08", "e10", "e12", "e14"]}
+{"t": 0.14792210443563988, "event": "io_submit", "worker": 0, "label": "e12:L4", "bytes": 3145728.0}
+{"t": 0.14792210443563988, "event": "io_submit", "worker": 0, "label": "e14:L4", "bytes": 1048576.0}
+{"t": 0.1479859444356399, "event": "state", "worker": 0, "state": "stall"}
+{"t": 0.14808594443563988, "event": "io_submit", "worker": 0, "label": "e12:L5", "bytes": 3145728.0}
+{"t": 0.14808594443563988, "event": "io_submit", "worker": 0, "label": "e14:L5", "bytes": 1048576.0}
+{"t": 0.15779225304780517, "event": "io_done", "worker": 1, "label": "e09:L5"}
+{"t": 0.15779225304780517, "event": "state", "worker": 1, "state": "compute"}
+{"t": 0.15779225304780517, "event": "layer_start", "worker": 1, "layer": 5, "requests": ["e01", "e03", "e05", "e07", "e09"]}
+{"t": 0.15786368389780517, "event": "state", "worker": 1, "state": "stall"}
+{"t": 0.15796368389780516, "event": "io_submit", "worker": 1, "label": "e09:L7", "bytes": 3145728.0}
+{"t": 0.1579734842842432, "event": "io_done", "worker": 0, "label": "e12:L4"}
+{"t": 0.1582368406093426, "event": "io_done", "worker": 0, "label": "e14:L4"}
+{"t": 0.1582368406093426, "event": "state", "worker": 0, "state": "compute"}
+{"t": 0.1582368406093426, "event": "layer_start", "worker": 0, "layer": 4, "requests": ["e04", "e08", "e10", "e12", "e14"]}
+{"t": 0.15829145394267594, "event": "io_done", "worker": 0, "label": "e12:L5"}
+{"t": 0.1583089460343426, "event": "state", "worker": 0, "state": "stall"}
+{"t": 0.1584006806093426, "event": "io_done", "worker": 0, "label": "e14:L5"}
+{"t": 0.1584006806093426, "event": "state", "worker": 0, "state": "compute"}
+{"t": 0.1584006806093426, "event": "layer_start", "worker": 0, "layer": 5, "requests": ["e04", "e08", "e10", "e12", "e14"]}
+{"t": 0.15840894603434258, "event": "io_submit", "worker": 0, "label": "e12:L6", "bytes": 3145728.0}
+{"t": 0.15840894603434258, "event": "io_submit", "worker": 0, "label": "e14:L6", "bytes": 1048576.0}
+{"t": 0.1584727860343426, "event": "state", "worker": 0, "state": "stall"}
+{"t": 0.15857278603434258, "event": "io_submit", "worker": 0, "label": "e12:L7", "bytes": 3145728.0}
+{"t": 0.15857278603434258, "event": "io_submit", "worker": 0, "label": "e14:L7", "bytes": 1048576.0}
+{"t": 0.16827801304780518, "event": "io_done", "worker": 1, "label": "e09:L6"}
+{"t": 0.16827801304780518, "event": "state", "worker": 1, "state": "compute"}
+{"t": 0.16827801304780518, "event": "layer_start", "worker": 1, "layer": 6, "requests": ["e01", "e03", "e05", "e07", "e09"]}
+{"t": 0.16834944389780518, "event": "state", "worker": 1, "state": "stall"}
+{"t": 0.168459270335821, "event": "io_done", "worker": 0, "label": "e12:L6"}
+{"t": 0.16871491971447183, "event": "io_done", "worker": 1, "label": "e09:L7"}
+{"t": 0.16871491971447183, "event": "state", "worker": 1, "state": "compute"}
+{"t": 0.16871491971447183, "event": "layer_start", "worker": 1, "layer": 7, "requests": ["e01", "e03", "e05", "e07", "e09"]}
+{"t": 0.16872269410607885, "event": "io_done", "worker": 0, "label": "e14:L6"}
+{"t": 0.16872269410607885, "event": "state", "worker": 0, "state": "compute"}
+{"t": 0.16872269410607885, "event": "layer_start", "worker": 0, "layer": 6, "requests": ["e04", "e08", "e10", "e12", "e14"]}
+{"t": 0.1687773074394122, "event": "io_done", "worker": 0, "label": "e12:L7"}
+{"t": 0.16878635056447183, "event": "state", "worker": 1, "state": "stall"}
+{"t": 0.16878635056447183, "event": "schedule", "worker": 1, "tokens": {"e01": 1, "e03": 1, "e05": 1, "e07": 1, "e09": 2, "e11": 128, "e13": 96, "e15": 26}, "running": ["e01", "e03", "e05", "e07", "e09", "e11", "e13", "e15"], "waiting": ["e17", "e19", "e21", "e23", "e25", "e27", "e29", "e31", "e33", "e35", "e37", "e39", "e41", "e43", "e45", "e47"], "skipped_waiting": [], "free_blocks": 70}
+{"t": 0.16879479953107884, "event": "state", "worker": 0, "state": "stall"}
+{"t": 0.16888635056447182, "event": "io_submit", "worker": 1, "label": "e13:L0", "bytes": 2097152.0}
+{"t": 0.16888635056447182, "event": "io_submit", "worker": 1, "label": "e13:L1", "bytes": 2097152.0}
+{"t": 0.16888653410607884, "event": "io_done", "worker": 0, "label": "e14:L7"}
+{"t": 0.16888653410607884, "event": "state", "worker": 0, "state": "compute"}
+{"t": 0.16888653410607884, "event": "layer_start", "worker": 0, "layer": 7, "requests": ["e04", "e08", "e10", "e12", "e14"]}
+{"t": 0.16895863953107884, "event": "request_done", "request": "e04", "worker": 0}
+{"t": 0.16895863953107884, "event": "request_done", "request": "e10", "worker": 0}
+{"t": 0.16895863953107884, "event": "state", "worker": 0, "state": "stall"}
+{"t": 0.16895863953107884, "event": "schedule", "worker": 0, "tokens": {"e08": 1, "e12": 64, "e14": 128, "e16": 63}, "running": ["e08", "e12", "e14", "e16"], "waiting": ["e18", "e20", "e22", "e24", "e26", "e28", "e30", "e32", "e34", "e36", "e38", "e40", "e42", "e44", "e46"], "skipped_waiting": [], "free_blocks": 98}
+{"t": 0.16905863953107883, "event": "io_submit", "worker": 0, "label": "e16:L0", "bytes": 2097152.0}
+{"t": 0.16905863953107883, "event": "io_submit", "worker": 0, "label": "e16:L1", "bytes": 2097152.0}
+{"t": 0.1819935505644718, "event": "io_done", "worker": 1, "label": "e13:L0"}
+{"t": 0.1819935505644718, "event": "state", "worker": 1, "state": "compute"}
+{"t": 0.1819935505644718, "event": "layer_start", "worker": 1, "layer": 0, "requests": ["e01", "e03", "e05", "e07", "e09", "e11", "e13", "e15"]}
+{"t": 0.18204816389780515, "event": "io_done", "worker": 0, "label": "e16:L0"}
+{"t": 0.18204816389780515, "event": "state", "worker": 0, "state": "compute"}
+{"t": 0.18204816389780515, "event": "layer_start", "worker": 0, "layer": 0, "requests": ["e08", "e12", "e14", "e16"]}
+{"t": 0.1820646184144718, "event": "state", "worker": 1, "state": "stall"}
+{"t": 0.1821027772311385, "event": "io_done", "worker": 0, "label": "e16:L1"}
+{"t": 0.18212030357280515, "event": "layer_start", "worker": 0, "layer": 1, "requests": ["e08", "e12", "e14", "e16"]}
+{"t": 0.1821646184144718, "event": "io_submit", "worker": 1, "label": "e13:L2", "bytes": 2097152.0}
+{"t": 0.18219244324780515, "event": "state", "worker": 0, "state": "stall"}
+{"t": 0.18222030357280514, "event": "io_submit", "worker": 0, "label": "e16:L2", "bytes": 2097152.0}
+{"t": 0.18229244324780514, "event": "io_submit", "worker": 0, "label": "e16:L3", "bytes": 2097152.0}
+{"t": 0.18877283174780513, "event": "io_done", "worker": 0, "label": "e16:L2"}
+{"t": 0.18877283174780513, "event": "state", "worker": 0, "state": "compute"}
+{"t": 0.18877283174780513, "event": "layer_start", "worker": 0, "layer": 2, "requests": ["e08", "e12", "e14", "e16"]}
+{"t": 0.18882744508113847, "event": "io_done", "worker": 0, "label": "e16:L3"}
+{"t": 0.18884497142280512, "event": "layer_start", "worker": 0, "layer": 3, "requests": ["e08", "e12", "e14", "e16"]}
+{"t": 0.18891711109780512, "event": "state", "worker": 0, "state": "stall"}
+{"t": 0.1889449714228051, "event": "io_submit", "worker": 0, "label": "e16:L4", "bytes": 2097152.0}
+{"t": 0.18898405723113845, "event": "io_done", "worker": 1, "label": "e13:L1"}
+{"t": 0.18898405723113845, "event": "state", "worker": 1, "state": "compute"}
+{"t": 0.18898405723113845, "event": "layer_start", "worker": 1, "layer": 1, "requests": ["e01", "e03", "e05", "e07", "e09", "e11", "e13", "e15"]}
+{"t": 0.1890171110978051, "event": "io_submit", "worker": 0, "label": "e16:L5", "bytes": 2097152.0}
+{"t": 0.18905512508113845, "event": "state", "worker": 1, "state": "stall"}
+{"t": 0.18915512508113844, "event": "io_submit", "worker": 1, "label": "e13:L3", "bytes": 2097152.0}
+{"t": 0.19233099808947177, "event": "io_done", "worker": 0, "label": "e16:L4"}
+{"t": 0.19233099808947177, "event": "state", "worker": 0, "state": "compute"}
+{"t": 0.19233099808947177, "event": "layer_start", "worker": 0, "layer": 4, "requests": ["e08", "e12", "e14", "e16"]}
+{"t": 0.19240313776447177, "event": "state", "worker": 0, "state": "stall"}
+{"t": 0.19244022475613842, "event": "io_done", "worker": 0, "label": "e16:L5"}
+{"t": 0.19244022475613842, "event": "state", "worker": 0, "state": "compute"}
+{"t": 0.19244022475613842, "event": "layer_start", "worker": 0, "layer": 5, "requests": ["e08", "e12", "e14", "e16"]}
+{"t": 0.19250313776447175, "event": "io_submit", "worker": 0, "label": "e16:L6", "bytes": 2097152.0}
+{"t": 0.19251236443113842, "event": "state", "worker": 0, "state": "stall"}
+{"t": 0.1926123644311384, "event": "io_submit", "worker": 0, "label": "e16:L7", "bytes": 2097152.0}
+{"t": 0.19597456389780513, "event": "io_done", "worker": 1, "label": "e13:L2"}
+{"t": 0.19597456389780513, "event": "state", "worker": 1, "state": "compute"}
+{"t": 0.19597456389780513, "event": "layer_start", "worker": 1, "layer": 2, "requests": ["e01", "e03", "e05", "e07", "e09", "e11", "e13", "e15"]}
+{"t": 0.19598236413918443, "event": "io_done", "worker": 0, "label": "e16:L6"}
+{"t": 0.19598236413918443, "event": "state", "worker": 0, "state": "compute"}
+{"t": 0.19598236413918443, "event": "layer_start", "worker": 0, "layer": 6, "requests": ["e08", "e12", "e14", "e16"]}
+{"t": 0.19603697747251778, "event": "io_done", "worker": 0, "label": "e16:L7"}
+{"t": 0.19604563174780512, "event": "state", "worker": 1, "state": "stall"}
+{"t": 0.19605450381418443, "event": "layer_start", "worker": 0, "layer": 7, "requests": ["e08", "e12", "e14", "e16"]}
+{"t": 0.19612664348918443, "event": "request_done", "request": "e08", "worker": 0}
+{"t": 0.19612664348918443, "event": "state", "worker": 0, "state": "stall"}
+{"t": 0.19612664348918443, "event": "schedule", "worker": 0, "tokens": {"e12": 1, "e14": 67, "e16": 128, "e18": 60}, "running": ["e12", "e14", "e16", "e18"], "waiting": ["e20", "e22", "e24", "e26", "e28", "e30", "e32", "e34", "e36", "e38", "e40", "e42", "e44", "e46"], "skipped_waiting": [], "free_blocks": 62}
+{"t": 0.1961456317478051, "event": "io_submit", "worker": 1, "label": "e13:L4", "bytes": 2097152.0}
+{"t": 0.19622664348918442, "event": "io_submit", "worker": 0, "label": "e18:L0", "bytes": 3145728.0}
+{"t": 0.19622664348918442, "event": "io_submit", "worker": 0, "label": "e18:L1", "bytes": 3145728.0}
+{"t": 0.20291768508113844, "event": "io_done", "worker": 0, "label": "e18:L0"}
+{"t": 0.20291768508113844, "event": "state", "worker": 0, "state": "compute"}
+{"t": 0.20291768508113844, "event": "layer_start", "worker": 0, "layer": 0, "requests": ["e12", "e14", "e16", "e18"]}
+{"t": 0.2029650705644718, "event": "io_done", "worker": 1, "label": "e13:L3"}
+{"t": 0.2029650705644718, "event": "state", "worker": 1, "state": "compute"}
+{"t": 0.2029650705644718, "event": "layer_start", "worker": 1, "layer": 3, "requests": ["e01", "e03", "e05", "e07", "e09", "e11", "e13", "e15"]}
+{"t": 0.20299002393113844, "event": "state", "worker": 0, "state": "stall"}
+{"t": 0.2030361384144718, "event": "state", "worker": 1, "state": "stall"}
+{"t": 0.20309002393113842, "event": "io_submit", "worker": 0, "label": "e18:L2", "bytes": 3145728.0}
+{"t": 0.20313613841447178, "event": "io_submit", "worker": 1, "label": "e13:L5", "bytes": 2097152.0}
+{"t": 0.20360881186863863, "event": "io_done", "worker": 0, "label": "e18:L1"}
+{"t": 0.20360881186863863, "event": "state", "worker": 0, "state": "compute"}
+{"t": 0.20360881186863863, "event": "layer_start", "worker": 0, "layer": 1, "requests": ["e12", "e14", "e16", "e18"]}
+{"t": 0.20368115071863863, "event": "state", "worker": 0, "state": "stall"}
+{"t": 0.20378115071863862, "event": "io_submit", "worker": 0, "label": "e18:L3", "bytes": 3145728.0}
+{"t": 0.20783288508113845, "event": "io_done", "worker": 0, "label": "e18:L2"}
+{"t": 0.20783288508113845, "event": "state", "worker": 0, "state": "compute"}
+{"t": 0.20783288508113845, "event": "layer_start", "worker": 0, "layer": 2, "requests": ["e12", "e14", "e16", "e18"]}
+{"t": 0.20790522393113844, "event": "state", "worker": 0, "state": "stall"}
+{"t": 0.20800522393113843, "event": "io_submit", "worker": 0, "label": "e18:L4", "bytes": 3145728.0}
+{"t": 0.20995557723113847, "event": "io_done", "worker": 1, "label": "e13:L4"}
+{"t": 0.20995557723113847, "event": "state", "worker": 1, "state": "compute"}
+{"t": 0.20995557723113847, "event": "layer_start", "worker": 1, "layer": 4, "requests": ["e01", "e03", "e05", "e07", "e09", "e11", "e13", "e15"]}
+{"t": 0.21002664508113847, "event": "state", "worker": 1, "state": "stall"}
+{"t": 0.21012664508113846, "event": "io_submit", "worker": 1, "label": "e13:L6", "bytes": 2097152.0}
+{"t": 0.21060257418482042, "event": "io_done", "worker": 0, "label": "e18:L3"}
+{"t": 0.21060257418482042, "event": "state", "worker": 0, "state": "compute"}
+{"t": 0.21060257418482042, "event": "layer_start", "worker": 0, "layer": 3, "requests": ["e12", "e14", "e16", "e18"]}
+{"t": 0.21067491303482042, "event": "state", "worker": 0, "state": "stall"}
+{"t": 0.2107749130348204, "event": "io_submit", "worker": 0, "label": "e18:L5", "bytes": 3145728.0}
+{"t": 0.2123376960106907, "event": "io_done", "worker": 0, "label": "e18:L4"}
+{"t": 0.2123376960106907, "event": "state", "worker": 0, "state": "compute"}
+{"t": 0.2123376960106907, "event": "layer_start", "worker": 0, "layer": 4, "requests": ["e12", "e14", "e16", "e18"]}
+{"t": 0.21241003486069068, "event": "state", "worker": 0, "state": "stall"}
+{"t": 0.21251003486069067, "event": "io_submit", "worker": 0, "label": "e18:L6", "bytes": 3145728.0}
+{"t": 0.21694608389780515, "event": "io_done", "worker": 1, "label": "e13:L5"}
+{"t": 0.21694608389780515, "event": "state", "worker": 1, "state": "compute"}
+{"t": 0.21694608389780515, "event": "layer_start", "worker": 1, "layer": 5, "requests": ["e01", "e03", "e05", "e07", "e09", "e11", "e13", "e15"]}
+{"t": 0.21701715174780514, "event": "state", "worker": 1, "state": "stall"}
+{"t": 0.21705238882574404, "event": "io_done", "worker": 0, "label": "e18:L5"}
+{"t": 0.21705238882574404, "event": "state", "worker": 0, "state": "compute"}
+{"t": 0.21705238882574404, "event": "layer_start", "worker": 0, "layer": 5, "requests": ["e12", "e14", "e16", "e18"]}
+{"t": 0.21711715174780513, "event": "io_submit", "worker": 1, "label": "e13:L7", "bytes": 2097152.0}
+{"t": 0.21712472767574403, "event": "state", "worker": 0, "state": "stall"}
+{"t": 0.21722472767574402, "event": "io_submit", "worker": 0, "label": "e18:L7", "bytes": 3145728.0}
+{"t": 0.21774351561324423, "event": "io_done", "worker": 0, "label": "e18:L6"}
+{"t": 0.21774351561324423, "event": "state", "worker": 0, "state": "compute"}
+{"t": 0.21774351561324423, "event": "layer_start", "worker": 0, "layer": 6, "requests": ["e12", "e14", "e16", "e18"]}
+{"t": 0.21781585446324422, "event": "state", "worker": 0, "state": "stall"}
+{"t": 0.22393659056447182, "event": "io_done", "worker": 1, "label": "e13:L6"}
+{"t": 0.22393659056447182, "event": "state", "worker": 1, "state": "compute"}
+{"t": 0.22393659056447182, "event": "layer_start", "worker": 1, "layer": 6, "requests": ["e01", "e03", "e05", "e07", "e09", "e11", "e13", "e15"]}
+{"t": 0.22393738691694148, "event": "io_done", "worker": 0, "label": "e18:L7"}
+{"t": 0.22393738691694148, "event": "state", "worker": 0, "state": "compute"}
+{"t": 0.22393738691694148, "event": "layer_start", "worker": 0, "layer": 7, "requests": ["e12", "e14", "e16", "e18"]}
+{"t": 0.22400765841447182, "event": "state", "worker": 1, "state": "stall"}
+{"t": 0.22400972576694148, "event": "state", "worker": 0, "state": "stall"}
+{"t": 0.22400972576694148, "event": "schedule", "worker": 0, "tokens": {"e12": 1, "e14": 1, "e16": 1, "e18": 128, "e20": 125}, "running": ["e12", "e14", "e16", "e18", "e20"], "waiting": ["e22", "e24", "e26", "e28", "e30", "e32", "e34", "e36", "e38", "e40", "e42", "e44", "e46"], "skipped_waiting": [], "free_blocks": 29}
+{"t": 0.22410972576694146, "event": "io_submit", "worker": 0, "label": "e20:L0", "bytes": 1048576.0}
+{"t": 0.22410972576694146, "event": "io_submit", "worker": 0, "label": "e20:L1", "bytes": 1048576.0}
+{"t": 0.22481040389780516, "event": "io_done", "worker": 1, "label": "e13:L7"}
+{"t": 0.22481040389780516, "event": "state", "worker": 1, "state": "compute"}
+{"t": 0.22481040389780516, "event": "layer_start", "worker": 1, "layer": 7, "requests": ["e01", "e03", "e05", "e07", "e09", "e11", "e13", "e15"]}
+{"t": 0.22488147174780515, "event": "state", "worker": 1, "state": "stall"}
+{"t": 0.22488147174780515, "event": "schedule", "worker": 1, "tokens": {"e01": 1, "e03": 1, "e05": 1, "e07": 1, "e09": 1, "e11": 32, "e13": 1, "e15": 128}, "running": ["e01", "e03", "e05", "e07", "e09", "e11", "e13", "e15"], "waiting": ["e17", "e19", "e21", "e23", "e25", "e27", "e29", "e31", "e33", "e35", "e37", "e39", "e41", "e43", "e45", "e47"], "skipped_waiting": [], "free_blocks": 57}
+{"t": 0.22488147174780515, "event": "state", "worker": 1, "state": "compute"}
+{"t": 0.22488147174780515, "event": "layer_start", "worker": 1, "layer": 0, "requests": ["e01", "e03", "e05", "e07", "e09", "e11", "e13", "e15"]}
+{"t": 0.22492945889780516, "event": "layer_start", "worker": 1, "layer": 1, "requests": ["e01", "e03", "e05", "e07", "e09", "e11", "e13", "e15"]}
+{"t": 0.22497744604780517, "event": "layer_start", "worker": 1, "layer": 2, "requests": ["e01", "e03", "e05", "e07", "e09", "e11", "e13", "e15"]}
+{"t": 0.22502543319780519, "event": "layer_start", "worker": 1, "layer": 3, "requests": ["e01", "e03", "e05", "e07", "e09", "e11", "e13", "e15"]}
+{"t": 0.2250734203478052, "event": "layer_start", "worker": 1, "layer": 4, "requests": ["e01", "e03", "e05", "e07", "e09", "e11", "e13", "e15"]}
+{"t": 0.2251214074978052, "event": "layer_start", "worker": 1, "layer": 5, "requests": ["e01", "e03", "e05", "e07", "e09", "e11", "e13", "e15"]}
+{"t": 0.22516939464780522, "event": "layer_start", "worker": 1, "layer": 6, "requests": ["e01", "e03", "e05", "e07", "e09", "e11", "e13", "e15"]}
+{"t": 0.22521738179780523, "event": "layer_start", "worker": 1, "layer": 7, "requests": ["e01", "e03", "e05", "e07", "e09", "e11", "e13", "e15"]}
+{"t": 0.22526536894780524, "event": "request_done", "request": "e01", "worker": 1}
+{"t": 0.22526536894780524, "event": "request_done", "request": "e05", "worker": 1}
+{"t": 0.22526536894780524, "event": "state", "worker": 1, "state": "stall"}
+{"t": 0.22526536894780524, "event": "schedule", "worker": 1, "tokens": {"e03": 1, "e07": 1, "e09": 1, "e11": 1, "e13": 1, "e15": 6, "e17": 96, "e19": 128}, "running": ["e03", "e07", "e09", "e11", "e13", "e15", "e17", "e19"], "waiting": ["e21", "e23", "e25", "e27", "e29", "e31", "e33", "e35", "e37", "e39", "e41", "e43", "e45", "e47"], "skipped_waiting": [], "free_blocks": 88}
+{"t": 0.22536536894780523, "event": "io_submit", "worker": 1, "label": "e17:L0", "bytes": 1048576.0}
+{"t": 0.22536536894780523, "event": "io_submit", "worker": 1, "label": "e17:L1", "bytes": 1048576.0}
+{"t": 0.22574812576694145, "event": "io_done", "worker": 0, "label": "e20:L0"}
+{"t": 0.22574812576694145, "event": "state", "worker": 0, "state": "compute"}
+{"t": 0.22574812576694145, "event": "layer_start", "worker": 0, "layer": 0, "requests": ["e12", "e14", "e16", "e18", "e20"]}
+{"t": 0.22582033024194145, "event": "state", "worker": 0, "state": "stall"}
+{"t": 0.2258573524336081, "event": "io_done", "worker": 0, "label": "e20:L1"}
+{"t": 0.2258573524336081, "event": "state", "worker": 0, "state": "compute"}
+{"t": 0.2258573524336081, "event": "layer_start", "worker": 0, "layer": 1, "requests": ["e12", "e14", "e16", "e18", "e20"]}
+{"t": 0.22592033024194144, "event": "io_submit", "worker": 0, "label": "e20:L2", "bytes": 1048576.0}
+{"t": 0.2259295569086081, "event": "state", "worker": 0, "state": "stall"}
+{"t": 0.2260295569086081, "event": "io_submit", "worker": 0, "label": "e20:L3", "bytes": 1048576.0}
+{"t": 0.22755873024194143, "event": "io_done", "worker": 0, "label": "e20:L2"}
+{"t": 0.22755873024194143, "event": "state", "worker": 0, "state": "compute"}
+{"t": 0.22755873024194143, "event": "layer_start", "worker": 0, "layer": 2, "requests": ["e12", "e14", "e16", "e18", "e20"]}
+{"t": 0.22763093471694143, "event": "state", "worker": 0, "state": "stall"}
+{"t": 0.22766795690860808, "event": "io_done", "worker": 0, "label": "e20:L3"}
+{"t": 0.22766795690860808, "event": "state", "worker": 0, "state": "compute"}
+{"t": 0.22766795690860808, "event": "layer_start", "worker": 0, "layer": 3, "requests": ["e12", "e14", "e16", "e18", "e20"]}
+{"t": 0.22773093471694142, "event": "io_submit", "worker": 0, "label": "e20:L4", "bytes": 1048576.0}
+{"t": 0.2277401613836081, "event": "state", "worker": 0, "state": "stall"}
+{"t": 0.22784016138360808, "event": "io_submit", "worker": 0, "label": "e20:L5", "bytes": 1048576.0}
+{"t": 0.2293693347169414, "event": "io_done", "worker": 0, "label": "e20:L4"}
+{"t": 0.2293693347169414, "event": "state", "worker": 0, "state": "compute"}
+{"t": 0.2293693347169414, "event": "layer_start", "worker": 0, "layer": 4, "requests": ["e12", "e14", "e16", "e18", "e20"]}
+{"t": 0.2294415391919414, "event": "state", "worker": 0, "state": "stall"}
+{"t": 0.22947856138360806, "event": "io_done", "worker": 0, "label": "e20:L5"}
+{"t": 0.22947856138360806, "event": "state", "worker": 0, "state": "compute"}
+{"t": 0.22947856138360806, "event": "layer_start", "worker": 0, "layer": 5, "requests": ["e12", "e14", "e16", "e18", "e20"]}
+{"t": 0.2295415391919414, "event": "io_submit", "worker": 0, "label": "e20:L6", "bytes": 1048576.0}
+{"t": 0.22955076585860806, "event": "state", "worker": 0, "state": "stall"}
+{"t": 0.22965076585860805, "event": "io_submit", "worker": 0, "label": "e20:L7", "bytes": 1048576.0}
+{"t": 0.23117993919194138, "event": "io_done", "worker": 0, "label": "e20:L6"}
+{"t": 0.23117993919194138, "event": "state", "worker": 0, "state": "compute"}
+{"t": 0.23117993919194138, "event": "layer_start", "worker": 0, "layer": 6, "requests": ["e12", "e14", "e16", "e18", "e20"]}
+{"t": 0.23125214366694138, "event": "state", "worker": 0, "state": "stall"}
+{"t": 0.23128916585860804, "event": "io_done", "worker": 0, "label": "e20:L7"}
+{"t": 0.23128916585860804, "event": "state", "worker": 0, "state": "compute"}
+{"t": 0.23128916585860804, "event": "layer_start", "worker": 0, "layer": 7, "requests": ["e12", "e14", "e16", "e18", "e20"]}
+{"t": 0.23136137033360804, "event": "state", "worker": 0, "state": "stall"}
+{"t": 0.23136137033360804, "event": "schedule", "worker": 0, "tokens": {"e12": 1, "e14": 1, "e16": 1, "e18": 128, "e20": 67}, "running": ["e12", "e14", "e16", "e18", "e20"], "waiting": ["e22", "e24", "e26", "e28", "e30", "e32", "e34", "e36", "e38", "e40", "e42", "e44", "e46"], "skipped_waiting": [], "free_blocks": 16}
+{"t": 0.23136137033360804, "event": "state", "worker": 0, "state": "compute"}
+{"t": 0.23136137033360804, "event": "layer_start", "worker": 0, "layer": 0, "requests": ["e12", "e14", "e16", "e18", "e20"]}
+{"t": 0.23141912877110804, "event": "layer_start", "worker": 0, "layer": 1, "requests": ["e12", "e14", "e16", "e18", "e20"]}
+{"t": 0.23147688720860804, "event": "layer_start", "worker": 0, "layer": 2, "requests": ["e12", "e14", "e16", "e18", "e20"]}
+{"t": 0.23153464564610804, "event": "layer_start", "worker": 0, "layer": 3, "requests": ["e12", "e14", "e16", "e18", "e20"]}
+{"t": 0.23159240408360804, "event": "layer_start", "worker": 0, "layer": 4, "requests": ["e12", "e14", "e16", "e18", "e20"]}
+{"t": 0.23165016252110804, "event": "layer_start", "worker": 0, "layer": 5, "requests": ["e12", "e14", "e16", "e18", "e20"]}
+{"t": 0.23170792095860804, "event": "layer_start", "worker": 0, "layer": 6, "requests": ["e12", "e14", "e16", "e18", "e20"]}
+{"t": 0.23176567939610804, "event": "layer_start", "worker": 0, "layer": 7, "requests": ["e12", "e14", "e16", "e18", "e20"]}
+{"t": 0.23182343783360804, "event": "state", "worker": 0, "state": "stall"}
+{"t": 0.23182343783360804, "event": "schedule", "worker": 0, "tokens": {"e12": 1, "e14": 1, "e16": 1, "e18": 4, "e20": 1}, "running": ["e12", "e14", "e16", "e18", "e20"], "waiting": ["e22", "e24", "e26", "e28", "e30", "e32", "e34", "e36", "e38", "e40", "e42", "e44", "e46"], "skipped_waiting": [], "free_blocks": 15}
+{"t": 0.23182343783360804, "event": "state", "worker": 0, "state": "compute"}
+{"t": 0.23182343783360804, "event": "layer_start", "worker": 0, "layer": 0, "requests": ["e12", "e14", "e16", "e18", "e20"]}
+{"t": 0.23184012808360804, "event": "layer_start", "worker": 0, "layer": 1, "requests": ["e12", "e14", "e16", "e18", "e20"]}
+{"t": 0.23185681833360805, "event": "layer_start", "worker": 0, "layer": 2, "requests": ["e12", "e14", "e16", "e18", "e20"]}
+{"t": 0.23187350858360806, "event": "layer_start", "worker": 0, "layer": 3, "requests": ["e12", "e14", "e16", "e18", "e20"]}
+{"t": 0.23189019883360806, "event": "layer_start", "worker": 0, "layer": 4, "requests": ["e12", "e14", "e16", "e18", "e20"]}
+{"t": 0.23190688908360807, "event": "layer_start", "worker": 0, "layer": 5, "requests": ["e12", "e14", "e16", "e18", "e20"]}
+{"t": 0.23191896894780523, "event": "io_done", "worker": 1, "label": "e17:L0"}
+{"t": 0.23191896894780523, "event": "state", "worker": 1, "state": "compute"}
+{"t": 0.23191896894780523, "event": "layer_start", "worker": 1, "layer": 0, "requests": ["e03", "e07", "e09", "e11", "e13", "e15", "e17", "e19"]}
+{"t": 0.23192357933360808, "event": "layer_start", "worker": 0, "layer": 6, "requests": ["e12", "e14", "e16", "e18", "e20"]}
+{"t": 0.23194026958360808, "event": "layer_start", "worker": 0, "layer": 7, "requests": ["e12", "e14", "e16", "e18", "e20"]}
+{"t": 0.2319569598336081, "event": "state", "worker": 0, "state": "stall"}
+{"t": 0.2319569598336081, "event": "schedule", "worker": 0, "tokens": {"e12": 1, "e14": 1, "e16": 1, "e18": 1, "e20": 1}, "running": ["e12", "e14", "e16", "e18", "e20"], "waiting": ["e22", "e24", "e26", "e28", "e30", "e32", "e34", "e36", "e38", "e40", "e42", "e44", "e46"], "skipped_waiting": [], "free_blocks": 14}
+{"t": 0.2319569598336081, "event": "state", "worker": 0, "state": "compute"}
+{"t": 0.2319569598336081, "event": "layer_start", "worker": 0, "layer": 0, "requests": ["e12", "e14", "e16", "e18", "e20"]}
+{"t": 0.2319696967711081, "event": "layer_start", "worker": 0, "layer": 1, "requests": ["e12", "e14", "e16", "e18", "e20"]}
+{"t": 0.2319824337086081, "event": "layer_start", "worker": 0, "layer": 2, "requests": ["e12", "e14", "e16", "e18", "e20"]}
+{"t": 0.23198447388530521, "event": "state", "worker": 1, "state": "stall"}
+{"t": 0.2319951706461081, "event": "layer_start", "worker": 0, "layer": 3, "requests": ["e12", "e14", "e16", "e18", "e20"]}
+{"t": 0.23200790758360812, "event": "layer_start", "worker": 0, "layer": 4, "requests": ["e12", "e14", "e16", "e18", "e20"]}
+{"t": 0.23202064452110813, "event": "layer_start", "worker": 0, "layer": 5, "requests": ["e12", "e14", "e16", "e18", "e20"]}
+{"t": 0.23203338145860813, "event": "layer_start", "worker": 0, "layer": 6, "requests": ["e12", "e14", "e16", "e18", "e20"]}
+{"t": 0.23204611839610814, "event": "layer_start", "worker": 0, "layer": 7, "requests": ["e12", "e14", "e16", "e18", "e20"]}
+{"t": 0.23205885533360815, "event": "request_done", "request": "e12", "worker": 0}
+{"t": 0.23205885533360815, "event": "state", "worker": 0, "state": "stall"}
+{"t": 0.23205885533360815, "event": "schedule", "worker": 0, "tokens": {"e14": 1, "e16": 1, "e18": 1, "e20": 1, "e22": 128}, "running": ["e14", "e16", "e18", "e20", "e22"], "waiting": ["e24", "e26", "e28", "e30", "e32", "e34", "e36", "e38", "e40", "e42", "e44", "e46"], "skipped_waiting": [], "free_blocks": 35}
+{"t": 0.2320844738853052, "event": "io_submit", "worker": 1, "label": "e17:L2", "bytes": 1048576.0}
+{"t": 0.23215885533360814, "event": "io_submit", "worker": 0, "label": "e22:L0", "bytes": 2097152.0}
+{"t": 0.23215885533360814, "event": "io_submit", "worker": 0, "label": "e22:L1", "bytes": 2097152.0}
+{"t": 0.23541422228113856, "event": "io_done", "worker": 1, "label": "e17:L1"}
+{"t": 0.23541422228113856, "event": "state", "worker": 1, "state": "compute"}
+{"t": 0.23541422228113856, "event": "layer_start", "worker": 1, "layer": 1, "requests": ["e03", "e07", "e09", "e11", "e13", "e15", "e17", "e19"]}
+{"t": 0.23547972721863855, "event": "state", "worker": 1, "state": "stall"}
+{"t": 0.23554240261866471, "event": "io_done", "worker": 0, "label": "e22:L0"}
+{"t": 0.23554240261866471, "event": "state", "worker": 0, "state": "compute"}
+{"t": 0.23554240261866471, "event": "layer_start", "worker": 0, "layer": 0, "requests": ["e14", "e16", "e18", "e20", "e22"]}
+{"t": 0.23557972721863854, "event": "io_submit", "worker": 1, "label": "e17:L3", "bytes": 1048576.0}
+{"t": 0.2355826103936647, "event": "state", "worker": 0, "state": "stall"}
+{"t": 0.23565410866694148, "event": "io_done", "worker": 0, "label": "e22:L1"}
+{"t": 0.23565410866694148, "event": "state", "worker": 0, "state": "compute"}
+{"t": 0.23565410866694148, "event": "layer_start", "worker": 0, "layer": 1, "requests": ["e14", "e16", "e18", "e20", "e22"]}
+{"t": 0.2356826103936647, "event": "io_submit", "worker": 0, "label": "e22:L2", "bytes": 2097152.0}
+{"t": 0.23569431644194147, "event": "state", "worker": 0, "state": "stall"}
+{"t": 0.23579431644194146, "event": "io_submit", "worker": 0, "label": "e22:L3", "bytes": 2097152.0}
+{"t": 0.2389094756144719, "event": "io_done", "worker": 1, "label": "e17:L2"}
+{"t": 0.2389094756144719, "event": "state", "worker": 1, "state": "compute"}
+{"t": 0.2389094756144719, "event": "layer_start", "worker": 1, "layer": 2, "requests": ["e03", "e07", "e09", "e11", "e13", "e15", "e17", "e19"]}
+{"t": 0.2389749805519719, "event": "state", "worker": 1, "state": "stall"}
+{"t": 0.2390653788165607, "event": "io_done", "worker": 0, "label": "e22:L2"}
+{"t": 0.2390653788165607, "event": "state", "worker": 0, "state": "compute"}
+{"t": 0.2390653788165607, "event": "layer_start", "worker": 0, "layer": 2, "requests": ["e14", "e16", "e18", "e20", "e22"]}
+{"t": 0.23907498055197188, "event": "io_submit", "worker": 1, "label": "e17:L4", "bytes": 1048576.0}
+{"t": 0.2391055865915607, "event": "state", "worker": 0, "state": "stall"}
+{"t": 0.239177863726998, "event": "io_done", "worker": 0, "label": "e22:L3"}
+{"t": 0.239177863726998, "event": "state", "worker": 0, "state": "compute"}
+{"t": 0.239177863726998, "event": "layer_start", "worker": 0, "layer": 3, "requests": ["e14", "e16", "e18", "e20", "e22"]}
+{"t": 0.2392055865915607, "event": "io_submit", "worker": 0, "label": "e22:L4", "bytes": 2097152.0}
+{"t": 0.239218071501998, "event": "state", "worker": 0, "state": "stall"}
+{"t": 0.239318071501998, "event": "io_submit", "worker": 0, "label": "e22:L5", "bytes": 2097152.0}
+{"t": 0.24240472894780524, "event": "io_done", "worker": 1, "label": "e17:L3"}
+{"t": 0.24240472894780524, "event": "state", "worker": 1, "state": "compute"}
+{"t": 0.24240472894780524, "event": "layer_start", "worker": 1, "layer": 3, "requests": ["e03", "e07", "e09", "e11", "e13", "e15", "e17", "e19"]}
+{"t": 0.24247023388530523, "event": "state", "worker": 1, "state": "stall"}
+{"t": 0.24257023388530521, "event": "io_submit", "worker": 1, "label": "e17:L5", "bytes": 1048576.0}
+{"t": 0.24258749692579168, "event": "io_done", "worker": 0, "label": "e22:L4"}
+{"t": 0.24258749692579168, "event": "state", "worker": 0, "state": "compute"}
+{"t": 0.24258749692579168, "event": "layer_start", "worker": 0, "layer": 4, "requests": ["e14", "e16", "e18", "e20", "e22"]}
+{"t": 0.24262770470079167, "event": "state", "worker": 0, "state": "stall"}
+{"t": 0.24270083992489402, "event": "io_done", "worker": 0, "label": "e22:L5"}
+{"t": 0.24270083992489402, "event": "state", "worker": 0, "state": "compute"}
+{"t": 0.24270083992489402, "event": "layer_start", "worker": 0, "layer": 5, "requests": ["e14", "e16", "e18", "e20", "e22"]}
+{"t": 0.24272770470079166, "event": "io_submit", "worker": 0, "label": "e22:L6", "bytes": 2097152.0}
+{"t": 0.24274104769989402, "event": "state", "worker": 0, "state": "stall"}
+{"t": 0.242841047699894, "event": "io_submit", "worker": 0, "label": "e22:L7", "bytes": 2097152.0}
+{"t": 0.24589998228113857, "event": "io_done", "worker": 1, "label": "e17:L4"}
+{"t": 0.24589998228113857, "event": "state", "worker": 1, "state": "compute"}
+{"t": 0.24589998228113857, "event": "layer_start", "worker": 1, "layer": 4, "requests": ["e03", "e07", "e09", "e11", "e13", "e15", "e17", "e19"]}
+{"t": 0.24596548721863856, "event": "state", "worker": 1, "state": "stall"}
+{"t": 0.24606548721863855, "event": "io_submit", "worker": 1, "label": "e17:L6", "bytes": 1048576.0}
+{"t": 0.24610878350624485, "event": "io_done", "worker": 0, "label": "e22:L6"}
+{"t": 0.24610878350624485, "event": "state", "worker": 0, "state": "compute"}
+{"t": 0.24610878350624485, "event": "layer_start", "worker": 0, "layer": 6, "requests": ["e14", "e16", "e18", "e20", "e22"]}
+{"t": 0.24614899128124484, "event": "state", "worker": 0, "state": "stall"}
+{"t": 0.24622295803412497, "event": "io_done", "worker": 0, "label": "e22:L7"}
+{"t": 0.24622295803412497, "event": "state", "worker": 0, "state": "compute"}
+{"t": 0.24622295803412497, "event": "layer_start", "worker": 0, "layer": 7, "requests": ["e14", "e16", "e18", "e20", "e22"]}
+{"t": 0.24626316580912497, "event": "request_done", "request": "e16", "worker": 0}
+{"t": 0.24626316580912497, "event": "request_done", "request": "e20", "worker": 0}
+{"t": 0.24626316580912497, "event": "state", "worker": 0, "state": "stall"}
+{"t": 0.24626316580912497, "event": "schedule", "worker": 0, "tokens": {"e14": 1, "e18": 1, "e22": 128, "e24": 126}, "running": ["e14", "e18", "e22", "e24"], "waiting": ["e26", "e28", "e30", "e32", "e34", "e36", "e38", "e40", "e42", "e44", "e46"], "skipped_waiting": [], "free_blocks": 45}
+{"t": 0.24636316580912496, "event": "io_submit", "worker": 0, "label": "e24:L0", "bytes": 3145728.0}
+{"t": 0.24636316580912496, "event": "io_submit", "worker": 0, "label": "e24:L1", "bytes": 3145728.0}
+{"t": 0.2493952356144719, "event": "io_done", "worker": 1, "label": "e17:L5"}
+{"t": 0.2493952356144719, "event": "state", "worker": 1, "state": "compute"}
+{"t": 0.2493952356144719, "event": "layer_start", "worker": 1, "layer": 5, "requests": ["e03", "e07", "e09", "e11", "e13", "e15", "e17", "e19"]}
+{"t": 0.2494607405519719, "event": "state", "worker": 1, "state": "stall"}
+{"t": 0.2495607405519719, "event": "io_submit", "worker": 1, "label": "e17:L7", "bytes": 1048576.0}
+{"t": 0.2512123847410243, "event": "io_done", "worker": 0, "label": "e24:L0"}
+{"t": 0.2512123847410243, "event": "state", "worker": 0, "state": "compute"}
+{"t": 0.2512123847410243, "event": "layer_start", "worker": 0, "layer": 0, "requests": ["e14", "e18", "e22", "e24"]}
+{"t": 0.2512850924660243, "event": "state", "worker": 0, "state": "stall"}
+{"t": 0.2513850924660243, "event": "io_submit", "worker": 0, "label": "e24:L2", "bytes": 3145728.0}
+{"t": 0.25257675767961774, "event": "io_done", "worker": 1, "label": "e17:L6"}
+{"t": 0.25257675767961774, "event": "state", "worker": 1, "state": "compute"}
+{"t": 0.25257675767961774, "event": "layer_start", "worker": 1, "layer": 6, "requests": ["e03", "e07", "e09", "e11", "e13", "e15", "e17", "e19"]}
+{"t": 0.25264226261711775, "event": "state", "worker": 1, "state": "stall"}
+{"t": 0.2533273956144719, "event": "io_done", "worker": 1, "label": "e17:L7"}
+{"t": 0.2533273956144719, "event": "state", "worker": 1, "state": "compute"}
+{"t": 0.2533273956144719, "event": "layer_start", "worker": 1, "layer": 7, "requests": ["e03", "e07", "e09", "e11", "e13", "e15", "e17", "e19"]}
+{"t": 0.2533929005519719, "event": "state", "worker": 1, "state": "stall"}
+{"t": 0.2533929005519719, "event": "schedule", "worker": 1, "tokens": {"e03": 1, "e07": 1, "e09": 1, "e11": 1, "e13": 1, "e15": 1, "e17": 1, "e19": 32}, "running": ["e03", "e07", "e09", "e11", "e13", "e15", "e17", "e19"], "waiting": ["e21", "e23", "e25", "e27", "e29", "e31", "e33", "e35", "e37", "e39", "e41", "e43", "e45", "e47"], "skipped_waiting": [], "free_blocks": 84}
+{"t": 0.2533929005519719, "event": "state", "worker": 1, "state": "compute"}
+{"t": 0.2533929005519719, "event": "layer_start", "worker": 1, "layer": 0, "requests": ["e03", "e07", "e09", "e11", "e13", "e15", "e17", "e19"]}
+{"t": 0.25343144203915136, "event": "layer_start", "worker": 1, "layer": 1, "requests": ["e03", "e07", "e09", "e11", "e13", "e15", "e17", "e19"]}
+{"t": 0.2534699835263308, "event": "layer_start", "worker": 1, "layer": 2, "requests": ["e03", "e07", "e09", "e11", "e13", "e15", "e17", "e19"]}
+{"t": 0.2535085250135103, "event": "layer_start", "worker": 1, "layer": 3, "requests": ["e03", "e07", "e09", "e11", "e13", "e15", "e17", "e19"]}
+{"t": 0.25354706650068976, "event": "layer_start", "worker": 1, "layer": 4, "requests": ["e03", "e07", "e09", "e11", "e13", "e15", "e17", "e19"]}
+{"t": 0.2535856079878692, "event": "layer_start", "worker": 1, "layer": 5, "requests": ["e03", "e07", "e09", "e11", "e13", "e15", "e17", "e19"]}
+{"t": 0.2536241494750487, "event": "layer_start", "worker": 1, "layer": 6, "requests": ["e03", "e07", "e09", "e11", "e13", "e15", "e17", "e19"]}
+{"t": 0.25366269096222815, "event": "layer_start", "worker": 1, "layer": 7, "requests": ["e03", "e07", "e09", "e11", "e13", "e15", "e17", "e19"]}
+{"t": 0.2537012324494076, "event": "state", "worker": 1, "state": "stall"}
+{"t": 0.2537012324494076, "event": "schedule", "worker": 1, "tokens": {"e03": 1, "e07": 1, "e09": 1, "e11": 1, "e13": 1, "e15": 1, "e17": 1, "e19": 1}, "running": ["e03", "e07", "e09", "e11", "e13", "e15", "e17", "e19"], "waiting": ["e21", "e23", "e25", "e27", "e29", "e31", "e33", "e35", "e37", "e39", "e41", "e43", "e45", "e47"], "skipped_waiting": [], "free_blocks": 83}
+{"t": 0.2537012324494076, "event": "state", "worker": 1, "state": "compute"}
+{"t": 0.2537012324494076, "event": "layer_start", "worker": 1, "layer": 0, "requests": ["e03", "e07", "e09", "e11", "e13", "e15", "e17", "e19"]}
+{"t": 0.2537176480119076, "event": "layer_start", "worker": 1, "layer": 1, "requests": ["e03", "e07", "e09", "e11", "e13", "e15", "e17", "e19"]}
+{"t": 0.2537340635744076, "event": "layer_start", "worker": 1, "layer": 2, "requests": ["e03", "e07", "e09", "e11", "e13", "e15", "e17", "e19"]}
+{"t": 0.25375047913690757, "event": "layer_start", "worker": 1, "layer": 3, "requests": ["e03", "e07", "e09", "e11", "e13", "e15", "e17", "e19"]}
+{"t": 0.25376689469940755, "event": "layer_start", "worker": 1, "layer": 4, "requests": ["e03", "e07", "e09", "e11", "e13", "e15", "e17", "e19"]}
+{"t": 0.25378331026190754, "event": "layer_start", "worker": 1, "layer": 5, "requests": ["e03", "e07", "e09", "e11", "e13", "e15", "e17", "e19"]}
+{"t": 0.2537997258244075, "event": "layer_start", "worker": 1, "layer": 6, "requests": ["e03", "e07", "e09", "e11", "e13", "e15", "e17", "e19"]}
+{"t": 0.2538161413869075, "event": "layer_start", "worker": 1, "layer": 7, "requests": ["e03", "e07", "e09", "e11", "e13", "e15", "e17", "e19"]}
+{"t": 0.2538325569494075, "event": "state", "worker": 1, "state": "stall"}
+{"t": 0.2538325569494075, "event": "schedule", "worker": 1, "tokens": {"e03": 1, "e07": 1, "e09": 1, "e11": 1, "e13": 1, "e15": 1, "e17": 1, "e19": 1}, "running": ["e03", "e07", "e09", "e11", "e13", "e15", "e17", "e19"], "waiting": ["e21", "e23", "e25", "e27", "e29", "e31", "e33", "e35", "e37", "e39", "e41", "e43", "e45", "e47"], "skipped_waiting": [], "free_blocks": 83}
+{"t": 0.2538325569494075, "event": "state", "worker": 1, "state": "compute"}
+{"t": 0.2538325569494075, "event": "layer_start", "worker": 1, "layer": 0, "requests": ["e03", "e07", "e09", "e11", "e13", "e15", "e17", "e19"]}
+{"t": 0.25383567161283094, "event": "io_done", "worker": 0, "label": "e24:L1"}
+{"t": 0.25383567161283094, "event": "state", "worker": 0, "state": "compute"}
+{"t": 0.25383567161283094, "event": "layer_start", "worker": 0, "layer": 1, "requests": ["e14", "e18", "e22", "e24"]}
+{"t": 0.2538489730119075, "event": "layer_start", "worker": 1, "layer": 1, "requests": ["e03", "e07", "e09", "e11", "e13", "e15", "e17", "e19"]}
+{"t": 0.25386538907440753, "event": "layer_start", "worker": 1, "layer": 2, "requests": ["e03", "e07", "e09", "e11", "e13", "e15", "e17", "e19"]}
+{"t": 0.25388180513690756, "event": "layer_start", "worker": 1, "layer": 3, "requests": ["e03", "e07", "e09", "e11", "e13", "e15", "e17", "e19"]}
+{"t": 0.2538982211994076, "event": "layer_start", "worker": 1, "layer": 4, "requests": ["e03", "e07", "e09", "e11", "e13", "e15", "e17", "e19"]}
+{"t": 0.25390837933783095, "event": "state", "worker": 0, "state": "stall"}
+{"t": 0.2539146372619076, "event": "layer_start", "worker": 1, "layer": 5, "requests": ["e03", "e07", "e09", "e11", "e13", "e15", "e17", "e19"]}
+{"t": 0.25393105332440763, "event": "layer_start", "worker": 1, "layer": 6, "requests": ["e03", "e07", "e09", "e11", "e13", "e15", "e17", "e19"]}
+{"t": 0.25394746938690765, "event": "layer_start", "worker": 1, "layer": 7, "requests": ["e03", "e07", "e09", "e11", "e13", "e15", "e17", "e19"]}
+{"t": 0.2539638854494077, "event": "request_done", "request": "e03", "worker": 1}
+{"t": 0.2539638854494077, "event": "request_done", "request": "e07", "worker": 1}
+{"t": 0.2539638854494077, "event": "request_done", "request": "e11", "worker": 1}
+{"t": 0.2539638854494077, "event": "request_done", "request": "e15", "worker": 1}
+{"t": 0.2539638854494077, "event": "state", "worker": 1, "state": "stall"}
+{"t": 0.2539638854494077, "event": "schedule", "worker": 1, "tokens": {"e09": 1, "e13": 1, "e17": 1, "e19": 1, "e21": 96, "e23": 128, "e25": 28}, "running": ["e09", "e13", "e17", "e19", "e21", "e23", "e25"], "waiting": ["e27", "e29", "e31", "e33", "e35", "e37", "e39", "e41", "e43", "e45", "e47"], "skipped_waiting": [], "free_blocks": 31}
+{"t": 0.25400837933783094, "event": "io_submit", "worker": 0, "label": "e24:L3", "bytes": 3145728.0}
+{"t": 0.25406388544940767, "event": "io_submit", "worker": 1, "label": "e21:L0", "bytes": 3145728.0}
+{"t": 0.25406388544940767, "event": "io_submit", "worker": 1, "label": "e25:L0", "bytes": 2097152.0}
+{"t": 0.25406388544940767, "event": "io_submit", "worker": 1, "label": "e21:L1", "bytes": 3145728.0}
+{"t": 0.25406388544940767, "event": "io_submit", "worker": 1, "label": "e25:L1", "bytes": 2097152.0}
+{"t": 0.25652124580912494, "event": "io_done", "worker": 0, "label": "e24:L2"}
+{"t": 0.25652124580912494, "event": "state", "worker": 0, "state": "compute"}
+{"t": 0.25652124580912494, "event": "layer_start", "worker": 0, "layer": 2, "requests": ["e14", "e18", "e22", "e24"]}
+{"t": 0.25659395353412495, "event": "state", "worker": 0, "state": "stall"}
+{"t": 0.25669395353412494, "event": "io_submit", "worker": 0, "label": "e24:L4", "bytes": 3145728.0}
+{"t": 0.25865693568412496, "event": "io_done", "worker": 0, "label": "e24:L3"}
+{"t": 0.25865693568412496, "event": "state", "worker": 0, "state": "compute"}
+{"t": 0.25865693568412496, "event": "layer_start", "worker": 0, "layer": 3, "requests": ["e14", "e18", "e22", "e24"]}
+{"t": 0.25872964340912497, "event": "state", "worker": 0, "state": "stall"}
+{"t": 0.25882964340912495, "event": "io_submit", "worker": 0, "label": "e24:L5", "bytes": 3145728.0}
+{"t": 0.2857033045824537, "event": "io_done", "worker": 1, "label": "e25:L0"}
+{"t": 0.2857033045824537, "event": "io_done", "worker": 1, "label": "e21:L0"}
+{"t": 0.2857033045824537, "event": "state", "worker": 1, "state": "compute"}
+{"t": 0.2857033045824537, "event": "layer_start", "worker": 1, "layer": 0, "requests": ["e09", "e13", "e17", "e19", "e21", "e23", "e25"]}
+{"t": 0.2857748468949537, "event": "state", "worker": 1, "state": "stall"}
+{"t": 0.2858748468949537, "event": "io_submit", "worker": 1, "label": "e21:L2", "bytes": 3145728.0}
+{"t": 0.2858748468949537, "event": "io_submit", "worker": 1, "label": "e25:L2", "bytes": 2097152.0}
+{"t": 0.2880195310208667, "event": "io_done", "worker": 0, "label": "e24:L4"}
+{"t": 0.2880195310208667, "event": "state", "worker": 0, "state": "compute"}
+{"t": 0.2880195310208667, "event": "layer_start", "worker": 0, "layer": 4, "requests": ["e14", "e18", "e22", "e24"]}
+{"t": 0.2880922387458667, "event": "state", "worker": 0, "state": "stall"}
+{"t": 0.2881922387458667, "event": "io_submit", "worker": 0, "label": "e24:L6", "bytes": 3145728.0}
+{"t": 0.28953957479943815, "event": "io_done", "worker": 0, "label": "e24:L5"}
+{"t": 0.28953957479943815, "event": "state", "worker": 0, "state": "compute"}
+{"t": 0.28953957479943815, "event": "layer_start", "worker": 0, "layer": 5, "requests": ["e14", "e18", "e22", "e24"]}
+{"t": 0.28961228252443816, "event": "state", "worker": 0, "state": "stall"}
+{"t": 0.28971228252443815, "event": "io_submit", "worker": 0, "label": "e24:L7", "bytes": 3145728.0}
+{"t": 0.30274398934338187, "event": "io_done", "worker": 0, "label": "e24:L6"}
+{"t": 0.30274398934338187, "event": "state", "worker": 0, "state": "compute"}
+{"t": 0.30274398934338187, "event": "layer_start", "worker": 0, "layer": 6, "requests": ["e14", "e18", "e22", "e24"]}
+{"t": 0.3028166970683819, "event": "state", "worker": 0, "state": "stall"}
+{"t": 0.3031262826767152, "event": "io_done", "worker": 0, "label": "e24:L7"}
+{"t": 0.3031262826767152, "event": "state", "worker": 0, "state": "compute"}
+{"t": 0.3031262826767152, "event": "layer_start", "worker": 0, "layer": 7, "requests": ["e14", "e18", "e22", "e24"]}
+{"t": 0.3031989904017152, "event": "state", "worker": 0, "state": "stall"}
+{"t": 0.3031989904017152, "event": "schedule", "worker": 0, "tokens": {"e14": 1, "e18": 1, "e22": 64, "e24": 66, "e26": 124}, "running": ["e14", "e18", "e22", "e24", "e26"], "waiting": ["e28", "e30", "e32", "e34", "e36", "e38", "e40", "e42", "e44", "e46"], "skipped_waiting": [], "free_blocks": 13}
+{"t": 0.3032989904017152, "event": "io_submit", "worker": 0, "label": "e26:L0", "bytes": 1048576.0}
+{"t": 0.3032989904017152, "event": "io_submit", "worker": 0, "label": "e26:L1", "bytes": 1048576.0}
+{"t": 0.303434338782741, "event": "io_done", "worker": 1, "label": "e25:L1"}
+{"t": 0.303434338782741, "event": "io_done", "worker": 1, "label": "e21:L1"}
+{"t": 0.303434338782741, "event": "state", "worker": 1, "state": "compute"}
+{"t": 0.303434338782741, "event": "layer_start", "worker": 1, "layer": 1, "requests": ["e09", "e13", "e17", "e19", "e21", "e23", "e25"]}
+{"t": 0.303505881095241, "event": "state", "worker": 1, "state": "stall"}
+{"t": 0.303605881095241, "event": "io_submit", "worker": 1, "label": "e21:L3", "bytes": 3145728.0}
+{"t": 0.303605881095241, "event": "io_submit", "worker": 1, "label": "e25:L3", "bytes": 2097152.0}
+{"t": 0.3049373904017152, "event": "io_done", "worker": 0, "label": "e26:L0"}
+{"t": 0.3049373904017152, "event": "state", "worker": 0, "state": "compute"}
+{"t": 0.3049373904017152, "event": "layer_start", "worker": 0, "layer": 0, "requests": ["e14", "e18", "e22", "e24", "e26"]}
+{"t": 0.3050095606017152, "event": "state", "worker": 0, "state": "stall"}
+{"t": 0.3050466170683819, "event": "io_done", "worker": 0, "label": "e26:L1"}
+{"t": 0.3050466170683819, "event": "state", "worker": 0, "state": "compute"}
+{"t": 0.3050466170683819, "event": "layer_start", "worker": 0, "layer": 1, "requests": ["e14", "e18", "e22", "e24", "e26"]}
+{"t": 0.3051095606017152, "event": "io_submit", "worker": 0, "label": "e26:L2", "bytes": 1048576.0}
+{"t": 0.3051187872683819, "event": "state", "worker": 0, "state": "stall"}
+{"t": 0.30521878726838186, "event": "io_submit", "worker": 0, "label": "e26:L3", "bytes": 1048576.0}
+{"t": 0.3200122883221847, "event": "io_done", "worker": 0, "label": "e26:L2"}
+{"t": 0.3200122883221847, "event": "state", "worker": 0, "state": "compute"}
+{"t": 0.3200122883221847, "event": "layer_start", "worker": 0, "layer": 2, "requests": ["e14", "e18", "e22", "e24", "e26"]}
+{"t": 0.3200844585221847, "event": "state", "worker": 0, "state": "stall"}
+{"t": 0.3201215149888514, "event": "io_done", "worker": 0, "label": "e26:L3"}
+{"t": 0.3201215149888514, "event": "state", "worker": 0, "state": "compute"}
+{"t": 0.3201215149888514, "event": "layer_start", "worker": 0, "layer": 3, "requests": ["e14", "e18", "e22", "e24", "e26"]}
+{"t": 0.3201844585221847, "event": "io_submit", "worker": 0, "label": "e26:L4", "bytes": 1048576.0}
+{"t": 0.3201936851888514, "event": "state", "worker": 0, "state": "stall"}
+{"t": 0.3202936851888514, "event": "io_submit", "worker": 0, "label": "e26:L5", "bytes": 1048576.0}
+{"t": 0.32091060544940764, "event": "io_done", "worker": 1, "label": "e25:L2"}
+{"t": 0.32091060544940764, "event": "io_done", "worker": 1, "label": "e21:L2"}
+{"t": 0.32091060544940764, "event": "state", "worker": 1, "state": "compute"}
+{"t": 0.32091060544940764, "event": "layer_start", "worker": 1, "layer": 2, "requests": ["e09", "e13", "e17", "e19", "e21", "e23", "e25"]}
+{"t": 0.32098214776190764, "event": "state", "worker": 1, "state": "stall"}
+{"t": 0.32108214776190763, "event": "io_submit", "worker": 1, "label": "e21:L4", "bytes": 3145728.0}
+{"t": 0.32108214776190763, "event": "io_submit", "worker": 1, "label": "e25:L4", "bytes": 2097152.0}
+{"t": 0.3218228585221847, "event": "io_done", "worker": 0, "label": "e26:L4"}
+{"t": 0.3218228585221847, "event": "state", "worker": 0, "state": "compute"}
+{"t": 0.3218228585221847, "event": "layer_start", "worker": 0, "layer": 4, "requests": ["e14", "e18", "e22", "e24", "e26"]}
+{"t": 0.3218950287221847, "event": "state", "worker": 0, "state": "stall"}
+{"t": 0.32193208518885136, "event": "io_done", "worker": 0, "label": "e26:L5"}
+{"t": 0.32193208518885136, "event": "state", "worker": 0, "state": "compute"}
+{"t": 0.32193208518885136, "event": "layer_start", "worker": 0, "layer": 5, "requests": ["e14", "e18", "e22", "e24", "e26"]}
+{"t": 0.32199502872218466, "event": "io_submit", "worker": 0, "label": "e26:L6", "bytes": 1048576.0}
+{"t": 0.32200425538885136, "event": "state", "worker": 0, "state": "stall"}
+{"t": 0.32210425538885135, "event": "io_submit", "worker": 0, "label": "e26:L7", "bytes": 1048576.0}
+{"t": 0.3374294751342316, "event": "io_done", "worker": 0, "label": "e26:L6"}
+{"t": 0.3374294751342316, "event": "state", "worker": 0, "state": "compute"}
+{"t": 0.3374294751342316, "event": "layer_start", "worker": 0, "layer": 6, "requests": ["e14", "e18", "e22", "e24", "e26"]}
+{"t": 0.3375016453342316, "event": "state", "worker": 0, "state": "stall"}
+{"t": 0.3375387018008983, "event": "io_done", "worker": 0, "label": "e26:L7"}
+{"t": 0.3375387018008983, "event": "state", "worker": 0, "state": "compute"}
+{"t": 0.3375387018008983, "event": "layer_start", "worker": 0, "layer": 7, "requests": ["e14", "e18", "e22", "e24", "e26"]}
+{"t": 0.3376108720008983, "event": "request_done", "request": "e14", "worker": 0}
+{"t": 0.3376108720008983, "event": "state", "worker": 0, "state": "stall"}
+{"t": 0.3376108720008983, "event": "schedule", "worker": 0, "tokens": {"e18": 1, "e22": 1, "e24": 1, "e26": 128}, "running": ["e18", "e22", "e24", "e26"], "waiting": ["e28", "e30", "e32", "e34", "e36", "e38", "e40", "e42", "e44", "e46"], "skipped_waiting": [], "free_blocks": 40}
+{"t": 0.3376108720008983, "event": "state", "worker": 0, "state": "compute"}
+{"t": 0.3376108720008983, "event": "layer_start", "worker": 0, "layer": 0, "requests": ["e18", "e22", "e24", "e26"]}
+{"t": 0.3376506192883983, "event": "layer_start", "worker": 0, "layer": 1, "requests": ["e18", "e22", "e24", "e26"]}
+{"t": 0.3376903665758983, "event": "layer_start", "worker": 0, "layer": 2, "requests": ["e18", "e22", "e24", "e26"]}
+{"t": 0.3377301138633983, "event": "layer_start", "worker": 0, "layer": 3, "requests": ["e18", "e22", "e24", "e26"]}
+{"t": 0.3377698611508983, "event": "layer_start", "worker": 0, "layer": 4, "requests": ["e18", "e22", "e24", "e26"]}
+{"t": 0.3378096084383983, "event": "layer_start", "worker": 0, "layer": 5, "requests": ["e18", "e22", "e24", "e26"]}
+{"t": 0.3378493557258983, "event": "layer_start", "worker": 0, "layer": 6, "requests": ["e18", "e22", "e24", "e26"]}
+{"t": 0.3378891030133983, "event": "layer_start", "worker": 0, "layer": 7, "requests": ["e18", "e22", "e24", "e26"]}
+{"t": 0.3379288503008983, "event": "state", "worker": 0, "state": "stall"}
+{"t": 0.3379288503008983, "event": "schedule", "worker": 0, "tokens": {"e18": 1, "e22": 1, "e24": 1, "e26": 68}, "running": ["e18", "e22", "e24", "e26"], "waiting": ["e28", "e30", "e32", "e34", "e36", "e38", "e40", "e42", "e44", "e46"], "skipped_waiting": [], "free_blocks": 36}
+{"t": 0.3379288503008983, "event": "state", "worker": 0, "state": "compute"}
+{"t": 0.3379288503008983, "event": "layer_start", "worker": 0, "layer": 0, "requests": ["e18", "e22", "e24", "e26"]}
+{"t": 0.33796799675160255, "event": "layer_start", "worker": 0, "layer": 1, "requests": ["e18", "e22", "e24", "e26"]}
+{"t": 0.3380071432023068, "event": "layer_start", "worker": 0, "layer": 2, "requests": ["e18", "e22", "e24", "e26"]}
+{"t": 0.33804628965301103, "event": "layer_start", "worker": 0, "layer": 3, "requests": ["e18", "e22", "e24", "e26"]}
+{"t": 0.3380854361037153, "event": "layer_start", "worker": 0, "layer": 4, "requests": ["e18", "e22", "e24", "e26"]}
+{"t": 0.3381245825544195, "event": "layer_start", "worker": 0, "layer": 5, "requests": ["e18", "e22", "e24", "e26"]}
+{"t": 0.33816372900512376, "event": "layer_start", "worker": 0, "layer": 6, "requests": ["e18", "e22", "e24", "e26"]}
+{"t": 0.338202875455828, "event": "layer_start", "worker": 0, "layer": 7, "requests": ["e18", "e22", "e24", "e26"]}
+{"t": 0.33824202190653224, "event": "request_done", "request": "e18", "worker": 0}
+{"t": 0.33824202190653224, "event": "state", "worker": 0, "state": "stall"}
+{"t": 0.33824202190653224, "event": "schedule", "worker": 0, "tokens": {"e22": 1, "e24": 1, "e26": 1, "e28": 128}, "running": ["e22", "e24", "e26", "e28"], "waiting": ["e30", "e32", "e34", "e36", "e38", "e40", "e42", "e44", "e46"], "skipped_waiting": [], "free_blocks": 64}
+{"t": 0.33834202190653223, "event": "io_submit", "worker": 0, "label": "e28:L0", "bytes": 2097152.0}
+{"t": 0.33834202190653223, "event": "io_submit", "worker": 0, "label": "e28:L1", "bytes": 2097152.0}
+{"t": 0.33838687211607427, "event": "io_done", "worker": 1, "label": "e25:L3"}
+{"t": 0.33838687211607427, "event": "io_done", "worker": 1, "label": "e21:L3"}
+{"t": 0.33838687211607427, "event": "state", "worker": 1, "state": "compute"}
+{"t": 0.33838687211607427, "event": "layer_start", "worker": 1, "layer": 3, "requests": ["e09", "e13", "e17", "e19", "e21", "e23", "e25"]}
+{"t": 0.3384584144285743, "event": "state", "worker": 1, "state": "stall"}
+{"t": 0.33855841442857426, "event": "io_submit", "worker": 1, "label": "e21:L5", "bytes": 3145728.0}
+{"t": 0.33855841442857426, "event": "io_submit", "worker": 1, "label": "e25:L5", "bytes": 2097152.0}
+{"t": 0.3558631387827409, "event": "io_done", "worker": 1, "label": "e25:L4"}
+{"t": 0.3558631387827409, "event": "io_done", "worker": 1, "label": "e21:L4"}
+{"t": 0.3558631387827409, "event": "state", "worker": 1, "state": "compute"}
+{"t": 0.3558631387827409, "event": "layer_start", "worker": 1, "layer": 4, "requests": ["e09", "e13", "e17", "e19", "e21", "e23", "e25"]}
+{"t": 0.35591775211607424, "event": "io_done", "worker": 0, "label": "e28:L0"}
+{"t": 0.35591775211607424, "event": "state", "worker": 0, "state": "compute"}
+{"t": 0.35591775211607424, "event": "layer_start", "worker": 0, "layer": 0, "requests": ["e22", "e24", "e26", "e28"]}
+{"t": 0.3559346810952409, "event": "state", "worker": 1, "state": "stall"}
+{"t": 0.35595770420357425, "event": "state", "worker": 0, "state": "stall"}
+{"t": 0.3559723654494076, "event": "io_done", "worker": 0, "label": "e28:L1"}
+{"t": 0.3559723654494076, "event": "state", "worker": 0, "state": "compute"}
+{"t": 0.3559723654494076, "event": "layer_start", "worker": 0, "layer": 1, "requests": ["e22", "e24", "e26", "e28"]}
+{"t": 0.3560123175369076, "event": "state", "worker": 0, "state": "stall"}
+{"t": 0.3560346810952409, "event": "io_submit", "worker": 1, "label": "e21:L6", "bytes": 3145728.0}
+{"t": 0.3560346810952409, "event": "io_submit", "worker": 1, "label": "e25:L6", "bytes": 2097152.0}
+{"t": 0.35605770420357424, "event": "io_submit", "worker": 0, "label": "e28:L2", "bytes": 2097152.0}
+{"t": 0.3561123175369076, "event": "io_submit", "worker": 0, "label": "e28:L3", "bytes": 2097152.0}
+{"t": 0.37332120100496313, "event": "io_done", "worker": 1, "label": "e21:L5"}
+{"t": 0.37344863211607426, "event": "io_done", "worker": 1, "label": "e25:L5"}
+{"t": 0.37344863211607426, "event": "state", "worker": 1, "state": "compute"}
+{"t": 0.37344863211607426, "event": "layer_start", "worker": 1, "layer": 5, "requests": ["e09", "e13", "e17", "e19", "e21", "e23", "e25"]}
+{"t": 0.37352017442857427, "event": "state", "worker": 1, "state": "stall"}
+{"t": 0.37362017442857426, "event": "io_submit", "worker": 1, "label": "e21:L7", "bytes": 3145728.0}
+{"t": 0.37362017442857426, "event": "io_submit", "worker": 1, "label": "e25:L7", "bytes": 2097152.0}
+{"t": 0.3907974676716298, "event": "io_done", "worker": 1, "label": "e21:L6"}
+{"t": 0.39092489878274095, "event": "io_done", "worker": 1, "label": "e25:L6"}
+{"t": 0.39092489878274095, "event": "state", "worker": 1, "state": "compute"}
+{"t": 0.39092489878274095, "event": "layer_start", "worker": 1, "layer": 6, "requests": ["e09", "e13", "e17", "e19", "e21", "e23", "e25"]}
+{"t": 0.3909795121160743, "event": "io_done", "worker": 0, "label": "e28:L2"}
+{"t": 0.3909795121160743, "event": "state", "worker": 0, "state": "compute"}
+{"t": 0.3909795121160743, "event": "layer_start", "worker": 0, "layer": 2, "requests": ["e22", "e24", "e26", "e28"]}
+{"t": 0.39099644109524095, "event": "state", "worker": 1, "state": "stall"}
+{"t": 0.3910194642035743, "event": "state", "worker": 0, "state": "stall"}
+{"t": 0.39103412544940763, "event": "io_done", "worker": 0, "label": "e28:L3"}
+{"t": 0.39103412544940763, "event": "state", "worker": 0, "state": "compute"}
+{"t": 0.39103412544940763, "event": "layer_start", "worker": 0, "layer": 3, "requests": ["e22", "e24", "e26", "e28"]}
+{"t": 0.39107407753690765, "event": "state", "worker": 0, "state": "stall"}
+{"t": 0.3911194642035743, "event": "io_submit", "worker": 0, "label": "e28:L4", "bytes": 2097152.0}
+{"t": 0.39117407753690764, "event": "io_submit", "worker": 0, "label": "e28:L5", "bytes": 2097152.0}
+{"t": 0.393837609893852, "event": "io_done", "worker": 1, "label": "e21:L7"}
+{"t": 0.3938740187827409, "event": "io_done", "worker": 1, "label": "e25:L7"}
+{"t": 0.3938740187827409, "event": "state", "worker": 1, "state": "compute"}
+{"t": 0.3938740187827409, "event": "layer_start", "worker": 1, "layer": 7, "requests": ["e09", "e13", "e17", "e19", "e21", "e23", "e25"]}
+{"t": 0.3939455610952409, "event": "request_done", "request": "e13", "worker": 1}
+{"t": 0.3939455610952409, "event": "state", "worker": 1, "state": "stall"}
+{"t": 0.3939455610952409, "event": "schedule", "worker": 1, "tokens": {"e09": 1, "e17": 1, "e19": 1, "e21": 1, "e23": 32, "e25": 68, "e27": 128, "e29": 24}, "running": ["e09", "e17", "e19", "e21", "e23", "e25", "e27", "e29"], "waiting": ["e31", "e33", "e35", "e37", "e39", "e41", "e43", "e45", "e47"], "skipped_waiting": [], "free_blocks": 37}
+{"t": 0.3940455610952409, "event": "io_submit", "worker": 1, "label": "e29:L0", "bytes": 1048576.0}
+{"t": 0.3940455610952409, "event": "io_submit", "worker": 1, "label": "e29:L1", "bytes": 1048576.0}
+{"t": 0.3944880826895465, "event": "io_done", "worker": 0, "label": "e28:L4"}
+{"t": 0.3944880826895465, "event": "state", "worker": 0, "state": "compute"}
+{"t": 0.3944880826895465, "event": "layer_start", "worker": 0, "layer": 4, "requests": ["e22", "e24", "e26", "e28"]}
+{"t": 0.3945280347770465, "event": "state", "worker": 0, "state": "stall"}
+{"t": 0.39461471753690763, "event": "io_done", "worker": 0, "label": "e28:L5"}
+{"t": 0.39461471753690763, "event": "state", "worker": 0, "state": "compute"}
+{"t": 0.39461471753690763, "event": "layer_start", "worker": 0, "layer": 5, "requests": ["e22", "e24", "e26", "e28"]}
+{"t": 0.3946280347770465, "event": "io_submit", "worker": 0, "label": "e28:L6", "bytes": 2097152.0}
+{"t": 0.39465466962440765, "event": "state", "worker": 0, "state": "stall"}
+{"t": 0.39475466962440764, "event": "io_submit", "worker": 0, "label": "e28:L7", "bytes": 2097152.0}
+{"t": 0.4005728674317389, "event": "io_done", "worker": 1, "label": "e29:L0"}
+{"t": 0.4005728674317389, "event": "state", "worker": 1, "state": "compute"}
+{"t": 0.4005728674317389, "event": "layer_start", "worker": 1, "layer": 0, "requests": ["e09", "e17", "e19", "e21", "e23", "e25", "e27", "e29"]}
+{"t": 0.4006438755192389, "event": "state", "worker": 1, "state": "stall"}
+{"t": 0.40068006809207624, "event": "io_done", "worker": 0, "label": "e28:L6"}
+{"t": 0.40068006809207624, "event": "state", "worker": 0, "state": "compute"}
+{"t": 0.40068006809207624, "event": "layer_start", "worker": 0, "layer": 6, "requests": ["e22", "e24", "e26", "e28"]}
+{"t": 0.40072002017957625, "event": "state", "worker": 0, "state": "stall"}
+{"t": 0.4007346814254096, "event": "io_done", "worker": 0, "label": "e28:L7"}
+{"t": 0.4007346814254096, "event": "state", "worker": 0, "state": "compute"}
+{"t": 0.4007346814254096, "event": "layer_start", "worker": 0, "layer": 7, "requests": ["e22", "e24", "e26", "e28"]}
+{"t": 0.4007438755192389, "event": "io_submit", "worker": 1, "label": "e29:L2", "bytes": 1048576.0}
+{"t": 0.4007746335129096, "event": "state", "worker": 0, "state": "stall"}
+{"t": 0.4007746335129096, "event": "schedule", "worker": 0, "tokens": {"e22": 1, "e24": 1, "e26": 1, "e28": 64}, "running": ["e22", "e24", "e26", "e28"], "waiting": ["e30", "e32", "e34", "e36", "e38", "e40", "e42", "e44", "e46"], "skipped_waiting": [], "free_blocks": 60}
+{"t": 0.4007746335129096, "event": "state", "worker": 0, "state": "compute"}
+{"t": 0.4007746335129096, "event": "layer_start", "worker": 0, "layer": 0, "requests": ["e22", "e24", "e26", "e28"]}
+{"t": 0.4008139681218648, "event": "layer_start", "worker": 0, "layer": 1, "requests": ["e22", "e24", "e26", "e28"]}
+{"t": 0.40085330273082004, "event": "layer_start", "worker": 0, "layer": 2, "requests": ["e22", "e24", "e26", "e28"]}
+{"t": 0.40089263733977526, "event": "layer_start", "worker": 0, "layer": 3, "requests": ["e22", "e24", "e26", "e28"]}
+{"t": 0.4009319719487305, "event": "layer_start", "worker": 0, "layer": 4, "requests": ["e22", "e24", "e26", "e28"]}
+{"t": 0.4009713065576857, "event": "layer_start", "worker": 0, "layer": 5, "requests": ["e22", "e24", "e26", "e28"]}
+{"t": 0.4010106411666409, "event": "layer_start", "worker": 0, "layer": 6, "requests": ["e22", "e24", "e26", "e28"]}
+{"t": 0.40104997577559615, "event": "layer_start", "worker": 0, "layer": 7, "requests": ["e22", "e24", "e26", "e28"]}
+{"t": 0.40108931038455137, "event": "state", "worker": 0, "state": "stall"}
+{"t": 0.40108931038455137, "event": "schedule", "worker": 0, "tokens": {"e22": 1, "e24": 1, "e26": 1, "e28": 1}, "running": ["e22", "e24", "e26", "e28"], "waiting": ["e30", "e32", "e34", "e36", "e38", "e40", "e42", "e44", "e46"], "skipped_waiting": [], "free_blocks": 59}
+{"t": 0.40108931038455137, "event": "state", "worker": 0, "state": "compute"}
+{"t": 0.40108931038455137, "event": "layer_start", "worker": 0, "layer": 0, "requests": ["e22", "e24", "e26", "e28"]}
+{"t": 0.40110075325955136, "event": "layer_start", "worker": 0, "layer": 1, "requests": ["e22", "e24", "e26", "e28"]}
+{"t": 0.40111219613455135, "event": "layer_start", "worker": 0, "layer": 2, "requests": ["e22", "e24", "e26", "e28"]}
+{"t": 0.40112363900955134, "event": "layer_start", "worker": 0, "layer": 3, "requests": ["e22", "e24", "e26", "e28"]}
+{"t": 0.4011350818845513, "event": "layer_start", "worker": 0, "layer": 4, "requests": ["e22", "e24", "e26", "e28"]}
+{"t": 0.4011465247595513, "event": "layer_start", "worker": 0, "layer": 5, "requests": ["e22", "e24", "e26", "e28"]}
+{"t": 0.4011579676345513, "event": "layer_start", "worker": 0, "layer": 6, "requests": ["e22", "e24", "e26", "e28"]}
+{"t": 0.4011694105095513, "event": "layer_start", "worker": 0, "layer": 7, "requests": ["e22", "e24", "e26", "e28"]}
+{"t": 0.4011808533845513, "event": "request_done", "request": "e22", "worker": 0}
+{"t": 0.4011808533845513, "event": "state", "worker": 0, "state": "stall"}
+{"t": 0.4011808533845513, "event": "schedule", "worker": 0, "tokens": {"e24": 1, "e26": 1, "e28": 1, "e30": 128, "e32": 125}, "running": ["e24", "e26", "e28", "e30", "e32"], "waiting": ["e34", "e36", "e38", "e40", "e42", "e44", "e46"], "skipped_waiting": [], "free_blocks": 32}
+{"t": 0.4012808533845513, "event": "io_submit", "worker": 0, "label": "e30:L0", "bytes": 3145728.0}
+{"t": 0.4012808533845513, "event": "io_submit", "worker": 0, "label": "e32:L0", "bytes": 1048576.0}
+{"t": 0.4012808533845513, "event": "io_submit", "worker": 0, "label": "e30:L1", "bytes": 3145728.0}
+{"t": 0.4012808533845513, "event": "io_submit", "worker": 0, "label": "e32:L1", "bytes": 1048576.0}
+{"t": 0.40409441442857424, "event": "io_done", "worker": 1, "label": "e29:L1"}
+{"t": 0.40409441442857424, "event": "state", "worker": 1, "state": "compute"}
+{"t": 0.40409441442857424, "event": "layer_start", "worker": 1, "layer": 1, "requests": ["e09", "e17", "e19", "e21", "e23", "e25", "e27", "e29"]}
+{"t": 0.40416542251607424, "event": "state", "worker": 1, "state": "stall"}
+{"t": 0.4042654225160742, "event": "io_submit", "worker": 1, "label": "e29:L3", "bytes": 1048576.0}
+{"t": 0.4071527610952409, "event": "io_done", "worker": 1, "label": "e29:L2"}
+{"t": 0.4071527610952409, "event": "state", "worker": 1, "state": "compute"}
+{"t": 0.4071527610952409, "event": "layer_start", "worker": 1, "layer": 2, "requests": ["e09", "e17", "e19", "e21", "e23", "e25", "e27", "e29"]}
+{"t": 0.4072237691827409, "event": "state", "worker": 1, "state": "stall"}
+{"t": 0.4073237691827409, "event": "io_submit", "worker": 1, "label": "e29:L4", "bytes": 1048576.0}
+{"t": 0.40740714348874446, "event": "io_done", "worker": 0, "label": "e30:L0"}
+{"t": 0.40783445338455127, "event": "io_done", "worker": 0, "label": "e32:L0"}
+{"t": 0.40783445338455127, "event": "state", "worker": 0, "state": "compute"}
+{"t": 0.40783445338455127, "event": "layer_start", "worker": 0, "layer": 0, "requests": ["e24", "e26", "e28", "e30", "e32"]}
+{"t": 0.4079065619720513, "event": "state", "worker": 0, "state": "stall"}
+{"t": 0.40800656197205126, "event": "io_submit", "worker": 0, "label": "e30:L2", "bytes": 3145728.0}
+{"t": 0.40800656197205126, "event": "io_submit", "worker": 0, "label": "e32:L2", "bytes": 1048576.0}
+{"t": 0.4094326332533013, "event": "io_done", "worker": 0, "label": "e30:L1"}
+{"t": 0.4106687673988208, "event": "io_done", "worker": 1, "label": "e29:L3"}
+{"t": 0.4106687673988208, "event": "state", "worker": 1, "state": "compute"}
+{"t": 0.4106687673988208, "event": "layer_start", "worker": 1, "layer": 3, "requests": ["e09", "e17", "e19", "e21", "e23", "e25", "e27", "e29"]}
+{"t": 0.4107397754863208, "event": "state", "worker": 1, "state": "stall"}
+{"t": 0.4108397754863208, "event": "io_submit", "worker": 1, "label": "e29:L5", "bytes": 1048576.0}
+{"t": 0.4114935467178846, "event": "io_done", "worker": 0, "label": "e32:L1"}
+{"t": 0.4114935467178846, "event": "state", "worker": 0, "state": "compute"}
+{"t": 0.4114935467178846, "event": "layer_start", "worker": 0, "layer": 1, "requests": ["e24", "e26", "e28", "e30", "e32"]}
+{"t": 0.4115656553053846, "event": "state", "worker": 0, "state": "stall"}
+{"t": 0.4116573867178846, "event": "io_done", "worker": 0, "label": "e32:L2"}
+{"t": 0.41166565530538457, "event": "io_submit", "worker": 0, "label": "e30:L3", "bytes": 3145728.0}
+{"t": 0.41166565530538457, "event": "io_submit", "worker": 0, "label": "e32:L3", "bytes": 1048576.0}
+{"t": 0.4141432677619076, "event": "io_done", "worker": 1, "label": "e29:L4"}
+{"t": 0.4141432677619076, "event": "state", "worker": 1, "state": "compute"}
+{"t": 0.4141432677619076, "event": "layer_start", "worker": 1, "layer": 4, "requests": ["e09", "e17", "e19", "e21", "e23", "e25", "e27", "e29"]}
+{"t": 0.41421427584940756, "event": "state", "worker": 1, "state": "stall"}
+{"t": 0.41431427584940755, "event": "io_submit", "worker": 1, "label": "e29:L6", "bytes": 1048576.0}
+{"t": 0.4149357315744668, "event": "io_done", "worker": 0, "label": "e30:L2"}
+{"t": 0.4149357315744668, "event": "state", "worker": 0, "state": "compute"}
+{"t": 0.4149357315744668, "event": "layer_start", "worker": 0, "layer": 2, "requests": ["e24", "e26", "e28", "e30", "e32"]}
+{"t": 0.4150078401619668, "event": "state", "worker": 0, "state": "stall"}
+{"t": 0.4151078401619668, "event": "io_submit", "worker": 0, "label": "e30:L4", "bytes": 3145728.0}
+{"t": 0.4151078401619668, "event": "io_submit", "worker": 0, "label": "e32:L4", "bytes": 1048576.0}
+{"t": 0.4176388801359506, "event": "io_done", "worker": 1, "label": "e29:L5"}
+{"t": 0.4176388801359506, "event": "state", "worker": 1, "state": "compute"}
+{"t": 0.4176388801359506, "event": "layer_start", "worker": 1, "layer": 5, "requests": ["e09", "e17", "e19", "e21", "e23", "e25", "e27", "e29"]}
+{"t": 0.41770988822345057, "event": "state", "worker": 1, "state": "stall"}
+{"t": 0.41780988822345055, "event": "io_submit", "worker": 1, "label": "e29:L7", "bytes": 1048576.0}
+{"t": 0.418040705519545, "event": "io_done", "worker": 0, "label": "e32:L3"}
+{"t": 0.4184969136136741, "event": "io_done", "worker": 0, "label": "e30:L3"}
+{"t": 0.4184969136136741, "event": "state", "worker": 0, "state": "compute"}
+{"t": 0.4184969136136741, "event": "layer_start", "worker": 0, "layer": 3, "requests": ["e24", "e26", "e28", "e30", "e32"]}
+{"t": 0.4185690222011741, "event": "state", "worker": 0, "state": "stall"}
+{"t": 0.41865616197205124, "event": "io_done", "worker": 0, "label": "e32:L4"}
+{"t": 0.4186690222011741, "event": "io_submit", "worker": 0, "label": "e30:L5", "bytes": 3145728.0}
+{"t": 0.4186690222011741, "event": "io_submit", "worker": 0, "label": "e32:L5", "bytes": 1048576.0}
+{"t": 0.4211395363303908, "event": "io_done", "worker": 1, "label": "e29:L6"}
+{"t": 0.4211395363303908, "event": "state", "worker": 1, "state": "compute"}
+{"t": 0.4211395363303908, "event": "layer_start", "worker": 1, "layer": 6, "requests": ["e09", "e17", "e19", "e21", "e23", "e25", "e27", "e29"]}
+{"t": 0.4212105444178908, "event": "state", "worker": 1, "state": "stall"}
+{"t": 0.4220514928334522, "event": "io_done", "worker": 0, "label": "e30:L4"}
+{"t": 0.4220514928334522, "event": "state", "worker": 0, "state": "compute"}
+{"t": 0.4220514928334522, "event": "layer_start", "worker": 0, "layer": 4, "requests": ["e24", "e26", "e28", "e30", "e32"]}
+{"t": 0.42212360142095223, "event": "state", "worker": 0, "state": "stall"}
+{"t": 0.4221642755345074, "event": "io_done", "worker": 0, "label": "e32:L5"}
+{"t": 0.4222236014209522, "event": "io_submit", "worker": 0, "label": "e30:L6", "bytes": 3145728.0}
+{"t": 0.4222236014209522, "event": "io_submit", "worker": 0, "label": "e32:L6", "bytes": 1048576.0}
+{"t": 0.4224883995001189, "event": "io_done", "worker": 1, "label": "e29:L7"}
+{"t": 0.4224883995001189, "event": "state", "worker": 1, "state": "compute"}
+{"t": 0.4224883995001189, "event": "layer_start", "worker": 1, "layer": 7, "requests": ["e09", "e17", "e19", "e21", "e23", "e25", "e27", "e29"]}
+{"t": 0.4225594075876189, "event": "request_done", "request": "e09", "worker": 1}
+{"t": 0.4225594075876189, "event": "request_done", "request": "e17", "worker": 1}
+{"t": 0.4225594075876189, "event": "state", "worker": 1, "state": "stall"}
+{"t": 0.4225594075876189, "event": "schedule", "worker": 1, "tokens": {"e19": 1, "e21": 1, "e23": 1, "e25": 1, "e27": 32, "e29": 72, "e31": 128, "e33": 20}, "running": ["e19", "e21", "e23", "e25", "e27", "e29", "e31", "e33"], "waiting": ["e35", "e37", "e39", "e41", "e43", "e45", "e47"], "skipped_waiting": [], "free_blocks": 49}
+{"t": 0.4226594075876189, "event": "io_submit", "worker": 1, "label": "e33:L0", "bytes": 3145728.0}
+{"t": 0.4226594075876189, "event": "io_submit", "worker": 1, "label": "e33:L1", "bytes": 3145728.0}
+{"t": 0.42536544848413405, "event": "io_done", "worker": 0, "label": "e30:L5"}
+{"t": 0.42536544848413405, "event": "state", "worker": 0, "state": "compute"}
+{"t": 0.42536544848413405, "event": "layer_start", "worker": 0, "layer": 5, "requests": ["e24", "e26", "e28", "e30", "e32"]}
+{"t": 0.42543755707163405, "event": "state", "worker": 0, "state": "stall"}
+{"t": 0.42553755707163404, "event": "io_submit", "worker": 0, "label": "e30:L7", "bytes": 3145728.0}
+{"t": 0.42553755707163404, "event": "io_submit", "worker": 0, "label": "e32:L7", "bytes": 1048576.0}
+{"t": 0.4273249441060091, "event": "io_done", "worker": 0, "label": "e30:L6"}
+{"t": 0.42871295906655826, "event": "io_done", "worker": 0, "label": "e32:L6"}
+{"t": 0.42871295906655826, "event": "state", "worker": 0, "state": "compute"}
+{"t": 0.42871295906655826, "event": "layer_start", "worker": 0, "layer": 6, "requests": ["e24", "e26", "e28", "e30", "e32"]}
+{"t": 0.42878506765405827, "event": "state", "worker": 0, "state": "stall"}
+{"t": 0.44287226980258776, "event": "io_done", "worker": 1, "label": "e33:L0"}
+{"t": 0.44287226980258776, "event": "state", "worker": 1, "state": "compute"}
+{"t": 0.44287226980258776, "event": "layer_start", "worker": 1, "layer": 0, "requests": ["e19", "e21", "e23", "e25", "e27", "e29", "e31", "e33"]}
+{"t": 0.44294318279008776, "event": "state", "worker": 1, "state": "stall"}
+{"t": 0.44304318279008775, "event": "io_submit", "worker": 1, "label": "e33:L2", "bytes": 3145728.0}
+{"t": 0.44785534572913405, "event": "io_done", "worker": 0, "label": "e30:L7"}
+{"t": 0.44796457239580073, "event": "io_done", "worker": 0, "label": "e32:L7"}
+{"t": 0.44796457239580073, "event": "state", "worker": 0, "state": "compute"}
+{"t": 0.44796457239580073, "event": "layer_start", "worker": 0, "layer": 7, "requests": ["e24", "e26", "e28", "e30", "e32"]}
+{"t": 0.44803668098330074, "event": "request_done", "request": "e26", "worker": 0}
+{"t": 0.44803668098330074, "event": "state", "worker": 0, "state": "stall"}
+{"t": 0.44803668098330074, "event": "schedule", "worker": 0, "tokens": {"e24": 1, "e28": 1, "e30": 128, "e32": 67, "e34": 59}, "running": ["e24", "e28", "e30", "e32", "e34"], "waiting": ["e36", "e38", "e40", "e42", "e44", "e46"], "skipped_waiting": [], "free_blocks": 21}
+{"t": 0.44813668098330073, "event": "io_submit", "worker": 0, "label": "e34:L0", "bytes": 2097152.0}
+{"t": 0.44813668098330073, "event": "io_submit", "worker": 0, "label": "e34:L1", "bytes": 2097152.0}
+{"t": 0.45367209263993724, "event": "io_done", "worker": 0, "label": "e34:L0"}
+{"t": 0.45367209263993724, "event": "state", "worker": 0, "state": "compute"}
+{"t": 0.45367209263993724, "event": "layer_start", "worker": 0, "layer": 0, "requests": ["e24", "e28", "e30", "e32", "e34"]}
+{"t": 0.4536797809209522, "event": "io_done", "worker": 1, "label": "e33:L1"}
+{"t": 0.4536797809209522, "event": "state", "worker": 1, "state": "compute"}
+{"t": 0.4536797809209522, "event": "layer_start", "worker": 1, "layer": 1, "requests": ["e19", "e21", "e23", "e25", "e27", "e29", "e31", "e33"]}
+{"t": 0.45373266347519975, "event": "io_done", "worker": 0, "label": "e34:L1"}
+{"t": 0.4537446476524372, "event": "layer_start", "worker": 0, "layer": 1, "requests": ["e24", "e28", "e30", "e32", "e34"]}
+{"t": 0.4537506939084522, "event": "state", "worker": 1, "state": "stall"}
+{"t": 0.4538172026649372, "event": "state", "worker": 0, "state": "stall"}
+{"t": 0.4538446476524372, "event": "io_submit", "worker": 0, "label": "e34:L2", "bytes": 2097152.0}
+{"t": 0.4538506939084522, "event": "io_submit", "worker": 1, "label": "e33:L3", "bytes": 3145728.0}
+{"t": 0.4539172026649372, "event": "io_submit", "worker": 0, "label": "e34:L3", "bytes": 2097152.0}
+{"t": 0.45701222098577055, "event": "io_done", "worker": 0, "label": "e34:L2"}
+{"t": 0.45701222098577055, "event": "state", "worker": 0, "state": "compute"}
+{"t": 0.45701222098577055, "event": "layer_start", "worker": 0, "layer": 2, "requests": ["e24", "e28", "e30", "e32", "e34"]}
+{"t": 0.4570847759982705, "event": "state", "worker": 0, "state": "stall"}
+{"t": 0.4571847759982705, "event": "io_submit", "worker": 0, "label": "e34:L4", "bytes": 2097152.0}
+{"t": 0.4641655409209522, "event": "io_done", "worker": 1, "label": "e33:L2"}
+{"t": 0.4641655409209522, "event": "state", "worker": 1, "state": "compute"}
+{"t": 0.4641655409209522, "event": "layer_start", "worker": 1, "layer": 2, "requests": ["e19", "e21", "e23", "e25", "e27", "e29", "e31", "e33"]}
+{"t": 0.4642364539084522, "event": "state", "worker": 1, "state": "stall"}
+{"t": 0.4643364539084522, "event": "io_submit", "worker": 1, "label": "e33:L4", "bytes": 3145728.0}
+{"t": 0.46437568570094795, "event": "io_done", "worker": 0, "label": "e34:L3"}
+{"t": 0.46437568570094795, "event": "state", "worker": 0, "state": "compute"}
+{"t": 0.46437568570094795, "event": "layer_start", "worker": 0, "layer": 3, "requests": ["e24", "e28", "e30", "e32", "e34"]}
+{"t": 0.4644482407134479, "event": "state", "worker": 0, "state": "stall"}
+{"t": 0.4645482407134479, "event": "io_submit", "worker": 0, "label": "e34:L5", "bytes": 2097152.0}
+{"t": 0.46490395269990653, "event": "io_done", "worker": 0, "label": "e34:L4"}
+{"t": 0.46490395269990653, "event": "state", "worker": 0, "state": "compute"}
+{"t": 0.46490395269990653, "event": "layer_start", "worker": 0, "layer": 4, "requests": ["e24", "e28", "e30", "e32", "e34"]}
+{"t": 0.4649765077124065, "event": "state", "worker": 0, "state": "stall"}
+{"t": 0.4650765077124065, "event": "io_submit", "worker": 0, "label": "e34:L6", "bytes": 2097152.0}
+{"t": 0.4746513009209522, "event": "io_done", "worker": 1, "label": "e33:L3"}
+{"t": 0.4746513009209522, "event": "state", "worker": 1, "state": "compute"}
+{"t": 0.4746513009209522, "event": "layer_start", "worker": 1, "layer": 3, "requests": ["e19", "e21", "e23", "e25", "e27", "e29", "e31", "e33"]}
+{"t": 0.4747222139084522, "event": "state", "worker": 1, "state": "stall"}
+{"t": 0.4748222139084522, "event": "io_submit", "worker": 1, "label": "e33:L5", "bytes": 3145728.0}
+{"t": 0.47483541155476505, "event": "io_done", "worker": 0, "label": "e34:L5"}
+{"t": 0.47483541155476505, "event": "state", "worker": 0, "state": "compute"}
+{"t": 0.47483541155476505, "event": "layer_start", "worker": 0, "layer": 5, "requests": ["e24", "e28", "e30", "e32", "e34"]}
+{"t": 0.474907966567265, "event": "state", "worker": 0, "state": "stall"}
+{"t": 0.475007966567265, "event": "io_submit", "worker": 0, "label": "e34:L7", "bytes": 2097152.0}
+{"t": 0.47536367855372363, "event": "io_done", "worker": 0, "label": "e34:L6"}
+{"t": 0.47536367855372363, "event": "state", "worker": 0, "state": "compute"}
+{"t": 0.47536367855372363, "event": "layer_start", "worker": 0, "layer": 6, "requests": ["e24", "e28", "e30", "e32", "e34"]}
+{"t": 0.4754362335662236, "event": "state", "worker": 0, "state": "stall"}
+{"t": 0.48513706092095216, "event": "io_done", "worker": 1, "label": "e33:L4"}
+{"t": 0.48513706092095216, "event": "state", "worker": 1, "state": "compute"}
+{"t": 0.48513706092095216, "event": "layer_start", "worker": 1, "layer": 4, "requests": ["e19", "e21", "e23", "e25", "e27", "e29", "e31", "e33"]}
+{"t": 0.48520797390845216, "event": "state", "worker": 1, "state": "stall"}
+{"t": 0.48530797390845215, "event": "io_submit", "worker": 1, "label": "e33:L6", "bytes": 3145728.0}
+{"t": 0.48532056610950497, "event": "io_done", "worker": 0, "label": "e34:L7"}
+{"t": 0.48532056610950497, "event": "state", "worker": 0, "state": "compute"}
+{"t": 0.48532056610950497, "event": "layer_start", "worker": 0, "layer": 7, "requests": ["e24", "e28", "e30", "e32", "e34"]}
+{"t": 0.48539312112200494, "event": "request_done", "request": "e24", "worker": 0}
+{"t": 0.48539312112200494, "event": "state", "worker": 0, "state": "stall"}
+{"t": 0.48539312112200494, "event": "schedule", "worker": 0, "tokens": {"e28": 1, "e30": 64, "e32": 1, "e34": 128, "e36": 62}, "running": ["e28", "e30", "e32", "e34", "e36"], "waiting": ["e38", "e40", "e42", "e44", "e46"], "skipped_waiting": [], "free_blocks": 17}
+{"t": 0.48549312112200493, "event": "io_submit", "worker": 0, "label": "e36:L0", "bytes": 3145728.0}
+{"t": 0.48549312112200493, "event": "io_submit", "worker": 0, "label": "e36:L1", "bytes": 3145728.0}
+{"t": 0.49562282092095217, "event": "io_done", "worker": 1, "label": "e33:L5"}
+{"t": 0.49562282092095217, "event": "state", "worker": 1, "state": "compute"}
+{"t": 0.49562282092095217, "event": "layer_start", "worker": 1, "layer": 5, "requests": ["e19", "e21", "e23", "e25", "e27", "e29", "e31", "e33"]}
+{"t": 0.49569373390845217, "event": "state", "worker": 1, "state": "stall"}
+{"t": 0.495737949207579, "event": "io_done", "worker": 0, "label": "e36:L0"}
+{"t": 0.495737949207579, "event": "state", "worker": 0, "state": "compute"}
+{"t": 0.495737949207579, "event": "layer_start", "worker": 0, "layer": 0, "requests": ["e28", "e30", "e32", "e34", "e36"]}
+{"t": 0.49579373390845216, "event": "io_submit", "worker": 1, "label": "e33:L7", "bytes": 3145728.0}
+{"t": 0.49581069528257904, "event": "state", "worker": 0, "state": "stall"}
+{"t": 0.49590178920757905, "event": "io_done", "worker": 0, "label": "e36:L1"}
+{"t": 0.49590178920757905, "event": "state", "worker": 0, "state": "compute"}
+{"t": 0.49590178920757905, "event": "layer_start", "worker": 0, "layer": 1, "requests": ["e28", "e30", "e32", "e34", "e36"]}
+{"t": 0.49591069528257903, "event": "io_submit", "worker": 0, "label": "e36:L2", "bytes": 3145728.0}
+{"t": 0.49597453528257907, "event": "state", "worker": 0, "state": "stall"}
+{"t": 0.49607453528257905, "event": "io_submit", "worker": 0, "label": "e36:L3", "bytes": 3145728.0}
+{"t": 0.5061085809209521, "event": "io_done", "worker": 1, "label": "e33:L6"}
+{"t": 0.5061085809209521, "event": "state", "worker": 1, "state": "compute"}
+{"t": 0.5061085809209521, "event": "layer_start", "worker": 1, "layer": 6, "requests": ["e19", "e21", "e23", "e25", "e27", "e29", "e31", "e33"]}
+{"t": 0.5061794939084521, "event": "state", "worker": 1, "state": "stall"}
+{"t": 0.5062273363773717, "event": "io_done", "worker": 0, "label": "e36:L2"}
+{"t": 0.5062273363773717, "event": "state", "worker": 0, "state": "compute"}
+{"t": 0.5062273363773717, "event": "layer_start", "worker": 0, "layer": 2, "requests": ["e28", "e30", "e32", "e34", "e36"]}
+{"t": 0.5063000824523717, "event": "state", "worker": 0, "state": "stall"}
+{"t": 0.5063911763773717, "event": "io_done", "worker": 0, "label": "e36:L3"}
+{"t": 0.5063911763773717, "event": "state", "worker": 0, "state": "compute"}
+{"t": 0.5063911763773717, "event": "layer_start", "worker": 0, "layer": 3, "requests": ["e28", "e30", "e32", "e34", "e36"]}
+{"t": 0.5064000824523717, "event": "io_submit", "worker": 0, "label": "e36:L4", "bytes": 3145728.0}
+{"t": 0.5064639224523717, "event": "state", "worker": 0, "state": "stall"}
+{"t": 0.5065454875876187, "event": "io_done", "worker": 1, "label": "e33:L7"}
+{"t": 0.5065454875876187, "event": "state", "worker": 1, "state": "compute"}
+{"t": 0.5065454875876187, "event": "layer_start", "worker": 1, "layer": 7, "requests": ["e19", "e21", "e23", "e25", "e27", "e29", "e31", "e33"]}
+{"t": 0.5065639224523717, "event": "io_submit", "worker": 0, "label": "e36:L5", "bytes": 3145728.0}
+{"t": 0.5066164005751187, "event": "state", "worker": 1, "state": "stall"}
+{"t": 0.5066164005751187, "event": "schedule", "worker": 1, "tokens": {"e19": 1, "e21": 1, "e23": 1, "e25": 1, "e27": 1, "e29": 1, "e31": 32, "e33": 76}, "running": ["e19", "e21", "e23", "e25", "e27", "e29", "e31", "e33"], "waiting": ["e35", "e37", "e39", "e41", "e43", "e45", "e47"], "skipped_waiting": [], "free_blocks": 41}
+{"t": 0.5066164005751187, "event": "state", "worker": 1, "state": "compute"}
+{"t": 0.5066164005751187, "event": "layer_start", "worker": 1, "layer": 0, "requests": ["e19", "e21", "e23", "e25", "e27", "e29", "e31", "e33"]}
+{"t": 0.5066556296207327, "event": "layer_start", "worker": 1, "layer": 1, "requests": ["e19", "e21", "e23", "e25", "e27", "e29", "e31", "e33"]}
+{"t": 0.5066948586663468, "event": "layer_start", "worker": 1, "layer": 2, "requests": ["e19", "e21", "e23", "e25", "e27", "e29", "e31", "e33"]}
+{"t": 0.5067340877119608, "event": "layer_start", "worker": 1, "layer": 3, "requests": ["e19", "e21", "e23", "e25", "e27", "e29", "e31", "e33"]}
+{"t": 0.5067733167575749, "event": "layer_start", "worker": 1, "layer": 4, "requests": ["e19", "e21", "e23", "e25", "e27", "e29", "e31", "e33"]}
+{"t": 0.5068125458031889, "event": "layer_start", "worker": 1, "layer": 5, "requests": ["e19", "e21", "e23", "e25", "e27", "e29", "e31", "e33"]}
+{"t": 0.506851774848803, "event": "layer_start", "worker": 1, "layer": 6, "requests": ["e19", "e21", "e23", "e25", "e27", "e29", "e31", "e33"]}
+{"t": 0.506891003894417, "event": "layer_start", "worker": 1, "layer": 7, "requests": ["e19", "e21", "e23", "e25", "e27", "e29", "e31", "e33"]}
+{"t": 0.506930232940031, "event": "state", "worker": 1, "state": "stall"}
+{"t": 0.506930232940031, "event": "schedule", "worker": 1, "tokens": {"e19": 1, "e21": 1, "e23": 1, "e25": 1, "e27": 1, "e29": 1, "e31": 1, "e33": 1}, "running": ["e19", "e21", "e23", "e25", "e27", "e29", "e31", "e33"], "waiting": ["e35", "e37", "e39", "e41", "e43", "e45", "e47"], "skipped_waiting": [], "free_blocks": 39}
+{"t": 0.506930232940031, "event": "state", "worker": 1, "state": "compute"}
+{"t": 0.506930232940031, "event": "layer_start", "worker": 1, "layer": 0, "requests": ["e19", "e21", "e23", "e25", "e27", "e29", "e31", "e33"]}
+{"t": 0.506946692377531, "event": "layer_start", "worker": 1, "layer": 1, "requests": ["e19", "e21", "e23", "e25", "e27", "e29", "e31", "e33"]}
+{"t": 0.5069631518150309, "event": "layer_start", "worker": 1, "layer": 2, "requests": ["e19", "e21", "e23", "e25", "e27", "e29", "e31", "e33"]}
+{"t": 0.5069796112525309, "event": "layer_start", "worker": 1, "layer": 3, "requests": ["e19", "e21", "e23", "e25", "e27", "e29", "e31", "e33"]}
+{"t": 0.5069960706900308, "event": "layer_start", "worker": 1, "layer": 4, "requests": ["e19", "e21", "e23", "e25", "e27", "e29", "e31", "e33"]}
+{"t": 0.5070125301275308, "event": "layer_start", "worker": 1, "layer": 5, "requests": ["e19", "e21", "e23", "e25", "e27", "e29", "e31", "e33"]}
+{"t": 0.5070289895650307, "event": "layer_start", "worker": 1, "layer": 6, "requests": ["e19", "e21", "e23", "e25", "e27", "e29", "e31", "e33"]}
+{"t": 0.5070454490025307, "event": "layer_start", "worker": 1, "layer": 7, "requests": ["e19", "e21", "e23", "e25", "e27", "e29", "e31", "e33"]}
+{"t": 0.5070619084400306, "event": "request_done", "request": "e19", "worker": 1}
+{"t": 0.5070619084400306, "event": "request_done", "request": "e21", "worker": 1}
+{"t": 0.5070619084400306, "event": "request_done", "request": "e25", "worker": 1}
+{"t": 0.5070619084400306, "event": "state", "worker": 1, "state": "stall"}
+{"t": 0.5070619084400306, "event": "schedule", "worker": 1, "tokens": {"e23": 1, "e27": 1, "e29": 1, "e31": 1, "e33": 1, "e35": 128, "e37": 96, "e39": 27}, "running": ["e23", "e27", "e29", "e31", "e33", "e35", "e37", "e39"], "waiting": ["e41", "e43", "e45", "e47"], "skipped_waiting": [], "free_blocks": 96}
+{"t": 0.5071619084400306, "event": "io_submit", "worker": 1, "label": "e37:L0", "bytes": 2097152.0}
+{"t": 0.5071619084400306, "event": "io_submit", "worker": 1, "label": "e37:L1", "bytes": 2097152.0}
+{"t": 0.5113152824523716, "event": "io_done", "worker": 0, "label": "e36:L4"}
+{"t": 0.5113152824523716, "event": "state", "worker": 0, "state": "compute"}
+{"t": 0.5113152824523716, "event": "layer_start", "worker": 0, "layer": 4, "requests": ["e28", "e30", "e32", "e34", "e36"]}
+{"t": 0.5113880285273715, "event": "state", "worker": 0, "state": "stall"}
+{"t": 0.5114880285273715, "event": "io_submit", "worker": 0, "label": "e36:L6", "bytes": 3145728.0}
+{"t": 0.5136054588357055, "event": "io_done", "worker": 0, "label": "e36:L5"}
+{"t": 0.5136054588357055, "event": "state", "worker": 0, "state": "compute"}
+{"t": 0.5136054588357055, "event": "layer_start", "worker": 0, "layer": 5, "requests": ["e28", "e30", "e32", "e34", "e36"]}
+{"t": 0.5136782049107055, "event": "state", "worker": 0, "state": "stall"}
+{"t": 0.5137782049107055, "event": "io_submit", "worker": 0, "label": "e36:L7", "bytes": 3145728.0}
+{"t": 0.5196301278227474, "event": "io_done", "worker": 1, "label": "e37:L0"}
+{"t": 0.5196301278227474, "event": "state", "worker": 1, "state": "compute"}
+{"t": 0.5196301278227474, "event": "layer_start", "worker": 1, "layer": 0, "requests": ["e23", "e27", "e29", "e31", "e33", "e35", "e37", "e39"]}
+{"t": 0.5197011797227474, "event": "state", "worker": 1, "state": "stall"}
+{"t": 0.5198011797227474, "event": "io_submit", "worker": 1, "label": "e37:L2", "bytes": 2097152.0}
+{"t": 0.523956728185705, "event": "io_done", "worker": 0, "label": "e36:L6"}
+{"t": 0.523956728185705, "event": "state", "worker": 0, "state": "compute"}
+{"t": 0.523956728185705, "event": "layer_start", "worker": 0, "layer": 6, "requests": ["e28", "e30", "e32", "e34", "e36"]}
+{"t": 0.524029474260705, "event": "state", "worker": 0, "state": "stall"}
+{"t": 0.5241751815190384, "event": "io_done", "worker": 0, "label": "e36:L7"}
+{"t": 0.5241751815190384, "event": "state", "worker": 0, "state": "compute"}
+{"t": 0.5241751815190384, "event": "layer_start", "worker": 0, "layer": 7, "requests": ["e28", "e30", "e32", "e34", "e36"]}
+{"t": 0.5242479275940384, "event": "state", "worker": 0, "state": "stall"}
+{"t": 0.5242479275940384, "event": "schedule", "worker": 0, "tokens": {"e28": 1, "e30": 1, "e32": 1, "e34": 128, "e36": 125}, "running": ["e28", "e30", "e32", "e34", "e36"], "waiting": ["e38", "e40", "e42", "e44", "e46"], "skipped_waiting": [], "free_blocks": 0}
+{"t": 0.5242479275940384, "event": "state", "worker": 0, "state": "compute"}
+{"t": 0.5242479275940384, "event": "layer_start", "worker": 0, "layer": 0, "requests": ["e28", "e30", "e32", "e34", "e36"]}
+{"t": 0.5243208226065383, "event": "layer_start", "worker": 0, "layer": 1, "requests": ["e28", "e30", "e32", "e34", "e36"]}
+{"t": 0.5243937176190383, "event": "layer_start", "worker": 0, "layer": 2, "requests": ["e28", "e30", "e32", "e34", "e36"]}
+{"t": 0.5244666126315383, "event": "layer_start", "worker": 0, "layer": 3, "requests": ["e28", "e30", "e32", "e34", "e36"]}
+{"t": 0.5245395076440382, "event": "layer_start", "worker": 0, "layer": 4, "requests": ["e28", "e30", "e32", "e34", "e36"]}
+{"t": 0.5246124026565382, "event": "layer_start", "worker": 0, "layer": 5, "requests": ["e28", "e30", "e32", "e34", "e36"]}
+{"t": 0.5246852976690382, "event": "layer_start", "worker": 0, "layer": 6, "requests": ["e28", "e30", "e32", "e34", "e36"]}
+{"t": 0.5247581926815381, "event": "layer_start", "worker": 0, "layer": 7, "requests": ["e28", "e30", "e32", "e34", "e36"]}
+{"t": 0.5248310876940381, "event": "state", "worker": 0, "state": "stall"}
+{"t": 0.5248310876940381, "event": "schedule", "worker": 0, "tokens": {"e28": 1, "e30": 1, "e32": 1, "e34": 5, "e36": 5}, "running": ["e28", "e30", "e32", "e34", "e36"], "waiting": ["e38", "e40", "e42", "e44", "e46"], "skipped_waiting": [], "free_blocks": 0}
+{"t": 0.5248310876940381, "event": "state", "worker": 0, "state": "compute"}
+{"t": 0.5248310876940381, "event": "layer_start", "worker": 0, "layer": 0, "requests": ["e28", "e30", "e32", "e34", "e36"]}
+{"t": 0.524854287131538, "event": "layer_start", "worker": 0, "layer": 1, "requests": ["e28", "e30", "e32", "e34", "e36"]}
+{"t": 0.524877486569038, "event": "layer_start", "worker": 0, "layer": 2, "requests": ["e28", "e30", "e32", "e34", "e36"]}
+{"t": 0.5249006860065379, "event": "layer_start", "worker": 0, "layer": 3, "requests": ["e28", "e30", "e32", "e34", "e36"]}
+{"t": 0.5249238854440379, "event": "layer_start", "worker": 0, "layer": 4, "requests": ["e28", "e30", "e32", "e34", "e36"]}
+{"t": 0.5249470848815379, "event": "layer_start", "worker": 0, "layer": 5, "requests": ["e28", "e30", "e32", "e34", "e36"]}
+{"t": 0.5249702843190378, "event": "layer_start", "worker": 0, "layer": 6, "requests": ["e28", "e30", "e32", "e34", "e36"]}
+{"t": 0.5249934837565378, "event": "layer_start", "worker": 0, "layer": 7, "requests": ["e28", "e30", "e32", "e34", "e36"]}
+{"t": 0.5250166831940377, "event": "request_done", "request": "e28", "worker": 0}
+{"t": 0.5250166831940377, "event": "state", "worker": 0, "state": "stall"}
+{"t": 0.5250166831940377, "event": "schedule", "worker": 0, "tokens": {"e30": 1, "e32": 1, "e34": 1, "e36": 1, "e38": 128}, "running": ["e30", "e32", "e34", "e36", "e38"], "waiting": ["e40", "e42", "e44", "e46"], "skipped_waiting": [], "free_blocks": 19}
+{"t": 0.5251166831940377, "event": "io_submit", "worker": 0, "label": "e38:L0", "bytes": 1048576.0}
+{"t": 0.5251166831940377, "event": "io_submit", "worker": 0, "label": "e38:L1", "bytes": 1048576.0}
+{"t": 0.5272304202871338, "event": "io_done", "worker": 0, "label": "e38:L0"}
+{"t": 0.5272304202871338, "event": "state", "worker": 0, "state": "compute"}
+{"t": 0.5272304202871338, "event": "layer_start", "worker": 0, "layer": 0, "requests": ["e30", "e32", "e34", "e36", "e38"]}
+{"t": 0.5272596151066974, "event": "io_done", "worker": 1, "label": "e37:L1"}
+{"t": 0.5272596151066974, "event": "state", "worker": 1, "state": "compute"}
+{"t": 0.5272596151066974, "event": "layer_start", "worker": 1, "layer": 1, "requests": ["e23", "e27", "e29", "e31", "e33", "e35", "e37", "e39"]}
+{"t": 0.5272702247996338, "event": "state", "worker": 0, "state": "stall"}
+{"t": 0.5272850336204672, "event": "io_done", "worker": 0, "label": "e38:L1"}
+{"t": 0.5272850336204672, "event": "state", "worker": 0, "state": "compute"}
+{"t": 0.5272850336204672, "event": "layer_start", "worker": 0, "layer": 1, "requests": ["e30", "e32", "e34", "e36", "e38"]}
+{"t": 0.5273248381329672, "event": "state", "worker": 0, "state": "stall"}
+{"t": 0.5273306670066974, "event": "state", "worker": 1, "state": "stall"}
+{"t": 0.5273702247996338, "event": "io_submit", "worker": 0, "label": "e38:L2", "bytes": 1048576.0}
+{"t": 0.5274248381329671, "event": "io_submit", "worker": 0, "label": "e38:L3", "bytes": 1048576.0}
+{"t": 0.5274306670066974, "event": "io_submit", "worker": 1, "label": "e37:L3", "bytes": 2097152.0}
+{"t": 0.5290086247996338, "event": "io_done", "worker": 0, "label": "e38:L2"}
+{"t": 0.5290086247996338, "event": "state", "worker": 0, "state": "compute"}
+{"t": 0.5290086247996338, "event": "layer_start", "worker": 0, "layer": 2, "requests": ["e30", "e32", "e34", "e36", "e38"]}
+{"t": 0.5290484293121338, "event": "state", "worker": 0, "state": "stall"}
+{"t": 0.5291178514663005, "event": "io_done", "worker": 0, "label": "e38:L3"}
+{"t": 0.5291178514663005, "event": "state", "worker": 0, "state": "compute"}
+{"t": 0.5291178514663005, "event": "layer_start", "worker": 0, "layer": 3, "requests": ["e30", "e32", "e34", "e36", "e38"]}
+{"t": 0.5291484293121338, "event": "io_submit", "worker": 0, "label": "e38:L4", "bytes": 1048576.0}
+{"t": 0.5291576559788005, "event": "state", "worker": 0, "state": "stall"}
+{"t": 0.5292576559788005, "event": "io_submit", "worker": 0, "label": "e38:L5", "bytes": 1048576.0}
+{"t": 0.5341477050154056, "event": "io_done", "worker": 0, "label": "e38:L4"}
+{"t": 0.5341477050154056, "event": "state", "worker": 0, "state": "compute"}
+{"t": 0.5341477050154056, "event": "layer_start", "worker": 0, "layer": 4, "requests": ["e30", "e32", "e34", "e36", "e38"]}
+{"t": 0.5341875095279056, "event": "state", "worker": 0, "state": "stall"}
+{"t": 0.534202318348739, "event": "io_done", "worker": 0, "label": "e38:L5"}
+{"t": 0.534202318348739, "event": "state", "worker": 0, "state": "compute"}
+{"t": 0.534202318348739, "event": "layer_start", "worker": 0, "layer": 5, "requests": ["e30", "e32", "e34", "e36", "e38"]}
+{"t": 0.534242122861239, "event": "state", "worker": 0, "state": "stall"}
+{"t": 0.5342501217733641, "event": "io_done", "worker": 1, "label": "e37:L2"}
+{"t": 0.5342501217733641, "event": "state", "worker": 1, "state": "compute"}
+{"t": 0.5342501217733641, "event": "layer_start", "worker": 1, "layer": 2, "requests": ["e23", "e27", "e29", "e31", "e33", "e35", "e37", "e39"]}
+{"t": 0.5342875095279056, "event": "io_submit", "worker": 0, "label": "e38:L6", "bytes": 1048576.0}
+{"t": 0.5343211736733641, "event": "state", "worker": 1, "state": "stall"}
+{"t": 0.5343421228612389, "event": "io_submit", "worker": 0, "label": "e38:L7", "bytes": 1048576.0}
+{"t": 0.5344211736733641, "event": "io_submit", "worker": 1, "label": "e37:L4", "bytes": 2097152.0}
+{"t": 0.5359259095279056, "event": "io_done", "worker": 0, "label": "e38:L6"}
+{"t": 0.5359259095279056, "event": "state", "worker": 0, "state": "compute"}
+{"t": 0.5359259095279056, "event": "layer_start", "worker": 0, "layer": 6, "requests": ["e30", "e32", "e34", "e36", "e38"]}
+{"t": 0.5359657140404056, "event": "state", "worker": 0, "state": "stall"}
+{"t": 0.5360351361945723, "event": "io_done", "worker": 0, "label": "e38:L7"}
+{"t": 0.5360351361945723, "event": "state", "worker": 0, "state": "compute"}
+{"t": 0.5360351361945723, "event": "layer_start", "worker": 0, "layer": 7, "requests": ["e30", "e32", "e34", "e36", "e38"]}
+{"t": 0.5360749407070723, "event": "request_done", "request": "e30", "worker": 0}
+{"t": 0.5360749407070723, "event": "state", "worker": 0, "state": "stall"}
+{"t": 0.5360749407070723, "event": "schedule", "worker": 0, "tokens": {"e32": 1, "e34": 1, "e36": 1, "e38": 128, "e40": 125}, "running": ["e32", "e34", "e36", "e38", "e40"], "waiting": ["e42", "e44", "e46"], "skipped_waiting": [], "free_blocks": 40}
+{"t": 0.5361749407070723, "event": "io_submit", "worker": 0, "label": "e40:L0", "bytes": 2097152.0}
+{"t": 0.5361749407070723, "event": "io_submit", "worker": 0, "label": "e40:L1", "bytes": 2097152.0}
+{"t": 0.5409774995634373, "event": "io_done", "worker": 0, "label": "e40:L0"}
+{"t": 0.5409774995634373, "event": "state", "worker": 0, "state": "compute"}
+{"t": 0.5409774995634373, "event": "layer_start", "worker": 0, "layer": 0, "requests": ["e32", "e34", "e36", "e38", "e40"]}
+{"t": 0.5410321128967707, "event": "io_done", "worker": 0, "label": "e40:L1"}
+{"t": 0.5410493937134373, "event": "layer_start", "worker": 0, "layer": 1, "requests": ["e32", "e34", "e36", "e38", "e40"]}
+{"t": 0.5411212878634373, "event": "state", "worker": 0, "state": "stall"}
+{"t": 0.5411493937134373, "event": "io_submit", "worker": 0, "label": "e40:L2", "bytes": 2097152.0}
+{"t": 0.5412212878634373, "event": "io_submit", "worker": 0, "label": "e40:L3", "bytes": 2097152.0}
+{"t": 0.5412406284400307, "event": "io_done", "worker": 1, "label": "e37:L3"}
+{"t": 0.5412406284400307, "event": "state", "worker": 1, "state": "compute"}
+{"t": 0.5412406284400307, "event": "layer_start", "worker": 1, "layer": 3, "requests": ["e23", "e27", "e29", "e31", "e33", "e35", "e37", "e39"]}
+{"t": 0.5413116803400307, "event": "state", "worker": 1, "state": "stall"}
+{"t": 0.5414116803400307, "event": "io_submit", "worker": 1, "label": "e37:L5", "bytes": 2097152.0}
+{"t": 0.5445354203801039, "event": "io_done", "worker": 0, "label": "e40:L2"}
+{"t": 0.5445354203801039, "event": "state", "worker": 0, "state": "compute"}
+{"t": 0.5445354203801039, "event": "layer_start", "worker": 0, "layer": 2, "requests": ["e32", "e34", "e36", "e38", "e40"]}
+{"t": 0.5446073145301039, "event": "state", "worker": 0, "state": "stall"}
+{"t": 0.5446446470467706, "event": "io_done", "worker": 0, "label": "e40:L3"}
+{"t": 0.5446446470467706, "event": "state", "worker": 0, "state": "compute"}
+{"t": 0.5446446470467706, "event": "layer_start", "worker": 0, "layer": 3, "requests": ["e32", "e34", "e36", "e38", "e40"]}
+{"t": 0.5447073145301039, "event": "io_submit", "worker": 0, "label": "e40:L4", "bytes": 2097152.0}
+{"t": 0.5447165411967706, "event": "state", "worker": 0, "state": "stall"}
+{"t": 0.5448165411967706, "event": "io_submit", "worker": 0, "label": "e40:L5", "bytes": 2097152.0}
+{"t": 0.5482311351066974, "event": "io_done", "worker": 1, "label": "e37:L4"}
+{"t": 0.5482311351066974, "event": "state", "worker": 1, "state": "compute"}
+{"t": 0.5482311351066974, "event": "layer_start", "worker": 1, "layer": 4, "requests": ["e23", "e27", "e29", "e31", "e33", "e35", "e37", "e39"]}
+{"t": 0.5482353240209553, "event": "io_done", "worker": 0, "label": "e40:L4"}
+{"t": 0.5482353240209553, "event": "state", "worker": 0, "state": "compute"}
+{"t": 0.5482353240209553, "event": "layer_start", "worker": 0, "layer": 4, "requests": ["e32", "e34", "e36", "e38", "e40"]}
+{"t": 0.5482899373542887, "event": "io_done", "worker": 0, "label": "e40:L5"}
+{"t": 0.5483021870066974, "event": "state", "worker": 1, "state": "stall"}
+{"t": 0.5483072181709553, "event": "layer_start", "worker": 0, "layer": 5, "requests": ["e32", "e34", "e36", "e38", "e40"]}
+{"t": 0.5483791123209553, "event": "state", "worker": 0, "state": "stall"}
+{"t": 0.5484021870066974, "event": "io_submit", "worker": 1, "label": "e37:L6", "bytes": 2097152.0}
+{"t": 0.5484072181709553, "event": "io_submit", "worker": 0, "label": "e40:L6", "bytes": 2097152.0}
+{"t": 0.5484791123209553, "event": "io_submit", "worker": 0, "label": "e40:L7", "bytes": 2097152.0}
+{"t": 0.5550104003400308, "event": "io_done", "worker": 0, "label": "e40:L6"}
+{"t": 0.5550104003400308, "event": "state", "worker": 0, "state": "compute"}
+{"t": 0.5550104003400308, "event": "layer_start", "worker": 0, "layer": 6, "requests": ["e32", "e34", "e36", "e38", "e40"]}
+{"t": 0.5550650136733641, "event": "io_done", "worker": 0, "label": "e40:L7"}
+{"t": 0.5550822944900308, "event": "layer_start", "worker": 0, "layer": 7, "requests": ["e32", "e34", "e36", "e38", "e40"]}
+{"t": 0.5551541886400307, "event": "request_done", "request": "e32", "worker": 0}
+{"t": 0.5551541886400307, "event": "state", "worker": 0, "state": "stall"}
+{"t": 0.5551541886400307, "event": "schedule", "worker": 0, "tokens": {"e34": 1, "e36": 1, "e38": 64, "e40": 67}, "running": ["e34", "e36", "e38", "e40"], "waiting": ["e42", "e44", "e46"], "skipped_waiting": [], "free_blocks": 61}
+{"t": 0.5551541886400307, "event": "state", "worker": 0, "state": "compute"}
+{"t": 0.5551541886400307, "event": "layer_start", "worker": 0, "layer": 0, "requests": ["e34", "e36", "e38", "e40"]}
+{"t": 0.5551947086775307, "event": "layer_start", "worker": 0, "layer": 1, "requests": ["e34", "e36", "e38", "e40"]}
+{"t": 0.5552216417733641, "event": "io_done", "worker": 1, "label": "e37:L5"}
+{"t": 0.5552216417733641, "event": "state", "worker": 1, "state": "compute"}
+{"t": 0.5552216417733641, "event": "layer_start", "worker": 1, "layer": 5, "requests": ["e23", "e27", "e29", "e31", "e33", "e35", "e37", "e39"]}
+{"t": 0.5552352287150307, "event": "layer_start", "worker": 0, "layer": 2, "requests": ["e34", "e36", "e38", "e40"]}
+{"t": 0.5552757487525307, "event": "layer_start", "worker": 0, "layer": 3, "requests": ["e34", "e36", "e38", "e40"]}
+{"t": 0.5552926936733641, "event": "state", "worker": 1, "state": "stall"}
+{"t": 0.5553162687900307, "event": "layer_start", "worker": 0, "layer": 4, "requests": ["e34", "e36", "e38", "e40"]}
+{"t": 0.5553567888275307, "event": "layer_start", "worker": 0, "layer": 5, "requests": ["e34", "e36", "e38", "e40"]}
+{"t": 0.5553926936733641, "event": "io_submit", "worker": 1, "label": "e37:L7", "bytes": 2097152.0}
+{"t": 0.5553973088650307, "event": "layer_start", "worker": 0, "layer": 6, "requests": ["e34", "e36", "e38", "e40"]}
+{"t": 0.5554378289025307, "event": "layer_start", "worker": 0, "layer": 7, "requests": ["e34", "e36", "e38", "e40"]}
+{"t": 0.5554783489400307, "event": "state", "worker": 0, "state": "stall"}
+{"t": 0.5554783489400307, "event": "schedule", "worker": 0, "tokens": {"e34": 1, "e36": 1, "e38": 1, "e40": 1}, "running": ["e34", "e36", "e38", "e40"], "waiting": ["e42", "e44", "e46"], "skipped_waiting": [], "free_blocks": 59}
+{"t": 0.5554783489400307, "event": "state", "worker": 0, "state": "compute"}
+{"t": 0.5554783489400307, "event": "layer_start", "worker": 0, "layer": 0, "requests": ["e34", "e36", "e38", "e40"]}
+{"t": 0.5554897915650306, "event": "layer_start", "worker": 0, "layer": 1, "requests": ["e34", "e36", "e38", "e40"]}
+{"t": 0.5555012341900306, "event": "layer_start", "worker": 0, "layer": 2, "requests": ["e34", "e36", "e38", "e40"]}
+{"t": 0.5555126768150306, "event": "layer_start", "worker": 0, "layer": 3, "requests": ["e34", "e36", "e38", "e40"]}
+{"t": 0.5555241194400306, "event": "layer_start", "worker": 0, "layer": 4, "requests": ["e34", "e36", "e38", "e40"]}
+{"t": 0.5555355620650305, "event": "layer_start", "worker": 0, "layer": 5, "requests": ["e34", "e36", "e38", "e40"]}
+{"t": 0.5555470046900305, "event": "layer_start", "worker": 0, "layer": 6, "requests": ["e34", "e36", "e38", "e40"]}
+{"t": 0.5555584473150305, "event": "layer_start", "worker": 0, "layer": 7, "requests": ["e34", "e36", "e38", "e40"]}
+{"t": 0.5555698899400304, "event": "request_done", "request": "e36", "worker": 0}
+{"t": 0.5555698899400304, "event": "state", "worker": 0, "state": "stall"}
+{"t": 0.5555698899400304, "event": "schedule", "worker": 0, "tokens": {"e34": 1, "e38": 1, "e40": 1, "e42": 128, "e44": 125}, "running": ["e34", "e38", "e40", "e42", "e44"], "waiting": ["e46"], "skipped_waiting": [], "free_blocks": 40}
+{"t": 0.5556698899400304, "event": "io_submit", "worker": 0, "label": "e42:L0", "bytes": 3145728.0}
+{"t": 0.5556698899400304, "event": "io_submit", "worker": 0, "label": "e44:L0", "bytes": 1048576.0}
+{"t": 0.5556698899400304, "event": "io_submit", "worker": 0, "label": "e42:L1", "bytes": 3145728.0}
+{"t": 0.5556698899400304, "event": "io_submit", "worker": 0, "label": "e44:L1", "bytes": 1048576.0}
+{"t": 0.5622121484400308, "event": "io_done", "worker": 1, "label": "e37:L6"}
+{"t": 0.5622121484400308, "event": "state", "worker": 1, "state": "compute"}
+{"t": 0.5622121484400308, "event": "layer_start", "worker": 1, "layer": 6, "requests": ["e23", "e27", "e29", "e31", "e33", "e35", "e37", "e39"]}
+{"t": 0.5622663546866972, "event": "io_done", "worker": 0, "label": "e42:L0"}
+{"t": 0.5622832003400308, "event": "state", "worker": 1, "state": "stall"}
+{"t": 0.5625394213533639, "event": "io_done", "worker": 0, "label": "e44:L0"}
+{"t": 0.5625394213533639, "event": "state", "worker": 0, "state": "compute"}
+{"t": 0.5625394213533639, "event": "layer_start", "worker": 0, "layer": 0, "requests": ["e34", "e38", "e40", "e42", "e44"]}
+{"t": 0.5626057832733637, "event": "io_done", "worker": 0, "label": "e42:L1"}
+{"t": 0.5626115283033639, "event": "state", "worker": 0, "state": "stall"}
+{"t": 0.5626603966066971, "event": "io_done", "worker": 0, "label": "e44:L1"}
+{"t": 0.5626603966066971, "event": "state", "worker": 0, "state": "compute"}
+{"t": 0.5626603966066971, "event": "layer_start", "worker": 0, "layer": 1, "requests": ["e34", "e38", "e40", "e42", "e44"]}
+{"t": 0.5627115283033639, "event": "io_submit", "worker": 0, "label": "e42:L2", "bytes": 3145728.0}
+{"t": 0.5627115283033639, "event": "io_submit", "worker": 0, "label": "e44:L2", "bytes": 1048576.0}
+{"t": 0.5627325035566971, "event": "state", "worker": 0, "state": "stall"}
+{"t": 0.5628325035566971, "event": "io_submit", "worker": 0, "label": "e42:L3", "bytes": 3145728.0}
+{"t": 0.5628325035566971, "event": "io_submit", "worker": 0, "label": "e44:L3", "bytes": 1048576.0}
+{"t": 0.5630859617733641, "event": "io_done", "worker": 1, "label": "e37:L7"}
+{"t": 0.5630859617733641, "event": "state", "worker": 1, "state": "compute"}
+{"t": 0.5630859617733641, "event": "layer_start", "worker": 1, "layer": 7, "requests": ["e23", "e27", "e29", "e31", "e33", "e35", "e37", "e39"]}
+{"t": 0.5631570136733641, "event": "state", "worker": 1, "state": "stall"}
+{"t": 0.5631570136733641, "event": "schedule", "worker": 1, "tokens": {"e23": 1, "e27": 1, "e29": 1, "e31": 1, "e33": 1, "e35": 32, "e37": 1, "e39": 128}, "running": ["e23", "e27", "e29", "e31", "e33", "e35", "e37", "e39"], "waiting": ["e41", "e43", "e45", "e47"], "skipped_waiting": [], "free_blocks": 85}
+{"t": 0.5631570136733641, "event": "state", "worker": 1, "state": "compute"}
+{"t": 0.5631570136733641, "event": "layer_start", "worker": 1, "layer": 0, "requests": ["e23", "e27", "e29", "e31", "e33", "e35", "e37", "e39"]}
+{"t": 0.5632049969233641, "event": "layer_start", "worker": 1, "layer": 1, "requests": ["e23", "e27", "e29", "e31", "e33", "e35", "e37", "e39"]}
+{"t": 0.5632529801733641, "event": "layer_start", "worker": 1, "layer": 2, "requests": ["e23", "e27", "e29", "e31", "e33", "e35", "e37", "e39"]}
+{"t": 0.5633009634233641, "event": "layer_start", "worker": 1, "layer": 3, "requests": ["e23", "e27", "e29", "e31", "e33", "e35", "e37", "e39"]}
+{"t": 0.5633489466733641, "event": "layer_start", "worker": 1, "layer": 4, "requests": ["e23", "e27", "e29", "e31", "e33", "e35", "e37", "e39"]}
+{"t": 0.5633969299233641, "event": "layer_start", "worker": 1, "layer": 5, "requests": ["e23", "e27", "e29", "e31", "e33", "e35", "e37", "e39"]}
+{"t": 0.5634449131733641, "event": "layer_start", "worker": 1, "layer": 6, "requests": ["e23", "e27", "e29", "e31", "e33", "e35", "e37", "e39"]}
+{"t": 0.5634928964233641, "event": "layer_start", "worker": 1, "layer": 7, "requests": ["e23", "e27", "e29", "e31", "e33", "e35", "e37", "e39"]}
+{"t": 0.5635408796733641, "event": "state", "worker": 1, "state": "stall"}
+{"t": 0.5635408796733641, "event": "schedule", "worker": 1, "tokens": {"e23": 1, "e27": 1, "e29": 1, "e31": 1, "e33": 1, "e35": 1, "e37": 1, "e39": 5}, "running": ["e23", "e27", "e29", "e31", "e33", "e35", "e37", "e39"], "waiting": ["e41", "e43", "e45", "e47"], "skipped_waiting": [], "free_blocks": 84}
+{"t": 0.5635408796733641, "event": "state", "worker": 1, "state": "compute"}
+{"t": 0.5635408796733641, "event": "layer_start", "worker": 1, "layer": 0, "requests": ["e23", "e27", "e29", "e31", "e33", "e35", "e37", "e39"]}
+{"t": 0.563562334735864, "event": "layer_start", "worker": 1, "layer": 1, "requests": ["e23", "e27", "e29", "e31", "e33", "e35", "e37", "e39"]}
+{"t": 0.563583789798364, "event": "layer_start", "worker": 1, "layer": 2, "requests": ["e23", "e27", "e29", "e31", "e33", "e35", "e37", "e39"]}
+{"t": 0.5636052448608639, "event": "layer_start", "worker": 1, "layer": 3, "requests": ["e23", "e27", "e29", "e31", "e33", "e35", "e37", "e39"]}
+{"t": 0.5636266999233639, "event": "layer_start", "worker": 1, "layer": 4, "requests": ["e23", "e27", "e29", "e31", "e33", "e35", "e37", "e39"]}
+{"t": 0.5636481549858638, "event": "layer_start", "worker": 1, "layer": 5, "requests": ["e23", "e27", "e29", "e31", "e33", "e35", "e37", "e39"]}
+{"t": 0.5636696100483638, "event": "layer_start", "worker": 1, "layer": 6, "requests": ["e23", "e27", "e29", "e31", "e33", "e35", "e37", "e39"]}
+{"t": 0.5636910651108638, "event": "layer_start", "worker": 1, "layer": 7, "requests": ["e23", "e27", "e29", "e31", "e33", "e35", "e37", "e39"]}
+{"t": 0.5637125201733637, "event": "request_done", "request": "e23", "worker": 1}
+{"t": 0.5637125201733637, "event": "request_done", "request": "e27", "worker": 1}
+{"t": 0.5637125201733637, "event": "request_done", "request": "e31", "worker": 1}
+{"t": 0.5637125201733637, "event": "state", "worker": 1, "state": "stall"}
+{"t": 0.5637125201733637, "event": "schedule", "worker": 1, "tokens": {"e29": 1, "e33": 1, "e35": 1, "e37": 1, "e39": 1, "e41": 96, "e43": 128, "e45": 27}, "running": ["e29", "e33", "e35", "e37", "e39", "e41", "e43", "e45"], "waiting": ["e47"], "skipped_waiting": [], "free_blocks": 36}
+{"t": 0.5638125201733637, "event": "io_submit", "worker": 1, "label": "e41:L0", "bytes": 1048576.0}
+{"t": 0.5638125201733637, "event": "io_submit", "worker": 1, "label": "e45:L0", "bytes": 3145728.0}
+{"t": 0.5638125201733637, "event": "io_submit", "worker": 1, "label": "e41:L1", "bytes": 1048576.0}
+{"t": 0.5638125201733637, "event": "io_submit", "worker": 1, "label": "e45:L1", "bytes": 3145728.0}
+{"t": 0.5689374483033639, "event": "io_done", "worker": 0, "label": "e42:L2"}
+{"t": 0.569265128303364, "event": "io_done", "worker": 0, "label": "e44:L2"}
+{"t": 0.569265128303364, "event": "state", "worker": 0, "state": "compute"}
+{"t": 0.569265128303364, "event": "layer_start", "worker": 0, "layer": 2, "requests": ["e34", "e38", "e40", "e42", "e44"]}
+{"t": 0.569337235253364, "event": "state", "worker": 0, "state": "stall"}
+{"t": 0.569437235253364, "event": "io_submit", "worker": 0, "label": "e42:L4", "bytes": 3145728.0}
+{"t": 0.569437235253364, "event": "io_submit", "worker": 0, "label": "e44:L4", "bytes": 1048576.0}
+{"t": 0.5707855350200299, "event": "io_done", "worker": 0, "label": "e42:L3"}
+{"t": 0.5727603816366973, "event": "io_done", "worker": 0, "label": "e44:L3"}
+{"t": 0.5727603816366973, "event": "state", "worker": 0, "state": "compute"}
+{"t": 0.5727603816366973, "event": "layer_start", "worker": 0, "layer": 3, "requests": ["e34", "e38", "e40", "e42", "e44"]}
+{"t": 0.5728324885866973, "event": "state", "worker": 0, "state": "stall"}
+{"t": 0.5729324885866973, "event": "io_submit", "worker": 0, "label": "e42:L5", "bytes": 3145728.0}
+{"t": 0.5729324885866973, "event": "io_submit", "worker": 0, "label": "e44:L5", "bytes": 1048576.0}
+{"t": 0.5898410282157475, "event": "io_done", "worker": 1, "label": "e41:L0"}
+{"t": 0.5898410282157475, "event": "io_done", "worker": 1, "label": "e45:L0"}
+{"t": 0.5898410282157475, "event": "state", "worker": 1, "state": "compute"}
+{"t": 0.5898410282157475, "event": "layer_start", "worker": 1, "layer": 0, "requests": ["e29", "e33", "e35", "e37", "e39", "e41", "e43", "e45"]}
+{"t": 0.5899120377532475, "event": "state", "worker": 1, "state": "stall"}
+{"t": 0.5900120377532475, "event": "io_submit", "worker": 1, "label": "e41:L2", "bytes": 1048576.0}
+{"t": 0.5900120377532475, "event": "io_submit", "worker": 1, "label": "e45:L2", "bytes": 3145728.0}
+{"t": 0.5984294846263796, "event": "io_done", "worker": 0, "label": "e42:L4"}
+{"t": 0.5985387112930463, "event": "io_done", "worker": 0, "label": "e44:L4"}
+{"t": 0.5985387112930463, "event": "state", "worker": 0, "state": "compute"}
+{"t": 0.5985387112930463, "event": "layer_start", "worker": 0, "layer": 4, "requests": ["e34", "e38", "e40", "e42", "e44"]}
+{"t": 0.5985933246263796, "event": "io_done", "worker": 0, "label": "e42:L5"}
+{"t": 0.5986108182430463, "event": "state", "worker": 0, "state": "stall"}
+{"t": 0.5987025512930463, "event": "io_done", "worker": 0, "label": "e44:L5"}
+{"t": 0.5987025512930463, "event": "state", "worker": 0, "state": "compute"}
+{"t": 0.5987025512930463, "event": "layer_start", "worker": 0, "layer": 5, "requests": ["e34", "e38", "e40", "e42", "e44"]}
+{"t": 0.5987108182430463, "event": "io_submit", "worker": 0, "label": "e42:L6", "bytes": 3145728.0}
+{"t": 0.5987108182430463, "event": "io_submit", "worker": 0, "label": "e44:L6", "bytes": 1048576.0}
+{"t": 0.5987746582430463, "event": "state", "worker": 0, "state": "stall"}
+{"t": 0.5988746582430463, "event": "io_submit", "worker": 0, "label": "e42:L7", "bytes": 3145728.0}
+{"t": 0.5988746582430463, "event": "io_submit", "worker": 0, "label": "e44:L7", "bytes": 1048576.0}
+{"t": 0.6044448401733636, "event": "io_done", "worker": 1, "label": "e41:L1"}
+{"t": 0.6044448401733636, "event": "io_done", "worker": 1, "label": "e45:L1"}
+{"t": 0.6044448401733636, "event": "state", "worker": 1, "state": "compute"}
+{"t": 0.6044448401733636, "event": "layer_start", "worker": 1, "layer": 1, "requests": ["e29", "e33", "e35", "e37", "e39", "e41", "e43", "e45"]}
+{"t": 0.6045158497108637, "event": "state", "worker": 1, "state": "stall"}
+{"t": 0.6046158497108637, "event": "io_submit", "worker": 1, "label": "e41:L3", "bytes": 1048576.0}
+{"t": 0.6046158497108637, "event": "io_submit", "worker": 1, "label": "e45:L3", "bytes": 3145728.0}
+{"t": 0.6049007941338301, "event": "io_done", "worker": 0, "label": "e42:L6"}
+{"t": 0.6055374849097128, "event": "io_done", "worker": 0, "label": "e44:L6"}
+{"t": 0.6055374849097128, "event": "state", "worker": 0, "state": "compute"}
+{"t": 0.6055374849097128, "event": "layer_start", "worker": 0, "layer": 6, "requests": ["e34", "e38", "e40", "e42", "e44"]}
+{"t": 0.6055920982430462, "event": "io_done", "worker": 0, "label": "e42:L7"}
+{"t": 0.6056095918597129, "event": "state", "worker": 0, "state": "stall"}
+{"t": 0.6057013249097128, "event": "io_done", "worker": 0, "label": "e44:L7"}
+{"t": 0.6057013249097128, "event": "state", "worker": 0, "state": "compute"}
+{"t": 0.6057013249097128, "event": "layer_start", "worker": 0, "layer": 7, "requests": ["e34", "e38", "e40", "e42", "e44"]}
+{"t": 0.6057734318597129, "event": "state", "worker": 0, "state": "stall"}
+{"t": 0.6057734318597129, "event": "schedule", "worker": 0, "tokens": {"e34": 1, "e38": 1, "e40": 1, "e42": 128, "e44": 67}, "running": ["e34", "e38", "e40", "e42", "e44"], "waiting": ["e46"], "skipped_waiting": [], "free_blocks": 28}
+{"t": 0.6057734318597129, "event": "state", "worker": 0, "state": "compute"}
+{"t": 0.6057734318597129, "event": "layer_start", "worker": 0, "layer": 0, "requests": ["e34", "e38", "e40", "e42", "e44"]}
+{"t": 0.6058310927722129, "event": "layer_start", "worker": 0, "layer": 1, "requests": ["e34", "e38", "e40", "e42", "e44"]}
+{"t": 0.605888753684713, "event": "layer_start", "worker": 0, "layer": 2, "requests": ["e34", "e38", "e40", "e42", "e44"]}
+{"t": 0.605946414597213, "event": "layer_start", "worker": 0, "layer": 3, "requests": ["e34", "e38", "e40", "e42", "e44"]}
+{"t": 0.606004075509713, "event": "layer_start", "worker": 0, "layer": 4, "requests": ["e34", "e38", "e40", "e42", "e44"]}
+{"t": 0.6060617364222131, "event": "layer_start", "worker": 0, "layer": 5, "requests": ["e34", "e38", "e40", "e42", "e44"]}
+{"t": 0.6061193973347131, "event": "layer_start", "worker": 0, "layer": 6, "requests": ["e34", "e38", "e40", "e42", "e44"]}
+{"t": 0.6061770582472131, "event": "layer_start", "worker": 0, "layer": 7, "requests": ["e34", "e38", "e40", "e42", "e44"]}
+{"t": 0.6062347191597132, "event": "request_done", "request": "e40", "worker": 0}
+{"t": 0.6062347191597132, "event": "state", "worker": 0, "state": "stall"}
+{"t": 0.6062347191597132, "event": "schedule", "worker": 0, "tokens": {"e34": 1, "e38": 1, "e42": 64, "e44": 1, "e46": 128}, "running": ["e34", "e38", "e42", "e44", "e46"], "waiting": [], "skipped_waiting": [], "free_blocks": 28}
+{"t": 0.6063347191597132, "event": "io_submit", "worker": 0, "label": "e46:L0", "bytes": 2097152.0}
+{"t": 0.6063347191597132, "event": "io_submit", "worker": 0, "label": "e46:L1", "bytes": 2097152.0}
+{"t": 0.6182562254560751, "event": "io_done", "worker": 0, "label": "e46:L0"}
+{"t": 0.6182562254560751, "event": "state", "worker": 0, "state": "compute"}
+{"t": 0.6182562254560751, "event": "layer_start", "worker": 0, "layer": 0, "requests": ["e34", "e38", "e42", "e44", "e46"]}
+{"t": 0.6183130164060751, "event": "state", "worker": 0, "state": "stall"}
+{"t": 0.6183920011474066, "event": "io_done", "worker": 0, "label": "e46:L1"}
+{"t": 0.6183920011474066, "event": "state", "worker": 0, "state": "compute"}
+{"t": 0.6183920011474066, "event": "layer_start", "worker": 0, "layer": 1, "requests": ["e34", "e38", "e42", "e44", "e46"]}
+{"t": 0.618413016406075, "event": "io_submit", "worker": 0, "label": "e46:L2", "bytes": 2097152.0}
+{"t": 0.618425853506697, "event": "io_done", "worker": 1, "label": "e41:L2"}
+{"t": 0.618425853506697, "event": "io_done", "worker": 1, "label": "e45:L2"}
+{"t": 0.618425853506697, "event": "state", "worker": 1, "state": "compute"}
+{"t": 0.618425853506697, "event": "layer_start", "worker": 1, "layer": 2, "requests": ["e29", "e33", "e35", "e37", "e39", "e41", "e43", "e45"]}
+{"t": 0.6184487920974066, "event": "state", "worker": 0, "state": "stall"}
+{"t": 0.618496863044197, "event": "state", "worker": 1, "state": "stall"}
+{"t": 0.6185487920974065, "event": "io_submit", "worker": 0, "label": "e46:L3", "bytes": 2097152.0}
+{"t": 0.618596863044197, "event": "io_submit", "worker": 1, "label": "e41:L4", "bytes": 1048576.0}
+{"t": 0.618596863044197, "event": "io_submit", "worker": 1, "label": "e45:L4", "bytes": 3145728.0}
+{"t": 0.6217990430727417, "event": "io_done", "worker": 0, "label": "e46:L2"}
+{"t": 0.6217990430727417, "event": "state", "worker": 0, "state": "compute"}
+{"t": 0.6217990430727417, "event": "layer_start", "worker": 0, "layer": 2, "requests": ["e34", "e38", "e42", "e44", "e46"]}
+{"t": 0.6218558340227417, "event": "state", "worker": 0, "state": "stall"}
+{"t": 0.6219082697394084, "event": "io_done", "worker": 0, "label": "e46:L3"}
+{"t": 0.6219082697394084, "event": "state", "worker": 0, "state": "compute"}
+{"t": 0.6219082697394084, "event": "layer_start", "worker": 0, "layer": 3, "requests": ["e34", "e38", "e42", "e44", "e46"]}
+{"t": 0.6219558340227417, "event": "io_submit", "worker": 0, "label": "e46:L4", "bytes": 2097152.0}
+{"t": 0.6219650606894084, "event": "state", "worker": 0, "state": "stall"}
+{"t": 0.6220650606894084, "event": "io_submit", "worker": 0, "label": "e46:L5", "bytes": 2097152.0}
+{"t": 0.632367128402869, "event": "io_done", "worker": 0, "label": "e46:L4"}
+{"t": 0.632367128402869, "event": "state", "worker": 0, "state": "compute"}
+{"t": 0.632367128402869, "event": "layer_start", "worker": 0, "layer": 4, "requests": ["e34", "e38", "e42", "e44", "e46"]}
+{"t": 0.6324068668400302, "event": "io_done", "worker": 1, "label": "e41:L3"}
+{"t": 0.6324068668400302, "event": "io_done", "worker": 1, "label": "e45:L3"}
+{"t": 0.6324068668400302, "event": "state", "worker": 1, "state": "compute"}
+{"t": 0.6324068668400302, "event": "layer_start", "worker": 1, "layer": 3, "requests": ["e29", "e33", "e35", "e37", "e39", "e41", "e43", "e45"]}
+{"t": 0.632423919352869, "event": "state", "worker": 0, "state": "stall"}
+{"t": 0.6324778763775303, "event": "state", "worker": 1, "state": "stall"}
+{"t": 0.632523919352869, "event": "io_submit", "worker": 0, "label": "e46:L6", "bytes": 2097152.0}
+{"t": 0.6325778763775303, "event": "io_submit", "worker": 1, "label": "e41:L5", "bytes": 1048576.0}
+{"t": 0.6325778763775303, "event": "io_submit", "worker": 1, "label": "e45:L5", "bytes": 3145728.0}
+{"t": 0.6332448287962025, "event": "io_done", "worker": 0, "label": "e46:L5"}
+{"t": 0.6332448287962025, "event": "state", "worker": 0, "state": "compute"}
+{"t": 0.6332448287962025, "event": "layer_start", "worker": 0, "layer": 5, "requests": ["e34", "e38", "e42", "e44", "e46"]}
+{"t": 0.6333016197462025, "event": "state", "worker": 0, "state": "stall"}
+{"t": 0.6334016197462025, "event": "io_submit", "worker": 0, "label": "e46:L7", "bytes": 2097152.0}
+{"t": 0.6357531550695357, "event": "io_done", "worker": 0, "label": "e46:L6"}
+{"t": 0.6357531550695357, "event": "state", "worker": 0, "state": "compute"}
+{"t": 0.6357531550695357, "event": "layer_start", "worker": 0, "layer": 6, "requests": ["e34", "e38", "e42", "e44", "e46"]}
+{"t": 0.6358099460195357, "event": "state", "worker": 0, "state": "stall"}
+{"t": 0.6463030231142449, "event": "io_done", "worker": 0, "label": "e46:L7"}
+{"t": 0.6463030231142449, "event": "state", "worker": 0, "state": "compute"}
+{"t": 0.6463030231142449, "event": "layer_start", "worker": 0, "layer": 7, "requests": ["e34", "e38", "e42", "e44", "e46"]}
+{"t": 0.6463598140642449, "event": "request_done", "request": "e34", "worker": 0}
+{"t": 0.6463598140642449, "event": "state", "worker": 0, "state": "stall"}
+{"t": 0.6463598140642449, "event": "schedule", "worker": 0, "tokens": {"e38": 1, "e42": 1, "e44": 1, "e46": 128}, "running": ["e38", "e42", "e44", "e46"], "waiting": [], "skipped_waiting": [], "free_blocks": 72}
+{"t": 0.6463598140642449, "event": "state", "worker": 0, "state": "compute"}
+{"t": 0.6463598140642449, "event": "layer_start", "worker": 0, "layer": 0, "requests": ["e38", "e42", "e44", "e46"]}
+{"t": 0.6463878801733636, "event": "io_done", "worker": 1, "label": "e41:L4"}
+{"t": 0.6463878801733636, "event": "io_done", "worker": 1, "label": "e45:L4"}
+{"t": 0.6463878801733636, "event": "state", "worker": 1, "state": "compute"}
+{"t": 0.6463878801733636, "event": "layer_start", "worker": 1, "layer": 4, "requests": ["e29", "e33", "e35", "e37", "e39", "e41", "e43", "e45"]}
+{"t": 0.6463999677642449, "event": "layer_start", "worker": 0, "layer": 1, "requests": ["e38", "e42", "e44", "e46"]}
+{"t": 0.6464401214642449, "event": "layer_start", "worker": 0, "layer": 2, "requests": ["e38", "e42", "e44", "e46"]}
+{"t": 0.6464588897108636, "event": "state", "worker": 1, "state": "stall"}
+{"t": 0.6464802751642449, "event": "layer_start", "worker": 0, "layer": 3, "requests": ["e38", "e42", "e44", "e46"]}
+{"t": 0.6465204288642449, "event": "layer_start", "worker": 0, "layer": 4, "requests": ["e38", "e42", "e44", "e46"]}
+{"t": 0.6465588897108636, "event": "io_submit", "worker": 1, "label": "e41:L6", "bytes": 1048576.0}
+{"t": 0.6465588897108636, "event": "io_submit", "worker": 1, "label": "e45:L6", "bytes": 3145728.0}
+{"t": 0.6465605825642449, "event": "layer_start", "worker": 0, "layer": 5, "requests": ["e38", "e42", "e44", "e46"]}
+{"t": 0.6466007362642449, "event": "layer_start", "worker": 0, "layer": 6, "requests": ["e38", "e42", "e44", "e46"]}
+{"t": 0.6466408899642448, "event": "layer_start", "worker": 0, "layer": 7, "requests": ["e38", "e42", "e44", "e46"]}
+{"t": 0.6466810436642448, "event": "state", "worker": 0, "state": "stall"}
+{"t": 0.6466810436642448, "event": "schedule", "worker": 0, "tokens": {"e38": 1, "e42": 1, "e44": 1, "e46": 64}, "running": ["e38", "e42", "e44", "e46"], "waiting": [], "skipped_waiting": [], "free_blocks": 68}
+{"t": 0.6466810436642448, "event": "state", "worker": 0, "state": "compute"}
+{"t": 0.6466810436642448, "event": "layer_start", "worker": 0, "layer": 0, "requests": ["e38", "e42", "e44", "e46"]}
+{"t": 0.6467205678134985, "event": "layer_start", "worker": 0, "layer": 1, "requests": ["e38", "e42", "e44", "e46"]}
+{"t": 0.6467600919627522, "event": "layer_start", "worker": 0, "layer": 2, "requests": ["e38", "e42", "e44", "e46"]}
+{"t": 0.6467996161120059, "event": "layer_start", "worker": 0, "layer": 3, "requests": ["e38", "e42", "e44", "e46"]}
+{"t": 0.6468391402612595, "event": "layer_start", "worker": 0, "layer": 4, "requests": ["e38", "e42", "e44", "e46"]}
+{"t": 0.6468786644105132, "event": "layer_start", "worker": 0, "layer": 5, "requests": ["e38", "e42", "e44", "e46"]}
+{"t": 0.6469181885597669, "event": "layer_start", "worker": 0, "layer": 6, "requests": ["e38", "e42", "e44", "e46"]}
+{"t": 0.6469577127090206, "event": "layer_start", "worker": 0, "layer": 7, "requests": ["e38", "e42", "e44", "e46"]}
+{"t": 0.6469972368582743, "event": "request_done", "request": "e38", "worker": 0}
+{"t": 0.6469972368582743, "event": "state", "worker": 0, "state": "stall"}
+{"t": 0.6469972368582743, "event": "schedule", "worker": 0, "tokens": {"e42": 1, "e44": 1, "e46": 1}, "running": ["e42", "e44", "e46"], "waiting": [], "skipped_waiting": [], "free_blocks": 104}
+{"t": 0.6469972368582743, "event": "state", "worker": 0, "state": "compute"}
+{"t": 0.6469972368582743, "event": "layer_start", "worker": 0, "layer": 0, "requests": ["e42", "e44", "e46"]}
+{"t": 0.6470073853582743, "event": "layer_start", "worker": 0, "layer": 1, "requests": ["e42", "e44", "e46"]}
+{"t": 0.6470175338582743, "event": "layer_start", "worker": 0, "layer": 2, "requests": ["e42", "e44", "e46"]}
+{"t": 0.6470276823582743, "event": "layer_start", "worker": 0, "layer": 3, "requests": ["e42", "e44", "e46"]}
+{"t": 0.6470378308582744, "event": "layer_start", "worker": 0, "layer": 4, "requests": ["e42", "e44", "e46"]}
+{"t": 0.6470479793582744, "event": "layer_start", "worker": 0, "layer": 5, "requests": ["e42", "e44", "e46"]}
+{"t": 0.6470581278582744, "event": "layer_start", "worker": 0, "layer": 6, "requests": ["e42", "e44", "e46"]}
+{"t": 0.6470682763582745, "event": "layer_start", "worker": 0, "layer": 7, "requests": ["e42", "e44", "e46"]}
+{"t": 0.6470784248582745, "event": "state", "worker": 0, "state": "stall"}
+{"t": 0.6470784248582745, "event": "schedule", "worker": 0, "tokens": {"e42": 1, "e44": 1, "e46": 1}, "running": ["e42", "e44", "e46"], "waiting": [], "skipped_waiting": [], "free_blocks": 104}
+{"t": 0.6470784248582745, "event": "state", "worker": 0, "state": "compute"}
+{"t": 0.6470784248582745, "event": "layer_start", "worker": 0, "layer": 0, "requests": ["e42", "e44", "e46"]}
+{"t": 0.6470885735457745, "event": "layer_start", "worker": 0, "layer": 1, "requests": ["e42", "e44", "e46"]}
+{"t": 0.6470987222332746, "event": "layer_start", "worker": 0, "layer": 2, "requests": ["e42", "e44", "e46"]}
+{"t": 0.6471088709207746, "event": "layer_start", "worker": 0, "layer": 3, "requests": ["e42", "e44", "e46"]}
+{"t": 0.6471190196082747, "event": "layer_start", "worker": 0, "layer": 4, "requests": ["e42", "e44", "e46"]}
+{"t": 0.6471291682957747, "event": "layer_start", "worker": 0, "layer": 5, "requests": ["e42", "e44", "e46"]}
+{"t": 0.6471393169832748, "event": "layer_start", "worker": 0, "layer": 6, "requests": ["e42", "e44", "e46"]}
+{"t": 0.6471494656707748, "event": "layer_start", "worker": 0, "layer": 7, "requests": ["e42", "e44", "e46"]}
+{"t": 0.6471596143582748, "event": "state", "worker": 0, "state": "stall"}
+{"t": 0.6471596143582748, "event": "schedule", "worker": 0, "tokens": {"e42": 1, "e44": 1, "e46": 1}, "running": ["e42", "e44", "e46"], "waiting": [], "skipped_waiting": [], "free_blocks": 104}
+{"t": 0.6471596143582748, "event": "state", "worker": 0, "state": "compute"}
+{"t": 0.6471596143582748, "event": "layer_start", "worker": 0, "layer": 0, "requests": ["e42", "e44", "e46"]}
+{"t": 0.6471697632332748, "event": "layer_start", "worker": 0, "layer": 1, "requests": ["e42", "e44", "e46"]}
+{"t": 0.6471799121082747, "event": "layer_start", "worker": 0, "layer": 2, "requests": ["e42", "e44", "e46"]}
+{"t": 0.6471900609832747, "event": "layer_start", "worker": 0, "layer": 3, "requests": ["e42", "e44", "e46"]}
+{"t": 0.6472002098582746, "event": "layer_start", "worker": 0, "layer": 4, "requests": ["e42", "e44", "e46"]}
+{"t": 0.6472103587332746, "event": "layer_start", "worker": 0, "layer": 5, "requests": ["e42", "e44", "e46"]}
+{"t": 0.6472205076082745, "event": "layer_start", "worker": 0, "layer": 6, "requests": ["e42", "e44", "e46"]}
+{"t": 0.6472306564832745, "event": "layer_start", "worker": 0, "layer": 7, "requests": ["e42", "e44", "e46"]}
+{"t": 0.6472408053582744, "event": "request_done", "request": "e42", "worker": 0}
+{"t": 0.6472408053582744, "event": "state", "worker": 0, "state": "stall"}
+{"t": 0.6472408053582744, "event": "schedule", "worker": 0, "tokens": {"e44": 1, "e46": 1}, "running": ["e44", "e46"], "waiting": [], "skipped_waiting": [], "free_blocks": 173}
+{"t": 0.6472408053582744, "event": "state", "worker": 0, "state": "compute"}
+{"t": 0.6472408053582744, "event": "layer_start", "worker": 0, "layer": 0, "requests": ["e44", "e46"]}
+{"t": 0.6472496360457745, "event": "layer_start", "worker": 0, "layer": 1, "requests": ["e44", "e46"]}
+{"t": 0.6472584667332745, "event": "layer_start", "worker": 0, "layer": 2, "requests": ["e44", "e46"]}
+{"t": 0.6472672974207745, "event": "layer_start", "worker": 0, "layer": 3, "requests": ["e44", "e46"]}
+{"t": 0.6472761281082745, "event": "layer_start", "worker": 0, "layer": 4, "requests": ["e44", "e46"]}
+{"t": 0.6472849587957745, "event": "layer_start", "worker": 0, "layer": 5, "requests": ["e44", "e46"]}
+{"t": 0.6472937894832745, "event": "layer_start", "worker": 0, "layer": 6, "requests": ["e44", "e46"]}
+{"t": 0.6473026201707746, "event": "layer_start", "worker": 0, "layer": 7, "requests": ["e44", "e46"]}
+{"t": 0.6473114508582746, "event": "request_done", "request": "e44", "worker": 0}
+{"t": 0.6473114508582746, "event": "request_done", "request": "e46", "worker": 0}
+{"t": 0.6473114508582746, "event": "state", "worker": 0, "state": "idle"}
+{"t": 0.6473114508582746, "event": "schedule", "worker": 0, "tokens": {}, "running": [], "waiting": [], "skipped_waiting": [], "free_blocks": 255}
+{"t": 0.6603688935066969, "event": "io_done", "worker": 1, "label": "e41:L5"}
+{"t": 0.6603688935066969, "event": "io_done", "worker": 1, "label": "e45:L5"}
+{"t": 0.6603688935066969, "event": "state", "worker": 1, "state": "compute"}
+{"t": 0.6603688935066969, "event": "layer_start", "worker": 1, "layer": 5, "requests": ["e29", "e33", "e35", "e37", "e39", "e41", "e43", "e45"]}
+{"t": 0.660439903044197, "event": "state", "worker": 1, "state": "stall"}
+{"t": 0.660539903044197, "event": "io_submit", "worker": 1, "label": "e41:L7", "bytes": 1048576.0}
+{"t": 0.660539903044197, "event": "io_submit", "worker": 1, "label": "e45:L7", "bytes": 3145728.0}
+{"t": 0.6743499068400303, "event": "io_done", "worker": 1, "label": "e41:L6"}
+{"t": 0.6743499068400303, "event": "io_done", "worker": 1, "label": "e45:L6"}
+{"t": 0.6743499068400303, "event": "state", "worker": 1, "state": "compute"}
+{"t": 0.6743499068400303, "event": "layer_start", "worker": 1, "layer": 6, "requests": ["e29", "e33", "e35", "e37", "e39", "e41", "e43", "e45"]}
+{"t": 0.6744209163775303, "event": "state", "worker": 1, "state": "stall"}
+{"t": 0.6756606268400303, "event": "io_done", "worker": 1, "label": "e41:L7"}
+{"t": 0.6756606268400303, "event": "io_done", "worker": 1, "label": "e45:L7"}
+{"t": 0.6756606268400303, "event": "state", "worker": 1, "state": "compute"}
+{"t": 0.6756606268400303, "event": "layer_start", "worker": 1, "layer": 7, "requests": ["e29", "e33", "e35", "e37", "e39", "e41", "e43", "e45"]}
+{"t": 0.6757316363775303, "event": "state", "worker": 1, "state": "stall"}
+{"t": 0.6757316363775303, "event": "schedule", "worker": 1, "tokens": {"e29": 1, "e33": 1, "e35": 1, "e37": 1, "e39": 1, "e41": 1, "e43": 32, "e45": 69}, "running": ["e29", "e33", "e35", "e37", "e39", "e41", "e43", "e45"], "waiting": ["e47"], "skipped_waiting": [], "free_blocks": 29}
+{"t": 0.6757316363775303, "event": "state", "worker": 1, "state": "compute"}
+{"t": 0.6757316363775303, "event": "layer_start", "worker": 1, "layer": 0, "requests": ["e29", "e33", "e35", "e37", "e39", "e41", "e43", "e45"]}
+{"t": 0.675770849562577, "event": "layer_start", "worker": 1, "layer": 1, "requests": ["e29", "e33", "e35", "e37", "e39", "e41", "e43", "e45"]}
+{"t": 0.6758100627476238, "event": "layer_start", "worker": 1, "layer": 2, "requests": ["e29", "e33", "e35", "e37", "e39", "e41", "e43", "e45"]}
+{"t": 0.6758492759326705, "event": "layer_start", "worker": 1, "layer": 3, "requests": ["e29", "e33", "e35", "e37", "e39", "e41", "e43", "e45"]}
+{"t": 0.6758884891177173, "event": "layer_start", "worker": 1, "layer": 4, "requests": ["e29", "e33", "e35", "e37", "e39", "e41", "e43", "e45"]}
+{"t": 0.675927702302764, "event": "layer_start", "worker": 1, "layer": 5, "requests": ["e29", "e33", "e35", "e37", "e39", "e41", "e43", "e45"]}
+{"t": 0.6759669154878107, "event": "layer_start", "worker": 1, "layer": 6, "requests": ["e29", "e33", "e35", "e37", "e39", "e41", "e43", "e45"]}
+{"t": 0.6760061286728575, "event": "layer_start", "worker": 1, "layer": 7, "requests": ["e29", "e33", "e35", "e37", "e39", "e41", "e43", "e45"]}
+{"t": 0.6760453418579042, "event": "request_done", "request": "e29", "worker": 1}
+{"t": 0.6760453418579042, "event": "request_done", "request": "e33", "worker": 1}
+{"t": 0.6760453418579042, "event": "request_done", "request": "e35", "worker": 1}
+{"t": 0.6760453418579042, "event": "state", "worker": 1, "state": "stall"}
+{"t": 0.6760453418579042, "event": "schedule", "worker": 1, "tokens": {"e37": 1, "e39": 1, "e41": 1, "e43": 1, "e45": 1, "e47": 128}, "running": ["e37", "e39", "e41", "e43", "e45", "e47"], "waiting": [], "skipped_waiting": [], "free_blocks": 108}
+{"t": 0.6760453418579042, "event": "state", "worker": 1, "state": "compute"}
+{"t": 0.6760453418579042, "event": "layer_start", "worker": 1, "layer": 0, "requests": ["e37", "e39", "e41", "e43", "e45", "e47"]}
+{"t": 0.6760849720079042, "event": "layer_start", "worker": 1, "layer": 1, "requests": ["e37", "e39", "e41", "e43", "e45", "e47"]}
+{"t": 0.6761246021579042, "event": "layer_start", "worker": 1, "layer": 2, "requests": ["e37", "e39", "e41", "e43", "e45", "e47"]}
+{"t": 0.6761642323079041, "event": "layer_start", "worker": 1, "layer": 3, "requests": ["e37", "e39", "e41", "e43", "e45", "e47"]}
+{"t": 0.6762038624579041, "event": "layer_start", "worker": 1, "layer": 4, "requests": ["e37", "e39", "e41", "e43", "e45", "e47"]}
+{"t": 0.6762434926079041, "event": "layer_start", "worker": 1, "layer": 5, "requests": ["e37", "e39", "e41", "e43", "e45", "e47"]}
+{"t": 0.676283122757904, "event": "layer_start", "worker": 1, "layer": 6, "requests": ["e37", "e39", "e41", "e43", "e45", "e47"]}
+{"t": 0.676322752907904, "event": "layer_start", "worker": 1, "layer": 7, "requests": ["e37", "e39", "e41", "e43", "e45", "e47"]}
+{"t": 0.676362383057904, "event": "request_done", "request": "e37", "worker": 1}
+{"t": 0.676362383057904, "event": "state", "worker": 1, "state": "stall"}
+{"t": 0.676362383057904, "event": "schedule", "worker": 1, "tokens": {"e39": 1, "e41": 1, "e43": 1, "e45": 1, "e47": 32}, "running": ["e39", "e41", "e43", "e45", "e47"], "waiting": [], "skipped_waiting": [], "free_blocks": 145}
+{"t": 0.676362383057904, "event": "state", "worker": 1, "state": "compute"}
+{"t": 0.676362383057904, "event": "layer_start", "worker": 1, "layer": 0, "requests": ["e39", "e41", "e43", "e45", "e47"]}
+{"t": 0.6764009073245706, "event": "layer_start", "worker": 1, "layer": 1, "requests": ["e39", "e41", "e43", "e45", "e47"]}
+{"t": 0.6764394315912372, "event": "layer_start", "worker": 1, "layer": 2, "requests": ["e39", "e41", "e43", "e45", "e47"]}
+{"t": 0.6764779558579038, "event": "layer_start", "worker": 1, "layer": 3, "requests": ["e39", "e41", "e43", "e45", "e47"]}
+{"t": 0.6765164801245704, "event": "layer_start", "worker": 1, "layer": 4, "requests": ["e39", "e41", "e43", "e45", "e47"]}
+{"t": 0.6765550043912371, "event": "layer_start", "worker": 1, "layer": 5, "requests": ["e39", "e41", "e43", "e45", "e47"]}
+{"t": 0.6765935286579037, "event": "layer_start", "worker": 1, "layer": 6, "requests": ["e39", "e41", "e43", "e45", "e47"]}
+{"t": 0.6766320529245703, "event": "layer_start", "worker": 1, "layer": 7, "requests": ["e39", "e41", "e43", "e45", "e47"]}
+{"t": 0.6766705771912369, "event": "state", "worker": 1, "state": "stall"}
+{"t": 0.6766705771912369, "event": "schedule", "worker": 1, "tokens": {"e39": 1, "e41": 1, "e43": 1, "e45": 1, "e47": 1}, "running": ["e39", "e41", "e43", "e45", "e47"], "waiting": [], "skipped_waiting": [], "free_blocks": 144}
+{"t": 0.6766705771912369, "event": "state", "worker": 1, "state": "compute"}
+{"t": 0.6766705771912369, "event": "layer_start", "worker": 1, "layer": 0, "requests": ["e39", "e41", "e43", "e45", "e47"]}
+{"t": 0.676683184191237, "event": "layer_start", "worker": 1, "layer": 1, "requests": ["e39", "e41", "e43", "e45", "e47"]}
+{"t": 0.676695791191237, "event": "layer_start", "worker": 1, "layer": 2, "requests": ["e39", "e41", "e43", "e45", "e47"]}
+{"t": 0.6767083981912371, "event": "layer_start", "worker": 1, "layer": 3, "requests": ["e39", "e41", "e43", "e45", "e47"]}
+{"t": 0.6767210051912371, "event": "layer_start", "worker": 1, "layer": 4, "requests": ["e39", "e41", "e43", "e45", "e47"]}
+{"t": 0.6767336121912372, "event": "layer_start", "worker": 1, "layer": 5, "requests": ["e39", "e41", "e43", "e45", "e47"]}
+{"t": 0.6767462191912372, "event": "layer_start", "worker": 1, "layer": 6, "requests": ["e39", "e41", "e43", "e45", "e47"]}
+{"t": 0.6767588261912373, "event": "layer_start", "worker": 1, "layer": 7, "requests": ["e39", "e41", "e43", "e45", "e47"]}
+{"t": 0.6767714331912373, "event": "request_done", "request": "e41", "worker": 1}
+{"t": 0.6767714331912373, "event": "request_done", "request": "e45", "worker": 1}
+{"t": 0.6767714331912373, "event": "state", "worker": 1, "state": "stall"}
+{"t": 0.6767714331912373, "event": "schedule", "worker": 1, "tokens": {"e39": 1, "e43": 1, "e47": 1}, "running": ["e39", "e43", "e47"], "waiting": [], "skipped_waiting": [], "free_blocks": 222}
+{"t": 0.6767714331912373, "event": "state", "worker": 1, "state": "compute"}
+{"t": 0.6767714331912373, "event": "layer_start", "worker": 1, "layer": 0, "requests": ["e39", "e43", "e47"]}
+{"t": 0.6767814639412373, "event": "layer_start", "worker": 1, "layer": 1, "requests": ["e39", "e43", "e47"]}
+{"t": 0.6767914946912372, "event": "layer_start", "worker": 1, "layer": 2, "requests": ["e39", "e43", "e47"]}
+{"t": 0.6768015254412372, "event": "layer_start", "worker": 1, "layer": 3, "requests": ["e39", "e43", "e47"]}
+{"t": 0.6768115561912371, "event": "layer_start", "worker": 1, "layer": 4, "requests": ["e39", "e43", "e47"]}
+{"t": 0.6768215869412371, "event": "layer_start", "worker": 1, "layer": 5, "requests": ["e39", "e43", "e47"]}
+{"t": 0.676831617691237, "event": "layer_start", "worker": 1, "layer": 6, "requests": ["e39", "e43", "e47"]}
+{"t": 0.676841648441237, "event": "layer_start", "worker": 1, "layer": 7, "requests": ["e39", "e43", "e47"]}
+{"t": 0.6768516791912369, "event": "state", "worker": 1, "state": "stall"}
+{"t": 0.6768516791912369, "event": "schedule", "worker": 1, "tokens": {"e39": 1, "e43": 1, "e47": 1}, "running": ["e39", "e43", "e47"], "waiting": [], "skipped_waiting": [], "free_blocks": 222}
+{"t": 0.6768516791912369, "event": "state", "worker": 1, "state": "compute"}
+{"t": 0.6768516791912369, "event": "layer_start", "worker": 1, "layer": 0, "requests": ["e39", "e43", "e47"]}
+{"t": 0.6768617101287369, "event": "layer_start", "worker": 1, "layer": 1, "requests": ["e39", "e43", "e47"]}
+{"t": 0.6768717410662368, "event": "layer_start", "worker": 1, "layer": 2, "requests": ["e39", "e43", "e47"]}
+{"t": 0.6768817720037368, "event": "layer_start", "worker": 1, "layer": 3, "requests": ["e39", "e43", "e47"]}
+{"t": 0.6768918029412367, "event": "layer_start", "worker": 1, "layer": 4, "requests": ["e39", "e43", "e47"]}
+{"t": 0.6769018338787367, "event": "layer_start", "worker": 1, "layer": 5, "requests": ["e39", "e43", "e47"]}
+{"t": 0.6769118648162367, "event": "layer_start", "worker": 1, "layer": 6, "requests": ["e39", "e43", "e47"]}
+{"t": 0.6769218957537366, "event": "layer_start", "worker": 1, "layer": 7, "requests": ["e39", "e43", "e47"]}
+{"t": 0.6769319266912366, "event": "request_done", "request": "e39", "worker": 1}
+{"t": 0.6769319266912366, "event": "state", "worker": 1, "state": "stall"}
+{"t": 0.6769319266912366, "event": "schedule", "worker": 1, "tokens": {"e43": 1, "e47": 1}, "running": ["e43", "e47"], "waiting": [], "skipped_waiting": [], "free_blocks": 233}
+{"t": 0.6769319266912366, "event": "state", "worker": 1, "state": "compute"}
+{"t": 0.6769319266912366, "event": "layer_start", "worker": 1, "layer": 0, "requests": ["e43", "e47"]}
+{"t": 0.6769406973162366, "event": "layer_start", "worker": 1, "layer": 1, "requests": ["e43", "e47"]}
+{"t": 0.6769494679412367, "event": "layer_start", "worker": 1, "layer": 2, "requests": ["e43", "e47"]}
+{"t": 0.6769582385662367, "event": "layer_start", "worker": 1, "layer": 3, "requests": ["e43", "e47"]}
+{"t": 0.6769670091912368, "event": "layer_start", "worker": 1, "layer": 4, "requests": ["e43", "e47"]}
+{"t": 0.6769757798162368, "event": "layer_start", "worker": 1, "layer": 5, "requests": ["e43", "e47"]}
+{"t": 0.6769845504412368, "event": "layer_start", "worker": 1, "layer": 6, "requests": ["e43", "e47"]}
+{"t": 0.6769933210662369, "event": "layer_start", "worker": 1, "layer": 7, "requests": ["e43", "e47"]}
+{"t": 0.6770020916912369, "event": "request_done", "request": "e43", "worker": 1}
+{"t": 0.6770020916912369, "event": "state", "worker": 1, "state": "stall"}
+{"t": 0.6770020916912369, "event": "schedule", "worker": 1, "tokens": {"e47": 1}, "running": ["e47"], "waiting": [], "skipped_waiting": [], "free_blocks": 244}
+{"t": 0.6770020916912369, "event": "state", "worker": 1, "state": "compute"}
+{"t": 0.6770020916912369, "event": "layer_start", "worker": 1, "layer": 0, "requests": ["e47"]}
+{"t": 0.6770096020037369, "event": "layer_start", "worker": 1, "layer": 1, "requests": ["e47"]}
+{"t": 0.677017112316237, "event": "layer_start", "worker": 1, "layer": 2, "requests": ["e47"]}
+{"t": 0.677024622628737, "event": "layer_start", "worker": 1, "layer": 3, "requests": ["e47"]}
+{"t": 0.677032132941237, "event": "layer_start", "worker": 1, "layer": 4, "requests": ["e47"]}
+{"t": 0.677039643253737, "event": "layer_start", "worker": 1, "layer": 5, "requests": ["e47"]}
+{"t": 0.677047153566237, "event": "layer_start", "worker": 1, "layer": 6, "requests": ["e47"]}
+{"t": 0.677054663878737, "event": "layer_start", "worker": 1, "layer": 7, "requests": ["e47"]}
+{"t": 0.677062174191237, "event": "request_done", "request": "e47", "worker": 1}
+{"t": 0.677062174191237, "event": "state", "worker": 1, "state": "idle"}
+{"t": 0.677062174191237, "event": "schedule", "worker": 1, "tokens": {}, "running": [], "waiting": [], "skipped_waiting": [], "free_blocks": 255}
